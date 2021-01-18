@@ -58,6 +58,7 @@ export default function Card({imgSrc, title, images, directory}) {
         animate={isToggled ? 'on' : 'off'}
         onClick={(e) => closeModal(e)}
         data-ref="modal">
+        <button className={styles.back_btn} onClick={() => setIsToggled(false)}>&larr; back</button>
         <div className={styles.content}>
           <div className={styles.arrow_left} onClick={prevHandler}>
             <img src="/icons/arrow_left.svg"/>

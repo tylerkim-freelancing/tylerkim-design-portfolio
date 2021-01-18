@@ -30,16 +30,12 @@ export default function Nav() {
 
   }
   return (
-    <motion.div 
-      className={styles.nav}
-      variants={nav}
-      initial="on"
-      animate={scrolled ? 'off' : 'on'}>
+    <div className={styles.nav}>
       <h1 className={styles.logo}>IRON MIND</h1>
       <div className={styles.route}><a href="#">Home</a></div>
       <div className={styles.route}><a href="#facility">Facilities</a></div>
-      <div className={styles.route}><a>Membership</a></div>
+      <div className={styles.route}><a href="#membership">Membership</a></div>
       <div className={styles.route}><a>Contact</a></div>
-    </motion.div>
+    </div>
   );
 }

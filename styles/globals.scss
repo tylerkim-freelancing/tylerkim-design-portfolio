@@ -63,12 +63,14 @@ button {
 
 input, textarea, select {
   outline-color: $secondary_color;
-  background-color: #f0f0f0;
+  background-color: $sub_color;
   border: none;
   padding: 5px;
+  color: $logo_color;
 
   &::placeholder {
     text-align: center;
+    color: $primary_color;
   }
 
   &:invalid {
