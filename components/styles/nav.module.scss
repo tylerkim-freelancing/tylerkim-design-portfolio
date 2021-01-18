@@ -1,0 +1,25 @@
+@import '../../styles/lib/theme.scss';
+
+.route {
+  margin: 0 0 10px 0;
+}
+
+.nav {
+  position: fixed;
+  z-index: 998;
+  top: 0;
+  right: 0;
+  width: 220px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-end;
+  transform-origin: right;
+}
+
+.logo {
+  font-family: 'Teko';
+  font-size: $xxlg_font;
+  color: $logo_color;
+}
+
