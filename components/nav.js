@@ -4,8 +4,53 @@ import { motion } from 'framer-motion'
 
 export default function Nav() {
   const [isToggled, setIsToggled] = useState(false)
+  const [isScrolling, setIsScrolling] = useState(false)
+
+  useEffect(() => {
+    let prevScrollPos = 0
+    function scrollHandler() {
+      let currScrollPos = window.scrollY
+      // console.log(currScrollPos, prevScrollPos)
+
+      currScrollPos > prevScrollPos ? setIsScrolling(true) : setIsScrolling(false)
+      prevScrollPos = window.scrollY
+
+      // console.log(isScrolling)
+    }
+    window.addEventListener('scroll', scrollHandler)
+
+    return function cleanup() {
+      window.removeEventListener('scroll', scrollHandler)
+    }
+  }, [])
 
   const nav = {
+    on: {
+      transition: {
+        staggerChildren: 0.1
+      }
+    },
+    off: {
+      transition: {
+        staggerChildren: 0.1
+      }
+    }
+  }
+
+  const routes = {
+    on: {
+      opacity: 1,
+      x: 0,
+      transition: { duration: 0.6 }
+    },
+    off: {
+      opacity: 0,
+      x: 500,
+      transition: { duration: 0.6 }
+    }
+  }
+
+  const nav_mobile = {
     on: {
       height: 'auto',
       display: 'block',
@@ -22,13 +67,17 @@ export default function Nav() {
   }
   return (
     <>
-    <div className={styles.nav}>
+    <motion.div 
+      className={styles.nav}
+      variants={nav}
+      initial="on"
+      animate={isScrolling ? "off" : "on"}>
       <h1 className={styles.logo}>IRON MIND</h1>
-      <div className={styles.route}><a href="#">Home</a></div>
-      <div className={styles.route}><a href="#facility">Facilities</a></div>
-      <div className={styles.route}><a href="#membership">Membership</a></div>
-      <div className={styles.route}><a href="#contact">Contact</a></div>
-    </div>
+      <motion.div className={styles.route} variants={routes}><a href="#">Home</a></motion.div>
+      <motion.div className={styles.route} variants={routes}><a href="#facility">Facilities</a></motion.div>
+      <motion.div className={styles.route} variants={routes}><a href="#membership">Membership</a></motion.div>
+      <motion.div className={styles.route} variants={routes}><a href="#contact">Contact</a></motion.div>
+    </motion.div>
 
     {/* Mobile */}
     <div 
@@ -37,7 +86,7 @@ export default function Nav() {
       <h1 className={styles.logo_mobile}>IRON MIND</h1>
       <motion.div 
         className={styles.routers_mobile}
-        variants={nav}
+        variants={nav_mobile}
         initial="off"
         animate={isToggled ? 'on' : 'off'}
         onClick={() => setIsToggled(!isToggled)}>
