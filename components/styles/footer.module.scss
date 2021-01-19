@@ -9,4 +9,9 @@
   align-items: center;
   height: 100px;
   background-color: $secondary_color;
+
+  p {
+    font-size: $sm_font;
+    text-align: center;
+  }
 }

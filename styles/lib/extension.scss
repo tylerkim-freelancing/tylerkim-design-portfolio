@@ -1,3 +1,9 @@
+@import "./breakpoints.scss";
+
 %page_padding {
-  padding: 100px
+  padding: 100px;
+
+  @include breakpoint(mobile) {
+    padding: 50px;
+  }
 }
