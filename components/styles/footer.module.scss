@@ -6,6 +6,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    & > p {
+        font-size: $sm_font;
+    }
 }
 
 .copyright {
