@@ -1,7 +1,5 @@
 import { motion } from "framer-motion";
 import Head from 'next/head'
-import Logo from './logo'
-import Nav from './nav'
 import Footer from './footer'
 
 export default function Layout({ children, title }) {
