@@ -1,6 +1,5 @@
 @import '../lib/theme.scss';
 
-.main {
-  min-height: 100vh;
-  width: 100vw;
+.container {
+  @extend %page_container;
 }
