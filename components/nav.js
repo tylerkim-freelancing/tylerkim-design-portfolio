@@ -104,7 +104,7 @@ export default function Nav({ title }) {
                 initial='scrollUp'
                 animate={ isScrollDown ? 'scrollDown' : 'scrollUp' }
                 >
-                THE CHAIRMAN
+                The Logo
             </motion.h1></Link>
             <img onClick={() => setIsToggled(prevState => !prevState)} className={styles.dropdown_btn} src={`/${isToggled ? 'close.svg' : 'menu.svg'}`}/>
         </div>  
