@@ -1,0 +1,79 @@
+@import '../../styles/lib/theme.scss';
+
+.active_route {
+    color: $primary_color;
+}
+
+.nav_container {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    display: flex;
+    padding: 50px 100px;
+    align-items: center;
+    justify-content: space-between;
+
+    @include breakpoint(mobile) {
+        display: none;
+    }
+
+    & > h1 {
+        cursor: pointer;
+        color: $primary_color;
+        font-size: $lg_font;
+    }
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+
+    & > li {
+        margin-left: 10px;
+    }
+}
+
+// Mobile Nav
+.nav_mobile_container {
+    z-index: 1000;
+    width: 100vw;
+    position: fixed;
+    display: none;
+    padding: 25px 25px;
+    justify-content: space-between;
+    align-items: center;
+
+    & > h1 {
+        cursor: pointer;
+        color: $primary_color;
+        font-size: $lg_font;
+    }
+
+    @include breakpoint(mobile) {
+        display: flex;
+    }
+}
+
+.dropdown_btn {
+    width: 25px;
+    height: 25px;
+}
+
+.nav_mobile {
+    z-index: 999;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    position: fixed;
+    background-color: $background_color;
+    transform-origin: top right;
+
+    li {
+        margin: 20px;
+    }
+}
