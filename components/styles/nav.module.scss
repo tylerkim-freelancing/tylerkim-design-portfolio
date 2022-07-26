@@ -19,6 +19,7 @@
     }
 
     & > h1 {
+        font-family: 'ShadowsIntoLight';
         cursor: pointer;
         color: $primary_color;
         font-size: $lg_font;
@@ -45,6 +46,7 @@
     align-items: center;
 
     & > h1 {
+        font-family: 'ShadowsIntoLight';
         cursor: pointer;
         color: $primary_color;
         font-size: $lg_font;

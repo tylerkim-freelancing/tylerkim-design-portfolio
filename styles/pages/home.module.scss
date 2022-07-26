@@ -3,3 +3,16 @@
 .container {
   @extend %page_container;
 }
+
+.main {
+  max-width: 1025px;
+
+  & > h1 {
+    @extend %title_style;
+  }
+
+  & > p {
+    margin-top: 50px;
+    line-height: 1.5em;
+  }
+}

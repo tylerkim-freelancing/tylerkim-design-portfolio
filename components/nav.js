@@ -70,7 +70,7 @@ export default function Nav({ title }) {
                 initial='scrollUp'
                 animate={ isScrollDown ? 'scrollDown' : 'scrollUp' }
                 >
-                The Logo
+                TylerKim_design
             </motion.h1></Link>
             <ul className={styles.nav}>
                 <Link href="/">
@@ -87,10 +87,10 @@ export default function Nav({ title }) {
                         </a>
                     </li>
                 </Link>
-                <Link href="/works">
+                <Link href="/shop">
                     <li>
-                        <a className={ title === 'Works' ? styles.active_route : 'dummy' }>
-                            Works
+                        <a className={ title === 'Shop' ? styles.active_route : 'dummy' }>
+                            Shop
                         </a>
                     </li>
                 </Link>
@@ -132,10 +132,10 @@ export default function Nav({ title }) {
                         </a>
                     </li>
                 </Link>
-                <Link href="/works">
+                <Link href="/shop">
                     <li>
-                        <a className={ title === 'Works' ? styles.active_route : 'dummy' }>
-                            Works
+                        <a className={ title === 'Shop' ? styles.active_route : 'dummy' }>
+                            Shop
                         </a>
                     </li>
                 </Link>
