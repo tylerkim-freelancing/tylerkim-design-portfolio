@@ -4,11 +4,36 @@
   @extend %page_container;
 }
 
+.more_btn {
+  align-self: flex-end;
+}
+
 .main {
   max-width: 1025px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   & > h1 {
     @extend %title_style;
+  }
+
+  & > p {
+    margin-top: 50px;
+    line-height: 1.5em;
+  }
+}
+
+.slideshow_container {
+  max-width: 1025px;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & > h1 {
+    @extend %title_style;
+    margin-top: 50px;
   }
 
   & > p {

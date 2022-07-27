@@ -1,0 +1,50 @@
+@import '../../styles/lib/theme.scss';
+
+.container {
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.thumbnail_wrapper {
+    position: relative;
+    width: 1025px;
+    height: 500px;
+}
+
+.thumbnail {
+    position: absolute;
+    width: 1025px;
+    height: 500px;
+    top: 0%;
+    left: 0%;
+}
+
+.window_top {
+    width: 1025px;
+    height: 25px;
+    background-color: $secondary_color;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    align-items: center;
+
+    & > div {
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        background-color: #fff;
+        margin-left: 10px;
+    }
+}
+
+.window_bottom {
+    width: 1025px;
+    height: 25px;
+    background-color: $secondary_color;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
