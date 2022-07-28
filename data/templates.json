@@ -1,0 +1,28 @@
+[
+    {
+        "name": "Blooming",
+        "src": "/images/template-thumbnails/blooming.png",
+        "url": "https://template-blooming.vercel.app"
+    },
+    {
+        "name": "Moderneon",
+        "src": "/images/template-thumbnails/moderneon.png",
+        "url": "https://template-moderneon.vercel.app"
+    },
+    {
+        "name": "Neuromorphism",
+        "src": "/images/template-thumbnails/neuromorphism.png",
+        "url": "https://template-neumorphism.vercel.app"
+    },
+    {
+        "name": "Newtro",
+        "src": "/images/template-thumbnails/newtro.png",
+        "url": "https://template-newtro.vercel.app"
+    }
+    ,
+    {
+        "name": "Staircase",
+        "src": "/images/template-thumbnails/staircase.png",
+        "url": "https://template-staircase.vercel.app"
+    }
+]

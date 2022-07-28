@@ -3,3 +3,9 @@
 .container {
     @extend %page_container;
 }
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}

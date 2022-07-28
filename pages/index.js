@@ -33,7 +33,7 @@ export default function Home({ thumbnails }) {
             </p>
             <br/>
             <br/>
-            <a className={styles.more_btn}>go to shop&rarr;</a>
+            <a className={styles.more_btn}>see templates&rarr;</a>
           </div>  
         </div>
       </Layout>

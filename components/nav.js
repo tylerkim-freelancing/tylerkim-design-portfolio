@@ -87,10 +87,10 @@ export default function Nav({ title }) {
                         </a>
                     </li>
                 </Link>
-                <Link href="/shop">
+                <Link href="/templates">
                     <li>
-                        <a className={ title === 'Shop' ? styles.active_route : 'dummy' }>
-                            Shop
+                        <a className={ title === 'Templates' ? styles.active_route : 'dummy' }>
+                            Templates
                         </a>
                     </li>
                 </Link>
@@ -132,10 +132,10 @@ export default function Nav({ title }) {
                         </a>
                     </li>
                 </Link>
-                <Link href="/shop">
+                <Link href="/templates">
                     <li>
-                        <a className={ title === 'Shop' ? styles.active_route : 'dummy' }>
-                            Shop
+                        <a className={ title === 'Templates' ? styles.active_route : 'dummy' }>
+                            Templates
                         </a>
                     </li>
                 </Link>
