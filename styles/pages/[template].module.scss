@@ -2,23 +2,117 @@
 
 .container {
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100vw;
     height: 100vh;
     overflow-y: hidden;
 }
 
-.info {
+.setting_btn {
+    z-index: 999;
+    cursor: pointer;
     position: absolute;
-    top: 50px;
+    background-color: $primary_color;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 7px 14px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    bottom: 50px;
     left: 50px;
-    width: 300px;
-    height: 200px;
+    width: 50px;
+    height: 50px;
+
+    &:hover {
+        transition: 0.3s;
+        transform: scale(1.05);
+    }
+}
+
+.info {
+    z-index: 1000;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    bottom: 50px;
+    left: 50px;
+    width: 500px;
+    height: 300px;
     box-shadow: 0 7px 14px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     border-radius: 10px;
-    background-color: $background_color;
+    background-color: rgba(255, 255, 255, 0.395);
+    backdrop-filter: blur(20px);
+
+    & > p {
+        margin: 20px 0;
+        font-size: $sm_font;
+    }
+}
+
+.viewports {
+    margin-bottom: 20px;
+
+    & > img {
+        cursor: pointer;
+        width: 25px;
+        height: 25px;
+        margin-right: 20px;
+
+        &:hover {
+            transition: 0.3s;
+            transform: scale(1.05);
+        }
+    }
+}
+
+.close_btn {
+    cursor: pointer;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 10px;
+    right: 10px;
+}
+
+.template_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    box-shadow: 0 7px 14px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .template {
     width: 100%;
     height: 100%;
+}
+
+.mobile_top, .mobile_bottom {
+    width: 450px;
+    height: 25px;
+    background-color: #fff;
+}
+
+.mobile_top { 
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+ }
+
+.mobile_bottom {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & > div {
+        width: 10px;
+        height: 10px;
+        background-color: $primary_color;
+        border-radius: 50%;
+    }
 }
