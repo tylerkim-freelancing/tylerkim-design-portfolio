@@ -1,12 +1,28 @@
 import styles from '../../styles/pages/[template].module.scss'
 import { readFile } from '../../module/fileServices'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 
 export default function Template({ template }) {
     const [isToggled, setIsToggled] = useState(true)
     const [isDesktop, setIsDesktop] = useState(true)
+    const [isMobile, setIsMobile] = useState(false)
+
+    useEffect(() => { 
+      function screenSizeHandler() {
+        if (window.innerWidth > 1024) {
+            setIsDesktop(true)
+        } else {
+            setIsDesktop(false)
+        }
+      }
+      window.addEventListener('resize', screenSizeHandler)
+
+      return function cleanup() {
+        window.removeEventListener('resize', screenSizeHandler)
+      }
+    })
 
     const modal = {
       on: {
@@ -38,12 +54,14 @@ export default function Template({ template }) {
       desktop: {
         width: '100%',
         height: '100%',
-        borderRadius: '0px'
+        borderRadius: '0px',
+        margin: '0px 0px 0px 0px'
       },
       mobile: {
         width: '450px',
         height: '800px',
-        borderRadius: '15px'
+        borderRadius: '15px',
+        margin: '50px 0px 50px 0px'
       }
     }
 
@@ -77,17 +95,20 @@ export default function Template({ template }) {
                 <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur condimentum in lacus et finibus. Maecenas lectus nunc, pellentesque et elit nec, blandit molestie tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse eget dui ut erat congue finibus. Maecenas neque nibh, venenatis in tempus aliquam, luctus nec tortor.
                 </p>
-                <div className={styles.viewports}>
-                  <img onClick={() => setIsDesktop(true)} className={styles.desktop} src={`/desktop${isDesktop ? '_active' : ''}.png`}/>
-                  <img onClick={() => setIsDesktop(false)} className={styles.smartphone} src={`/smartphone${isDesktop ? '' : '_active'}.png`}/>
+                {/* View  Ports */}
+                <div style={{ display: isDesktop ? 'flex' : 'none' }} className={styles.viewports}>
+                  <img onClick={() => setIsMobile(false)} className={styles.desktop} src={`/desktop${isMobile ? '' : '_active'}.png`}/>
+                  <img onClick={() => setIsMobile(true)} className={styles.smartphone} src={`/smartphone${isMobile ? '_active' : ''}.png`}/>
                 </div>
+                {/* alert */}
+                <p style={{ display: isDesktop ? 'none' : 'block' }} className={styles.alert}>*Cannot display the desktop view of the template on your current device. In order to see the desktop view, switch to a device with a bigger screen.</p>
                 <Link href='/templates'><a>more templates&rarr;</a></Link>
             </motion.div>
             <motion.div 
               className={styles.template_container}
               variants={view}
               initial='desktop'
-              animate={ isDesktop ? 'desktop' : 'mobile' }
+              animate={ isMobile ? 'mobile' : 'desktop' }
               >
               <motion.div className={styles.mobile_top} variants={frame}></motion.div>
               <iframe className={styles.template} src={template.url}/>

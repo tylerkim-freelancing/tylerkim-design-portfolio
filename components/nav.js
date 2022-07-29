@@ -19,21 +19,8 @@ export default function Nav({ title }) {
         prevScrollPos = window.scrollY
       }
 
-    //   function topHandler() {
-    //     let currScrollPos = window.scrollY
-  
-    //     currScrollPos > 0 ? setIsTop(false) : setIsTop(true)
-    //   }
-
-    //   function screenSizeHandler() {
-    //     if (window.innerWidth < 768) {
-    //         setIsMobile(true)
-    //     } else {
-    //         setIsMobile(false)
-    //     }
-    // }
       window.addEventListener('scroll', scrollHandler)
-    //   window.addEventListener('resize', screenSizeHandler)
+
   
       return function cleanup() {
         window.removeEventListener('scroll', scrollHandler)
