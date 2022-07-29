@@ -17,6 +17,7 @@ export default function Template({ template }) {
             setIsDesktop(false)
         }
       }
+      screenSizeHandler()
       window.addEventListener('resize', screenSizeHandler)
 
       return function cleanup() {

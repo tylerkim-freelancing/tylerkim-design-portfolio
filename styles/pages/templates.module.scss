@@ -5,7 +5,14 @@
 }
 
 .gallery {
-    display: flex;
-    flex-wrap: wrap;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
     gap: 100px;
+
+    @include breakpoint(tablet_mobile) {
+        grid-template-columns: auto auto;
+        gap: 50px;
+    }
 }

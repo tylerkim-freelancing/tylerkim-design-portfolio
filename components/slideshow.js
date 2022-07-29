@@ -1,8 +1,27 @@
 import styles from './styles/slideshow.module.scss'
 import { motion } from 'framer-motion'
+import { useState, useEffect } from 'react'
 import Img from './img'
 
-export default function Slideshow({ thumbnails }) {
+export default function Slideshow({ templates }) {
+    const [isDesktop, setIsDesktop] = useState(true)
+    
+    useEffect(() => { 
+        function screenSizeHandler() {
+          if (window.innerWidth > 1024) {
+              setIsDesktop(true)
+          } else {
+              setIsDesktop(false)
+          }
+        }
+        screenSizeHandler()
+        window.addEventListener('resize', screenSizeHandler)
+  
+        return function cleanup() {
+          window.removeEventListener('resize', screenSizeHandler)
+        }
+      })
+
     return (
         <div className={styles.container}>
             <div className={styles.window_top}>
@@ -12,7 +31,7 @@ export default function Slideshow({ thumbnails }) {
             </div>
             <div className={styles.thumbnail_wrapper}>
                 {
-                    thumbnails.map((thumbnail, i) => 
+                    templates.map((template, i) => 
                     <motion.div 
                         key={i} 
                         className={styles.thumbnail}
@@ -21,13 +40,13 @@ export default function Slideshow({ thumbnails }) {
                         exit={{opacity: 0}}
                         transition={{
                             repeat: "Infinity",
-                            repeatDelay: (thumbnails.length - 1) * 5 - 1,
+                            repeatDelay: (templates.length - 1) * 5 - 1,
                             duration: 6,
                             delay: (i)* 5,
                             type: 'just' 
                         }}
                         >
-                        <Img src={`/images/template-thumbnails/${thumbnail}`} alt='template thumbnail' objectFit='contain'/>
+                        <Img src={isDesktop ? template.src_desktop : template.src_mobile} alt='template thumbnail'/>
                     </motion.div>)
                 }
             </div>

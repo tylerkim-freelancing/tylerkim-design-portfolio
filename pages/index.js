@@ -1,9 +1,9 @@
 import styles from '../styles/pages/home.module.scss'
 import Layout from '../components/layout'
 import Slideshow from '../components/slideshow'
-import { readDir } from '../module/fileServices'
+import { readFile } from '../module/fileServices'
 
-export default function Home({ thumbnails }) {
+export default function Home({ templates }) {
   return (
     <>
       <Layout title='Home'>
@@ -23,7 +23,7 @@ export default function Home({ thumbnails }) {
           </div>
 
           <div className={styles.slideshow_container}>
-            <Slideshow thumbnails={thumbnails}/>
+            <Slideshow templates={templates}/>
             <h1>Thoughtfully <span className='highlight'>designed</span> and <span className='highlight'>layed out</span> templates to <span className='highlight'>fit</span> your purpose.</h1>
             <p>
               What you see above are my pre-built templates to serve your purposes, and they are ready to transform into your own personal websites
@@ -42,7 +42,11 @@ export default function Home({ thumbnails }) {
 }
 
 export async function getStaticProps() {
-  const thumbnails = await readDir('/public/images/template-thumbnails')
+  const templates = JSON.parse(await readFile('/data/templates.json'))
 
-  return { props: { thumbnails } }
+  return {
+    props: {
+      templates
+    }
+  }
 }

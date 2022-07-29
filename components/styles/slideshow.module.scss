@@ -12,15 +12,25 @@
 .thumbnail_wrapper {
     position: relative;
     width: 1025px;
-    height: 500px;
+    height: 576px;
+
+    @include breakpoint(tablet_mobile) {
+        width: 80vw;
+        height: 160vw;
+    }
 }
 
 .thumbnail {
     position: absolute;
     width: 1025px;
-    height: 500px;
+    height: 576px;
     top: 0%;
     left: 0%;
+
+    @include breakpoint(tablet_mobile) {
+        width: 80vw;
+        height: 160vw;
+    }
 }
 
 .window_top {
@@ -31,6 +41,11 @@
     border-top-right-radius: 10px;
     display: flex;
     align-items: center;
+
+    @include breakpoint(tablet_mobile) {
+        width: 80vw;
+        height: 15px;
+    }
 
     & > div {
         border-radius: 50%;
@@ -47,4 +62,9 @@
     background-color: $secondary_color;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    
+    @include breakpoint(tablet_mobile) {
+        width: 80vw;
+        height: 15px;
+    }
 }

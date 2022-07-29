@@ -9,7 +9,7 @@
   align-items: center;
 
   @include breakpoint(mobile) {
-    padding: 50px;
+    padding: 100px 50px 50px 50px;
   }
 }
 
@@ -18,4 +18,8 @@
   font-family: 'BebasNeue';
   font-size: $huge_font;
   font-weight: lighter;
+
+  @include breakpoint(mobile) {
+    font-size: $xlg_font;
+  }
 }
