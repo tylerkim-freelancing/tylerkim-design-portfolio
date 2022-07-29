@@ -1,5 +1,7 @@
 @import '../lib/theme.scss';
 
+$component_margin: 150px;
+
 .container {
     @extend %page_container;
 }
@@ -32,9 +34,9 @@
     }
 }
 
-.intro {
-    margin-top: 100px;
-    max-width: 1025px;
+.intro, .efficiency {
+    margin-top: $component_margin;
+    width: 1025px;
 
     & > h1 {
         @extend %title_style;
@@ -42,5 +44,115 @@
 
     & > p {
         margin-top: 50px;
+    }
+}
+
+.efficient_components {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 100px;
+}
+
+.component {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    padding: 50px 25px;
+    box-shadow: 0 7px 14px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+    & > h2 {
+        margin: 20px;
+    }
+}
+
+.intro_templates {
+    margin-top: $component_margin;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & > h1 {
+        @extend %title_style;
+    }
+}
+
+.equation {
+    margin: 100px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & > h2 {
+        margin: 0 50px;
+    }
+}
+
+.templates_container {
+    display: flex;
+    width: 100%;
+    gap: 50px;
+
+    .img_container {
+        position: relative;
+        height: 600px;
+        width: 100%;
+    }
+}
+
+.template_desktop, .template_mobile {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 7px 14px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    border-radius: 15px;
+}
+
+.template_desktop {
+    width: 1150px;
+}
+
+.template_mobile {
+    width: 300px;
+}
+
+.desktop_top, .desktop_bottom, .mobile_top, .mobile_bottom {
+    background-color: $secondary_color;
+    width: 100%;
+    height: 25px;
+}
+
+.desktop_top, .mobile_top {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.desktop_bottom, .mobile_bottom {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.desktop_top {
+    display: flex;
+    align-items: center;
+    & > div {
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        background-color: #fff;
+        margin-left: 10px;
+    }
+}
+
+.mobile_bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & > div {
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        background-color: #fff;
     }
 }

@@ -26,7 +26,68 @@ export default function About() {
                 </div>
                 
                 <div className={styles.efficiency}>
+                    <h1><span className='highlight'>Efficiency</span> is the quality I value the <span className='highlight'>most</span></h1>
+                    <p>
+                        We are living in the time where everything changes too fast, and the monetary assets have become by far the most valuble quality of a life in history.
+                        In order to keep up with the rapid growth, especially in the IT field, you must stay efficient thus you lose less and gain more. When it specifcially 
+                        comes to a web development, there are crucial four components that I focus on to keep the website as efficient as possible.
+                    </p>
+                </div>
 
+                <div className={styles.efficient_components}>
+                    <div className={styles.component}>
+                        <img src='/performance.png'/>
+                        <h2>Performance</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi laoreet at ex eget ultrices. Donec ante ex, faucibus ultrices sem sit amet, luctus varius tortor. Quisque a leo nisl. In libero arcu, efficitur non tincidunt nec, consequat eu nisi. Curabitur lobortis orci quis cursus pellentesque. Nulla convallis metus ac massa elementum porta.</p>
+                    </div>
+                    <div className={styles.component}>
+                        <img src='/design.png'/>
+                        <h2>Design</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi laoreet at ex eget ultrices. Donec ante ex, faucibus ultrices sem sit amet, luctus varius tortor. Quisque a leo nisl. In libero arcu, efficitur non tincidunt nec, consequat eu nisi. Curabitur lobortis orci quis cursus pellentesque. Nulla convallis metus ac massa elementum porta.</p>
+                    </div>
+                    <div className={styles.component}>
+                        <img src='/affordability.png'/>
+                        <h2>Affordability</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi laoreet at ex eget ultrices. Donec ante ex, faucibus ultrices sem sit amet, luctus varius tortor. Quisque a leo nisl. In libero arcu, efficitur non tincidunt nec, consequat eu nisi. Curabitur lobortis orci quis cursus pellentesque. Nulla convallis metus ac massa elementum porta.</p>
+                    </div>
+                    <div className={styles.component}>
+                        <img src='/scalability.png'/>
+                        <h2>Scalability</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi laoreet at ex eget ultrices. Donec ante ex, faucibus ultrices sem sit amet, luctus varius tortor. Quisque a leo nisl. In libero arcu, efficitur non tincidunt nec, consequat eu nisi. Curabitur lobortis orci quis cursus pellentesque. Nulla convallis metus ac massa elementum porta.</p>
+                    </div>
+                </div>
+
+                <div className={styles.intro_templates}>
+                    <h1>Introduce you my <span className='highlight'>templates</span> with all the <span className='highlight'>goodies</span></h1>
+                    <div className={styles.equation}>
+                        <img src='/performance.png'/><h2>+</h2>
+                        <img src='/design.png'/><h2>+</h2>
+                        <img src='/affordability.png'/><h2>+</h2>
+                        <img src='/scalability.png'/><h2>=</h2>
+                        <img src='/template.png'/>
+                    </div>
+                    <div className={styles.templates_container}>
+                        <div className={styles.template_desktop}>
+                            <div className={styles.desktop_top}>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <div className={styles.img_container}>
+                                <Img src='/images/template-thumbnails/desktop/staircase.png'/>
+                            </div>
+                            <div className={styles.desktop_bottom}></div>
+                        </div>
+                        <div className={styles.template_mobile}>
+                            <div className={styles.mobile_top}></div>
+                            <div className={styles.img_container}>
+                                <Img src='/images/template-thumbnails/mobile/newtro.png'/>
+                            </div>
+                            <div className={styles.mobile_bottom}>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </Layout>

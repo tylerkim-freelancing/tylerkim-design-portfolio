@@ -13,7 +13,7 @@ export default function Layout({ children, title }) {
     return (
         <>
             <Head>
-                <title>{title}</title>
+                <title>TylerKim_design | {title}</title>
             </Head>
             <div>
                 <Nav title={title} />

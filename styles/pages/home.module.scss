@@ -1,4 +1,5 @@
 @import '../lib/theme.scss';
+$component_margin: 150px;
 
 .container {
   @extend %page_container;
@@ -9,7 +10,7 @@
 }
 
 .main {
-  max-width: 1025px;
+  width: 1025px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,15 +26,15 @@
 }
 
 .slideshow_container {
-  max-width: 1025px;
-  margin-top: 100px;
+  width: 1025px;
+  margin-top: $component_margin;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   & > h1 {
     @extend %title_style;
-    margin-top: 50px;
+    margin-top: 100px;
   }
 
   & > p {
