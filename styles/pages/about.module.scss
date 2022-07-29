@@ -3,3 +3,44 @@
 .container {
     @extend %page_container;
 }
+
+.main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.profile_container {
+    position: relative;
+    width: 500px;
+    height: 500px;
+}
+
+.about_me {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    
+    & > h1 {
+        @extend %title_style;
+    }
+
+    & > p {
+        margin-top: 50px;
+    }
+}
+
+.intro {
+    margin-top: 100px;
+    max-width: 1025px;
+
+    & > h1 {
+        @extend %title_style;
+    }
+
+    & > p {
+        margin-top: 50px;
+    }
+}
