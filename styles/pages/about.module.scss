@@ -76,6 +76,10 @@ $component_margin: 150px;
     & > h1 {
         @extend %title_style;
     }
+
+    & > a {
+        align-self: flex-end;
+    }
 }
 
 .equation {
@@ -83,7 +87,6 @@ $component_margin: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
-
     & > h2 {
         margin: 0 50px;
     }

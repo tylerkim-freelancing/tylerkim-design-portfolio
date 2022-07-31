@@ -1,6 +1,7 @@
 import Layout from '../components/layout'
 import styles from '../styles/pages/about.module.scss'
 import Img from '../components/img'
+import Link from 'next/link'
 
 export default function About() {
     return(
@@ -58,7 +59,7 @@ export default function About() {
                 </div>
 
                 <div className={styles.intro_templates}>
-                    <h1>Introduce you my <span className='highlight'>templates</span> with all the <span className='highlight'>goodies</span></h1>
+                    <h1>Proudly introduce you my <span className='highlight'>templates</span> with all the <span className='highlight'>goodies</span></h1>
                     <div className={styles.equation}>
                         <img src='/performance.png'/><h2>+</h2>
                         <img src='/design.png'/><h2>+</h2>
@@ -74,20 +75,24 @@ export default function About() {
                                 <div></div>
                             </div>
                             <div className={styles.img_container}>
-                                <Img src='/images/template-thumbnails/desktop/staircase.png'/>
+                                <Img src='/images/templates/desktop/staircase.png'/>
                             </div>
                             <div className={styles.desktop_bottom}></div>
                         </div>
                         <div className={styles.template_mobile}>
                             <div className={styles.mobile_top}></div>
                             <div className={styles.img_container}>
-                                <Img src='/images/template-thumbnails/mobile/newtro.png'/>
+                                <Img src='/images/templates/mobile/newtro.png'/>
                             </div>
                             <div className={styles.mobile_bottom}>
                                 <div></div>
                             </div>
                         </div>
                     </div>
+
+                    <br/>
+                    <br/>
+                    <Link href='/templates'><a>See my templates&rarr;</a></Link>
                 </div>
             </div>
         </Layout>

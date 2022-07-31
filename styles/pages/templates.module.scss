@@ -1,10 +1,29 @@
 @import '../lib/theme.scss';
 
+$component_margin: 150px;
+
 .container {
     @extend %page_container;
 }
 
+.intro {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    & > h1 {
+        @extend %title_style;
+    }
+
+    & > p {
+        width: 1025px;
+        margin-top: 50px;
+    }
+}
+
 .gallery {
+    margin-top: $component_margin;
     width: 100%;
     display: grid;
     grid-template-columns: auto auto auto;

@@ -1,0 +1,52 @@
+@import '../lib/theme.scss';
+
+$component_margin: 150px;
+.subtitle {
+    @extend %title_style;
+    font-size: $xlg_font;
+}
+
+.description {
+    margin: 50px 0 20px 0;
+}
+
+.container {
+    @extend %page_container;
+
+    & > div {
+        margin-top: $component_margin;
+        width: 1025px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        & > h3 {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.title {
+    @extend %title_style;
+}
+
+.template_structure, .web_stack {
+    align-self: flex-start;
+}
+
+.basic_features {
+    align-self: flex-end;
+}
+
+.equation {
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+
+    & > img {
+        width: 150px;
+        margin: 0 25px;
+    }
+}
