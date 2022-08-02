@@ -1,7 +1,7 @@
 import styles from '../styles/pages/home.module.scss'
 import Layout from '../components/layout'
 import Slideshow from '../components/slideshow'
-import { readFile } from '../module/fileServices'
+import { readFile } from '../modules/fileServices'
 
 export default function Home({ templates }) {
   return (

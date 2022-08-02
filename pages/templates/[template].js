@@ -1,5 +1,5 @@
 import styles from '../../styles/pages/[template].module.scss'
-import { readFile } from '../../module/fileServices'
+import { readFile } from '../../modules/fileServices'
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
