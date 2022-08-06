@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }) {
         <meta name="description" content="montana design boilerplate" />
         <meta property="og:title" content="Tyler Kim | The Best Web Developer" />
         <meta property="og:description" content="I make the best personal websites that can grow in to a business" />
-        <meta property="og:image" content="https://tylerkim-design-portfolio.vercel.app/images/profile.jpg" />
+        <meta property="og:image" content="https://tylerkim-design-portfolio.vercel.app/api/images?title=profile.jpg" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Component {...pageProps} />
