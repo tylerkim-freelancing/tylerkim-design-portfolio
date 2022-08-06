@@ -19,6 +19,10 @@ $component_margin: 150px;
     & > p {
         width: 1025px;
         margin-top: 50px;
+
+        @include breakpoint(tablet_mobile) {
+            width: 100%;
+        }
     }
 }
 

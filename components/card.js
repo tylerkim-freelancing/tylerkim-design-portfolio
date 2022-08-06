@@ -16,7 +16,9 @@ export default function Card({ src, name }) {
                     <h2>{ name }</h2>
                 </div></Link>
             </div>
-            <div className={styles.window_bottom}></div>
+            <div className={styles.window_bottom}>
+                <div></div>
+            </div>
         </div>
     )
 }

@@ -8,7 +8,7 @@ export default function Slideshow({ templates }) {
     
     useEffect(() => { 
         function screenSizeHandler() {
-          if (window.innerWidth > 1024) {
+          if (window.innerWidth > 767) {
               setIsDesktop(true)
           } else {
               setIsDesktop(false)

@@ -14,7 +14,9 @@ export default function About() {
                     <div className={styles.about_me}>
                         <h1 className={styles.title}><span className='highlight'>Tyler Kim</span><br/>A Web Developer</h1>
                         <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut consectetur ultricies libero, vitae molestie orci lobortis non. Proin ac mi sed dui laoreet vulputate eget eget dolor. Donec a rutrum odio, in volutpat libero. Vivamus ligula massa, maximus non venenatis molestie, tempus a massa. Aenean quis felis nunc. Cras eget mi leo. Cras vel interdum ligula. Vivamus sit amet feugiat ipsum. Nulla ac vulputate tellus. Nulla euismod volutpat auctor. Ut sem lectus, fringilla non tincidunt vel, vulputate vel eros. Donec efficitur nisl a lobortis efficitur. Nulla pharetra semper ex, at aliquam purus vestibulum sed.
+                            Hi! My name is Tyler Kim, a web developer who specialized in personal websites that will potentially can grow into a business. 
+                            I always admire people who are so passionate with their creative works, and I would love to help them delivering the idea
+                            to the people.
                         </p>
                     </div>
                 </div>
@@ -64,22 +66,40 @@ export default function About() {
                     <div className={styles.component}>
                         <img src='/performance.png'/>
                         <h2 className={styles.subtitle}>Performance</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi laoreet at ex eget ultrices. Donec ante ex, faucibus ultrices sem sit amet, luctus varius tortor. Quisque a leo nisl. In libero arcu, efficitur non tincidunt nec, consequat eu nisi. Curabitur lobortis orci quis cursus pellentesque. Nulla convallis metus ac massa elementum porta.</p>
+                        <p>
+                            The performance of a website is directly related to the delivery of the contents to the users. How fast the first 
+                            component of a website determines whether the user will stay on the website or not. It is very important for me to
+                            make sure your website performs better than industry standard, so it brings more audience to your contents faster than
+                            your competitors.
+                        </p>
                     </div>
                     <div className={styles.component}>
                         <img src='/design.png'/>
                         <h2 className={styles.subtitle}>Design</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi laoreet at ex eget ultrices. Donec ante ex, faucibus ultrices sem sit amet, luctus varius tortor. Quisque a leo nisl. In libero arcu, efficitur non tincidunt nec, consequat eu nisi. Curabitur lobortis orci quis cursus pellentesque. Nulla convallis metus ac massa elementum porta.</p>
+                        <p>
+                            A good design must be eye-catching that it powerfully attracts the users, and it should be able to keep them around
+                            the contents without causing fatigues. I make sure your website is fairly attractive, but never be overdesign as it can
+                            distract the audience and it can also hurt the performance of the website. 
+                        </p>
                     </div>
                     <div className={styles.component}>
                         <img src='/affordability.png'/>
                         <h2 className={styles.subtitle}>Affordability</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi laoreet at ex eget ultrices. Donec ante ex, faucibus ultrices sem sit amet, luctus varius tortor. Quisque a leo nisl. In libero arcu, efficitur non tincidunt nec, consequat eu nisi. Curabitur lobortis orci quis cursus pellentesque. Nulla convallis metus ac massa elementum porta.</p>
+                        <p>
+                            The cheaper, the better. I truly try my best to keep my service as affordable as possible, since I know for a fact
+                            that the price is the first concern when it comes to decide whether you choose me or not. I can confidently speak that what I 
+                            offer is about half of the market standard, and it is possible for me to keep up with the price because I use the only and the
+                            most efficient resource to build a website, myself.
+                        </p>
                     </div>
                     <div className={styles.component}>
-                        <img src='/scalability.png'/>
-                        <h2 className={styles.subtitle}>Scalability</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi laoreet at ex eget ultrices. Donec ante ex, faucibus ultrices sem sit amet, luctus varius tortor. Quisque a leo nisl. In libero arcu, efficitur non tincidunt nec, consequat eu nisi. Curabitur lobortis orci quis cursus pellentesque. Nulla convallis metus ac massa elementum porta.</p>
+                        <img src='/flexibility.png'/>
+                        <h2 className={styles.subtitle}>Flexibility</h2>
+                        <p>
+                            Things always change in our lives. Your idea may change and grow in the future. Then you may need a different design language, a new 
+                            layout, or an additional feature to support the expansion. I design easily transformable websites and prepare additional features
+                            that can be effortlessly implemented into your website to support your work in different ways.
+                        </p>
                     </div>
                 </div>
 
@@ -89,7 +109,7 @@ export default function About() {
                         <img src='/performance.png'/><h2>+</h2>
                         <img src='/design.png'/><h2>+</h2>
                         <img src='/affordability.png'/><h2>+</h2>
-                        <img src='/scalability.png'/><h2>=</h2>
+                        <img src='/flexibility.png'/><h2>=</h2>
                         <img src='/template.png'/>
                     </div>
                     <div className={styles.templates_container}>
@@ -159,7 +179,7 @@ export default function About() {
                         There are few things you can upgrade the basic templates with. First of all, you can add <strong>more sections</strong> to each pages, and 
                         the additional section could be used as textarea, title area, or picture area. You can also upgrade the template with
                         addtional features. <strong>Blogging</strong> and <strong>e-commerce</strong> are currently the official features that you can add onto your template, and 
-                        more features will be updated in the future for your template.
+                        <strong> more features will be updated</strong> in the future for your template.
                     </p>
                     <div className={styles.templates_comparison_container}>
                         <div>
@@ -185,7 +205,7 @@ export default function About() {
                                     <div></div>
                                 </div>
                                 <div className={styles.img_container}>
-                                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%', height: '100%' }}>
+                                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%' }}>
                                         <h1>Coming Soon</h1>
                                     </div>
                                 </div>
