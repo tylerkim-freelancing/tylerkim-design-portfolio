@@ -29,7 +29,7 @@ export default function Nav({ title }) {
     }, [])
 
     
-    const logo = {
+    const nav_desktop = {
         scrollUp: {
             opacity: 1
         },
@@ -38,7 +38,7 @@ export default function Nav({ title }) {
         }
     }
 
-    const nav = {
+    const nav_mobile = {
         toggled: {
             display: 'flex',
             opacity: 1
@@ -53,13 +53,17 @@ export default function Nav({ title }) {
         <>
         <div className={styles.nav_container}>
             <Link href='/'><motion.h1
-                variants={logo}
+                variants={nav_desktop}
                 initial='scrollUp'
                 animate={ isScrollDown ? 'scrollDown' : 'scrollUp' }
                 >
                 TylerKim_design
             </motion.h1></Link>
-            <ul className={styles.nav}>
+            <motion.ul 
+                className={styles.nav}
+                variants={nav_desktop}
+                initial='scrollUp'
+                animate={ isScrollDown ? 'scrollDown' : 'scrollUp' }>
                 <Link href="/">
                     <li>
                         <a className={ title === 'Home' ? styles.active_route : 'dummy' }>
@@ -81,23 +85,23 @@ export default function Nav({ title }) {
                         </a>
                     </li>
                 </Link>
-            </ul>
+            </motion.ul>
         </div>
 
         {/* Mobile Nav */}
         <div className={styles.nav_mobile_container}>
             <Link href='/'><motion.h1
-                variants={logo}
+                variants={nav_desktop}
                 initial='scrollUp'
                 animate={ isScrollDown ? 'scrollDown' : 'scrollUp' }
                 >
-                The Logo
+                TylerKim_design
             </motion.h1></Link>
             <img onClick={() => setIsToggled(prevState => !prevState)} className={styles.dropdown_btn} src={`/${isToggled ? 'close.svg' : 'menu.svg'}`}/>
         </div>  
         <motion.ul 
             className={styles.nav_mobile}
-            variants={nav}
+            variants={nav_mobile}
             initial='untoggled'
             animate={ isToggled ? 'toggled' : 'untoggled' }
             transition={{

@@ -15,8 +15,8 @@ export default function Layout({ children, title }) {
             <Head>
                 <title>TylerKim_design | {title}</title>
             </Head>
+            <Nav title={title} />
             <div>
-                <Nav title={title} />
                 <motion.main
                     variants={variants} // Pass the variant object into Framer Motion 
                     initial="hidden" // Set the initial state to variants.hidden

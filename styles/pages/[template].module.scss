@@ -65,6 +65,10 @@
         margin: 20px 0;
         font-size: $sm_font;
     }
+
+    & > a {
+        align-self: flex-end;
+    }
 }
 
 .viewports {
@@ -103,6 +107,7 @@
 }
 
 .template {
+    border: none;
     width: 100%;
     height: 100%;
 }

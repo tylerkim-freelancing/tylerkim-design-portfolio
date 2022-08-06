@@ -1,19 +1,5 @@
 [
     {
-        "name": "Newtro with Blogs",
-        "src_desktop": "/images/templates/desktop/newtrowithblogs.png",
-        "src_mobile": "/images/templates/mobile/newtrowithblogs.png",
-        "url": "https://template-blog-example.vercel.app/",
-        "isExample": true
-    },
-    {
-        "name": "Joy Sweet",
-        "src_desktop": "/images/templates/desktop/joysweet.png",
-        "src_mobile": "/images/templates/mobile/joysweet.png",
-        "url": "https://template-custom-example.vercel.app",
-        "isExample": true
-    },
-    {
         "name": "Blooming",
         "src_desktop": "/images/templates/desktop/blooming.png",
         "src_mobile": "/images/templates/mobile/blooming.png",

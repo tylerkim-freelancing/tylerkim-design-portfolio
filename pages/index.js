@@ -42,7 +42,7 @@ export default function Home({ templates }) {
 }
 
 export async function getStaticProps() {
-  const templates = JSON.parse(await readFile('/data/templates.json'))
+  const templates = JSON.parse(await readFile('/data/template_slideshow.json'))
 
   return {
     props: {

@@ -35,11 +35,11 @@ export default function Templates({templates}) {
                   are more superior than the standard templates in the market, click the following. 
                 </p>
                 <br/>
-                <Link href='/templates/about'><a>Learn more about my templates&rarr;</a></Link>
+                <Link href='/templates/about'><a>learn more &rarr;</a></Link>
               </div>
                 <div className={styles.gallery}>
                     {
-                        templates.map((template, i) => <Card key={i} src={isDesktop ? template.src_desktop : template.src_mobile} name={template.name}/>)
+                        templates.map((template, i) => template.isExample || <Card key={i} src={isDesktop ? template.src_desktop : template.src_mobile} name={template.name}/>)
                     }
                 </div>
             </div>
