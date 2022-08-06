@@ -60,10 +60,10 @@
 
 .window_top {
     width: 25vw;
-    height: 15px;
+    height: 0.8vw;
     background-color: $secondary_color;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: 0.5vw;
+    border-top-right-radius: 0.5vw;
     display: flex;
     align-items: center;
 
@@ -76,10 +76,10 @@
 
     & > div {
         border-radius: 50%;
-        width: 5px;
-        height: 5px;
+        width: 0.3vw;
+        height: 0.3vw;
         background-color: #fff;
-        margin-left: 10px;
+        margin-left: 0.5vw;
 
         @include breakpoint(tablet_mobile) {
             display: none;
@@ -89,10 +89,10 @@
 
 .window_bottom {
     width: 25vw;
-    height: 15px;
+    height: 0.8vw;
     background-color: $secondary_color;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 0.5vw;
+    border-bottom-right-radius: 0.5vw;
     display: flex;
     align-items: center;
     justify-content: center;

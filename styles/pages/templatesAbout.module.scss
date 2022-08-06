@@ -1,13 +1,19 @@
 @import '../lib/theme.scss';
 
 $component_margin: 150px;
+$component_margin_mobile: 100px;
+
 .subtitle {
     @extend %title_style;
     font-size: $xlg_font;
+
+    @include breakpoint(mobile) {
+        font-size: $lg_font;
+    }
 }
 
 .description {
-    margin: 50px 0 20px 0;
+    margin: 50px 0;
 }
 
 .container {
@@ -21,11 +27,28 @@ $component_margin: 150px;
         align-items: flex-start;
 
         @include breakpoint(tablet_mobile) {
+            margin-top: $component_margin_mobile;
             width: 100%;
         }
 
-        & > h3 {
+        & > h4 {
             margin-bottom: 10px;
+        }
+    }
+
+    ul {
+        padding-left: 50px;
+    }
+    li {
+        line-height: 1.5em;
+        list-style: disc;
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li  {
+            list-style: circle;
         }
     }
 }
@@ -55,7 +78,7 @@ $component_margin: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 50px 0;
+    margin-bottom: 50px;
 
     & > img {
         width: 150px;

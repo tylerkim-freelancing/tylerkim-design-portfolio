@@ -1,6 +1,7 @@
 import styles from '../styles/pages/home.module.scss'
 import Layout from '../components/layout'
 import Slideshow from '../components/slideshow'
+import Link from 'next/link'
 import { readFile } from '../modules/fileServices'
 
 export default function Home({ templates }) {
@@ -19,7 +20,7 @@ export default function Home({ templates }) {
             </p>
             <br/>
             <br/>
-            <a className={styles.more_btn}>read more&rarr;</a>
+            <Link href='/about'><a className={styles.more_btn}>read more&rarr;</a></Link>
           </div>
 
           <div className={styles.slideshow_container}>
@@ -33,7 +34,7 @@ export default function Home({ templates }) {
             </p>
             <br/>
             <br/>
-            <a className={styles.more_btn}>see templates&rarr;</a>
+            <Link href='/templates'><a className={styles.more_btn}>see templates&rarr;</a></Link>
           </div>  
         </div>
       </Layout>
