@@ -64,7 +64,7 @@ $component_margin_mobile: 150px;
 .carousel_container {
     position: relative;
     width: 31vw;
-    margin: 100px auto 500px auto;
+    margin: 5vw auto 32vw auto;
     perspective: 180vw;
   }
   
@@ -85,6 +85,7 @@ $component_margin_mobile: 150px;
     display: flex;
     flex-direction: column;
 
+
 & > div {
     position: relative;
     width: 100%;
@@ -92,7 +93,7 @@ $component_margin_mobile: 150px;
 }
 
 & > .windows_top, & > .windows_bottom {
-    height: 1vw;
+    height: 0.7vw;
     background-color: $secondary_color;
 }
 
@@ -135,4 +136,24 @@ from {
 to {
     transform: rotateY(-360deg);
 }
+}
+
+.hashtag_container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hashtag {
+  cursor: pointer;
+  padding: 10px;
+  border: 2px solid $secondary_color;
+  border-radius: 15px;
+  margin-right: 20px;
+
+  &:hover {
+    transition: 0.3s;
+    background-color: $primary_color;
+    border-color: $primary_color;
+    color: #fff;
+  }
 }
