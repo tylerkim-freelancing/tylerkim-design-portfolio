@@ -3,6 +3,7 @@ import { readFile } from '../../modules/fileServices'
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
+import Head from 'next/head'
 
 export default function Template({ template }) {
     const [isToggled, setIsToggled] = useState(true)
@@ -75,6 +76,10 @@ export default function Template({ template }) {
       }
     }
     return(
+      <>
+      <Head>
+        <title>Template | { template.name }</title>
+      </Head>
         <div className={styles.container}>
           <motion.img 
             onClick={() => setIsToggled(true)} 
@@ -118,6 +123,7 @@ export default function Template({ template }) {
               </motion.div>
             </motion.div>
         </div>
+      </>
     )
 }
 

@@ -12,9 +12,9 @@ export default function Card({ src, name }) {
             </div>
             <div className={styles.img_container}>
                 <Img alt='template thumbnail' src={src}/>
-                <Link href={`/templates/${name}`}><div className={styles.info_container}>
+                <Link href={`/templates/${name}`}><a target="_blank"><div className={styles.info_container}>
                     <h2>{ name }</h2>
-                </div></Link>
+                </div></a></Link>
             </div>
             <div className={styles.window_bottom}>
                 <div></div>

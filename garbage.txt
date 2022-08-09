@@ -1,0 +1,271 @@
+
+        <div className={styles.intro_templates}>
+            <div className={styles.templates_container}>
+                <div className={styles.template_desktop}>
+                    <div className={styles.desktop_top}>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div className={styles.img_container}>
+                        <Img src='/images/templates/desktop/staircase.png'/>
+                    </div>
+                    <div className={styles.desktop_bottom}></div>
+                </div>
+                <div className={styles.template_mobile}>
+                    <div className={styles.mobile_top}></div>
+                    <div className={styles.img_container}>
+                        <Img src='/images/templates/mobile/newtro.png'/>
+                    </div>
+                    <div className={styles.mobile_bottom}>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+            
+            <br/>
+            <br/>
+            <Link href='/templates'><a>see my templates&rarr;</a></Link>
+            {/* <h1 className={styles.title}>Proudly introduce you my <span className='highlight'>templates</span> with all the <span className='highlight'>goodies</span></h1> */}
+            <div className={styles.equation}>
+                <img src='/performance.png'/><h2>+</h2>
+                <img src='/design.png'/><h2>+</h2>
+                <img src='/affordability.png'/><h2>+</h2>
+                <img src='/flexibility.png'/><h2>=</h2>
+                <img src='/template.png'/>
+            </div>
+          </div>
+
+        <div className={styles.efficient_components}>
+            <div className={styles.component}>
+                <img src='/performance.png'/>
+                <h2 className={styles.subtitle}>Performance</h2>
+                <p>
+                    All of my templates are built with the performance prioritized technology stack, so that they are noticeably faster than
+                    other templates provided by any website builder platforms.
+                </p>
+            </div>
+            <div className={styles.component}>
+                <img src='/design.png'/>
+                <h2 className={styles.subtitle}>Design</h2>
+                <p>
+                    My design motto is "simple, but attractive", meaning I do not sacrifice the performance over design, but I still
+                    design my templates eye-catching.
+                </p>
+            </div>
+            <div className={styles.component}>
+                <img src='/affordability.png'/>
+                <h2 className={styles.subtitle}>Affordability</h2>
+                <p>
+                    The cheaper, the better. One of my biggest concern is to provide my clients the best service with the lowest cost as possible.
+                    I confidently say my templates serve the better job with 50-70% price of industry standard
+                </p>
+            </div>
+            <div className={styles.component}>
+                <img src='/flexibility.png'/>
+                <h2 className={styles.subtitle}>Flexibility</h2>
+                <p>
+                    Each of my templates can serve many different purposes by changing its design, and add more features to the website. You can
+                    start your website as a unique portfolio, and expand it to blog, e-commerce, and more.
+                </p>
+            </div>
+        </div>
+
+
+
+        //////////////////////////////////////////////////////
+
+        
+.efficient_components {
+  margin-top: 50px;
+  width: 1025px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: space-around;
+  gap: 100px;
+
+  @include breakpoint(tablet_mobile) {
+      gap: 50px;
+      width: 100%
+  }
+
+  @include breakpoint(mobile) {
+      grid-template-columns: 1fr;
+  }
+}
+
+.component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  padding: 35px 25px;
+  box-shadow: 0 7px 14px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+  @include breakpoint(tablet_mobile) {
+      width: auto;
+  }
+
+
+  & > h2 {
+      margin: 30px;
+  }
+}
+
+.intro_templates {
+  // margin-top: $component_margin;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & > a {
+      align-self: flex-end;
+  }
+
+      
+  .templates_container {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      gap: 50px;
+
+      @include breakpoint(mobile) {
+          flex-direction: column-reverse;
+          align-items: center;
+      }
+
+      .img_container {
+          position: relative;
+          height: 32vw;
+          width: 100%;
+
+          @include breakpoint(mobile) {
+              width: 80vw;
+          }
+      }
+  }
+
+  .template_desktop, .template_mobile {
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 7px 14px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+      border-radius: 15px;
+  }
+
+  .template_desktop {
+      width: 60vw;
+
+      @include breakpoint(mobile) {
+          width: 80vw;
+
+          & > .img_container {
+              height: 45vw;
+          }
+      }
+  }
+
+  .template_mobile {
+      width: 15.8vw;
+
+      @include breakpoint(mobile) {
+          width: 80vw;
+
+          & > .img_container {
+              height: 160vw;
+          }
+      }
+  }
+
+  .desktop_top, .desktop_bottom, .mobile_top, .mobile_bottom {
+      background-color: $secondary_color;
+      width: 100%;
+      height: 1.3vw;
+
+      @include breakpoint(mobile) {
+          height: 2.5vw;
+      }
+  }
+
+  .desktop_top, .mobile_top {
+      border-top-left-radius: 0.7vw;
+      border-top-right-radius: 0.7vw;
+
+      @include breakpoint(mobile) {
+          border-top-left-radius: 1.4vw;
+          border-top-right-radius: 1.4vw;
+      }
+  }
+
+  .desktop_bottom, .mobile_bottom {
+      border-bottom-left-radius: 0.7vw;
+      border-bottom-right-radius: 0.7vw;
+
+      @include breakpoint(mobile) {
+          border-bottom-left-radius: 1.4vw;
+          border-bottom-right-radius: 1.4vw;
+      }
+  }
+
+  .desktop_top {
+      display: flex;
+      align-items: center;
+      & > div {
+          border-radius: 50%;
+          width: 0.5vw;
+          height: 0.5vw;
+          background-color: #fff;
+          margin-left: 0.5vw;
+
+          @include breakpoint(mobile) {
+              width: 1vw;
+              height: 1vw;
+              margin-left: 1vw;
+          }
+      }
+  }
+
+  .mobile_bottom {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      & > div {
+          border-radius: 50%;
+          width: 0.5vw;
+          height: 0.5vw;
+          background-color: #fff;
+
+          @include breakpoint(mobile) {
+              width: 1vw;
+              height: 1vw;
+          }
+      }
+  }
+}
+
+.equation {
+  margin: 100px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  @include breakpoint(tablet_mobile) {
+      margin: 50px 0;
+      width: 100%;
+      justify-content: space-around;
+
+      & > img {
+          width: 35px;
+          height: 35px;
+      }
+  }
+
+
+  & > h2 {
+      margin: 0 50px;
+
+      @include breakpoint(tablet_mobile) {
+          margin: 0;
+      }
+  }
+}

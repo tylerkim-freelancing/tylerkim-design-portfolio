@@ -1,5 +1,6 @@
 import '../styles/globals.scss'
 import Head from 'next/head'
+import client from '../modules/sanityClient'
 
 function MyApp({ Component, pageProps }) {
   return (

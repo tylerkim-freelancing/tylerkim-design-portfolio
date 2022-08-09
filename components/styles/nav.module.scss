@@ -24,6 +24,10 @@
         color: $primary_color;
         font-size: $lg_font;
     }
+
+    & > img {
+        width: 200px;
+    }
 }
 
 .nav {

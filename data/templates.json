@@ -17,7 +17,8 @@
         "name": "Blooming",
         "src_desktop": "/images/templates/desktop/blooming.png",
         "src_mobile": "/images/templates/mobile/blooming.png",
-        "url": "https://template-blooming.vercel.app"
+        "url": "https://template-blooming.vercel.app",
+        "description": ""
     },
     {
         "name": "Moderneon",
@@ -26,9 +27,9 @@
         "url": "https://template-moderneon.vercel.app"
     },
     {
-        "name": "Neuromorphism",
-        "src_desktop": "/images/templates/desktop/neuromorphism.png",
-        "src_mobile": "/images/templates/mobile/neuromorphism.png",
+        "name": "Neumorphism",
+        "src_desktop": "/images/templates/desktop/neumorphism.png",
+        "src_mobile": "/images/templates/mobile/neumorphism.png",
         "url": "https://template-neumorphism.vercel.app"
     },
     {
