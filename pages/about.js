@@ -18,6 +18,8 @@ export default function About() {
                             I always admire people who are so passionate with their creative works, and I would love to help them delivering the idea
                             to the people.
                         </p>
+                        <h4>tylerkim.design@gmail.com</h4>
+                        <h4>Tel# 917 888 8888</h4>
                     </div>
                 </div>
                 

@@ -22,6 +22,10 @@ $component_margin_mobile: 150px;
 .subtitle {
   @extend %title_style;
   font-size: $xlg_font;
+
+  @include breakpoint(mobile) {
+    font-size: $lg_font;
+  }
 }
 
 .more_btn {
@@ -38,34 +42,43 @@ $component_margin_mobile: 150px;
     width: 100%
   }
 
-  & > h1 {
-    margin-bottom: 50px;
-  }
-
   & > p {
-    margin-top: 50px;
-    line-height: 1.5em;
+    margin: 50px 0;
   }
 }
 
-.efficiency {
+.intro_template {
+  display: flex;
+  flex-direction: column;
   margin-top: $component_margin;
   width: 1025px;
 
   @include breakpoint(tablet_mobile) {
       width: 100%
   }
+  
+  @include breakpoint(mobile) {
+    margin-top: $component_margin_mobile;;
+  }
 
   & > p {
       margin-top: 50px;
+  }
+
+  & > a {
+    align-self: flex-end;
   }
 }
 
 .carousel_container {
     position: relative;
     width: 31vw;
-    margin: 5vw auto 32vw auto;
+    margin: 5vw auto 28vw auto;
     perspective: 180vw;
+
+    @include breakpoint(mobile) {
+      margin-bottom: 90vw;
+    }
   }
   
 .carousel {
@@ -74,7 +87,12 @@ $component_margin_mobile: 150px;
     height: 100%;
     transform-style: preserve-3d; 
     animation: rotate360 30s infinite forwards linear;
+
+    @include breakpoint(mobile) {
+      animation-duration: 20s;
+    }
 }
+
 .carousel_face { 
     position: absolute;
     width: 30vw;
@@ -85,16 +103,24 @@ $component_margin_mobile: 150px;
     display: flex;
     flex-direction: column;
 
-
-& > div {
+& > .img_container {
     position: relative;
     width: 100%;
     height: 17vw;
+
+    
+    @include breakpoint(mobile) {
+      height: 60vw;
+    }
 }
 
 & > .windows_top, & > .windows_bottom {
     height: 0.7vw;
     background-color: $secondary_color;
+
+    @include breakpoint(mobile) {
+      height: 2vw;
+    }
 }
 
 & > .windows_top {
@@ -103,31 +129,65 @@ $component_margin_mobile: 150px;
     display: flex;
     align-items: center;
 
+    @include breakpoint(mobile) {
+      border-top-right-radius: 1vw;
+      border-top-left-radius: 1vw;
+    }
+
     & > div {
         border-radius: 50%;
         background-color: #fff;
         margin-left: 0.5vw;
         width: 0.3vw;
         height: 0.3vw;
+
+        @include breakpoint(mobile) {
+          display: none;
+        }
     }
 }
 
 & > .windows_bottom {
     border-bottom-left-radius: 0.5vw;
     border-bottom-right-radius: 0.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & > div {
+      background-color: #fff;
+      width: 1vw;
+      height: 1vw;
+      border-radius: 50%;
+      display: none;
+
+      @include breakpoint(mobile) {
+        display: block;
+      }
+    }
+
+    @include breakpoint(mobile) {
+      border-bottom-left-radius: 1vw;
+      border-bottom-right-radius: 1vw;
+    }
 }
 }
 
 .carousel_face:nth-child(1) {
-transform: rotateY(0deg) translateZ(25vw); }
+  transform: rotateY(0deg) translateZ(25vw); 
+}
 .carousel_face:nth-child(2) { 
-    transform: rotateY( 72deg) translateZ(25vw); }
+  transform: rotateY( 72deg) translateZ(25vw); 
+}
 .carousel_face:nth-child(3) {
-transform: rotateY( 144deg) translateZ(25vw); }
+  transform: rotateY( 144deg) translateZ(25vw); 
+}
 .carousel_face:nth-child(4) {
-transform: rotateY(216deg) translateZ(25vw); }
+  transform: rotateY(216deg) translateZ(25vw); 
+}
 .carousel_face:nth-child(5) { 
-transform: rotateY(288deg) translateZ(25vw); }
+  transform: rotateY(288deg) translateZ(25vw); 
+}
 
 @keyframes rotate360 {
 from {
@@ -138,22 +198,20 @@ to {
 }
 }
 
-.hashtag_container {
-  display: flex;
-  flex-wrap: wrap;
+.keywords_container {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  gap: 50px 100px;
+
+  @include breakpoint(mobile) {
+    grid-template-columns: auto;
+    gap: 50px;
+  }
 }
 
-.hashtag {
-  cursor: pointer;
-  padding: 10px;
-  border: 2px solid $secondary_color;
-  border-radius: 15px;
-  margin-right: 20px;
-
-  &:hover {
-    transition: 0.3s;
-    background-color: $primary_color;
-    border-color: $primary_color;
-    color: #fff;
+.keyword {
+  & > h4 {
+    margin-bottom: 20px;
   }
 }

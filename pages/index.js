@@ -2,22 +2,43 @@ import styles from '../styles/pages/home.module.scss'
 import Layout from '../components/layout'
 import Slideshow from '../components/slideshow'
 import { readFile } from '../modules/fileServices'
+import { useEffect, useState } from 'react'
 import Img from '../components/img'
+import Link from 'next/link'
 
-export default function Home({ templates, hashtags }) {
+export default function Home({ templates, keywords }) {
+  const [isDesktop, setIsDesktop] = useState(true)
+    
+  useEffect(() => { 
+      function screenSizeHandler() {
+        if (window.innerWidth > 767) {
+            setIsDesktop(true)
+        } else {
+            setIsDesktop(false)
+        }
+      }
+      screenSizeHandler()
+      window.addEventListener('resize', screenSizeHandler)
+
+      return function cleanup() {
+        window.removeEventListener('resize', screenSizeHandler)
+      }
+    })
+
   return (
     <>
       <Layout title='Home'>
         <div className={styles.container}>
           <div className={styles.main}>
-            <h1 className={styles.title}>My name is <span className='highlight'>Tyler Kim</span>, a web developer who creates the best <span className='highlight'>personal websites</span>.</h1>
-            <Slideshow templates={templates}/>
+            <h1 className={styles.title}><span className='highlight'>The best</span> web developer who creates the best <span className='highlight'>portfolio websites</span>.</h1>
             <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut felis quis neque tincidunt fringilla at a erat. In eu massa commodo, aliquam nisl a, pretium ex. Ut dignissim lacus ut aliquet dictum. Suspendisse convallis nisi quis nisi tincidunt, sit amet pulvinar orci facilisis. Quisque in lacus orci. Suspendisse in neque consequat, congue libero eget, tempor nisi. In fringilla ut erat vitae efficitur. Duis at leo sed nibh maximus pharetra. Ut eleifend iaculis magna, in tempus metus rhoncus eget. Vivamus urna elit, blandit sed vestibulum semper, placerat quis tortor. Nunc blandit neque sed nisl varius, a placerat lectus ultrices. Morbi vestibulum orci sed tortor venenatis lobortis.
+              I am very passionate of designing the most efficient portfolio website for my clients, that they can start sharing their works
+              without hassle and too much money, and they can also turn it into a business in the future by adding more features.
             </p>
+            <Slideshow templates={templates}/>
           </div>
 
-          <div className={styles.efficiency}>
+          <div className={styles.intro_template}>
             <h1 className={styles.title}>I build <span className='highlight'>templates</span> that you can use <span className='highlight'>on the go</span> with so many <span className='highlight'>goodies</span> right out of the box.</h1>
             <div className={styles.carousel_container}>
               <div className={styles.carousel}>
@@ -29,24 +50,33 @@ export default function Home({ templates, hashtags }) {
                       <div></div>
                       <div></div>
                     </div>
-                    <div>
-                      <Img src={t.src_desktop}/>
+                    <div className={styles.img_container}>
+                      <Img src={isDesktop ? t.src_desktop : t.src_mobile}/>
                     </div>
                     <div className={styles.windows_bottom}>
+                      <div></div>
                       </div>
                   </div>
                 )
                 }
               </div>
             </div>
-            <div className={styles.hashtag_container}>
+
+            <div className={styles.keywords_container}>
                 {
-                  hashtags.map((hashtag, i) => <span key={i} className={styles.hashtag}>#{ hashtag.name }</span>)
+                  keywords.map((keyword, i) =>
+                  <div key={i} className={styles.keyword}> 
+                  <h4 className={styles.subtitle}>
+                    <span className='highlight'>&#10004;</span>&nbsp;{ keyword.name }
+                  </h4>
+                  <p>{ keyword.description }</p>
+                  </div>)
                 }
             </div>
+            <br/>
+            <br/>
+            <Link href="/templates"><a>view templates &rarr;</a></Link>
           </div>
-
-          
         </div>
       </Layout>
     </>
@@ -55,12 +85,12 @@ export default function Home({ templates, hashtags }) {
 
 export async function getStaticProps() {
   const templates = JSON.parse(await readFile('/data/template_slideshow.json'))
-  const hashtags = JSON.parse(await readFile('/data/hashtags.json'))
+  const keywords = JSON.parse(await readFile('/data/keywords.json'))
 
   return {
     props: {
       templates,
-      hashtags
+      keywords
     }
   }
 }

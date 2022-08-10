@@ -68,6 +68,10 @@
         height: 7px;
         background-color: #fff;
         margin-left: 10px;
+
+        @include breakpoint(mobile) {
+            display: none;
+        }
     }
 }
 
@@ -77,6 +81,21 @@
     background-color: $secondary_color;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & > div {
+        width: 2vw;
+        height: 2vw;
+        background-color: #fff;
+        border-radius: 50%;
+        display: none;
+
+        @include breakpoint(mobile) {
+            display: block;
+        }
+    }
     
     @include breakpoint(mobile) {
         width: 80vw;

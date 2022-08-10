@@ -50,7 +50,9 @@ export default function Slideshow({ templates }) {
                     </motion.div>)
                 }
             </div>
-            <div className={styles.window_bottom}></div>
+            <div className={styles.window_bottom}>
+                <div></div>
+            </div>
         </div>
     )
 }
