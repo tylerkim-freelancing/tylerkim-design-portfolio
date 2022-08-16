@@ -17,32 +17,32 @@
         "name": "Blooming",
         "src_desktop": "/images/templates/desktop/blooming.png",
         "src_mobile": "/images/templates/mobile/blooming.png",
-        "url": "https://template-blooming.vercel.app",
+        "url": "https://demonstration-blooming.vercel.app",
         "description": ""
     },
     {
         "name": "Moderneon",
         "src_desktop": "/images/templates/desktop/moderneon.png",
         "src_mobile": "/images/templates/mobile/moderneon.png",
-        "url": "https://template-moderneon.vercel.app"
+        "url": "https://demonstration-moderneon.vercel.app"
     },
     {
         "name": "Neumorphism",
         "src_desktop": "/images/templates/desktop/neumorphism.png",
         "src_mobile": "/images/templates/mobile/neumorphism.png",
-        "url": "https://template-neumorphism.vercel.app"
+        "url": "https://demonstration-neumorphism.vercel.app"
     },
     {
         "name": "Newtro",
         "src_desktop": "/images/templates/desktop/newtro.png",
         "src_mobile": "/images/templates/mobile/newtro.png",
-        "url": "https://template-newtro.vercel.app"
+        "url": "https://demonstration-newtro.vercel.app"
     }
     ,
     {
         "name": "Staircase",
         "src_desktop": "/images/templates/desktop/staircase.png",
         "src_mobile": "/images/templates/mobile/staircase.png",
-        "url": "https://template-staircase.vercel.app"
+        "url": "https://demonstration-staircase.vercel.app"
     }
 ]
