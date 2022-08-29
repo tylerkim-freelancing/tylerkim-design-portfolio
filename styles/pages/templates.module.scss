@@ -34,8 +34,11 @@ $component_margin: 150px;
     justify-content: center;
     gap: 100px;
 
-    @include breakpoint(tablet_mobile) {
+    @include breakpoint(smallScreen) {
         grid-template-columns: auto auto;
-        gap: 50px;
+    }
+
+    @include breakpoint(tablet_mobile) {
+        grid-template-columns: auto;
     }
 }

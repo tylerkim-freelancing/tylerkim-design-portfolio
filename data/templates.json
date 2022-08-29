@@ -1,48 +1,34 @@
 [
     {
-        "name": "Newtro with Blogs",
-        "src_desktop": "/images/templates/desktop/newtrowithblogs.png",
-        "src_mobile": "/images/templates/mobile/newtrowithblogs.png",
-        "url": "https://template-blog-example.vercel.app/",
-        "isExample": true
-    },
-    {
-        "name": "Joy Sweet",
-        "src_desktop": "/images/templates/desktop/joysweet.png",
-        "src_mobile": "/images/templates/mobile/joysweet.png",
-        "url": "https://template-custom-example.vercel.app",
-        "isExample": true
-    },
-    {
         "name": "Blooming",
         "src_desktop": "/images/templates/desktop/blooming.png",
         "src_mobile": "/images/templates/mobile/blooming.png",
-        "url": "https://demonstration-blooming.vercel.app",
+        "url": "https://template-blooming.vercel.app",
         "description": ""
     },
     {
         "name": "Moderneon",
         "src_desktop": "/images/templates/desktop/moderneon.png",
         "src_mobile": "/images/templates/mobile/moderneon.png",
-        "url": "https://demonstration-moderneon.vercel.app"
+        "url": "https://template-moderneon.vercel.app"
     },
     {
         "name": "Neumorphism",
         "src_desktop": "/images/templates/desktop/neumorphism.png",
         "src_mobile": "/images/templates/mobile/neumorphism.png",
-        "url": "https://demonstration-neumorphism.vercel.app"
+        "url": "https://template-neumorphism.vercel.app"
     },
     {
         "name": "Newtro",
         "src_desktop": "/images/templates/desktop/newtro.png",
         "src_mobile": "/images/templates/mobile/newtro.png",
-        "url": "https://demonstration-newtro.vercel.app"
+        "url": "https://template-newtro.vercel.app"
     }
     ,
     {
         "name": "Staircase",
         "src_desktop": "/images/templates/desktop/staircase.png",
         "src_mobile": "/images/templates/mobile/staircase.png",
-        "url": "https://demonstration-staircase.vercel.app"
+        "url": "https://template-staircase.vercel.app"
     }
 ]

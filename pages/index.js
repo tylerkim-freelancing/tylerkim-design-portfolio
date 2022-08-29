@@ -30,16 +30,22 @@ export default function Home({ templates, keywords }) {
       <Layout title='Home'>
         <div className={styles.container}>
           <div className={styles.main}>
-            <h1 className={styles.title}><span className='highlight'>The best</span> web developer who creates the best <span className='highlight'>portfolio websites</span>.</h1>
-            <p>
-              I am very passionate of designing the most efficient portfolio website for my clients, that they can start sharing their works
-              without hassle and too much money, and they can also turn it into a business in the future by adding more features.
-            </p>
+            <h1 className={styles.title}>
+              <span className='highlight'>The best</span> portfoilo website solution for you.
+            </h1>
             <Slideshow templates={templates}/>
+            <p>
+              I am the best freelance developer/designer who can create a portfolio website for a <strong>cheaper</strong> price than your average grocery bill, 
+              and deliver it to you <strong>faster</strong> than Amazon prime. Check out my templates which make that possible.
+            </p>
+            <div className={styles.button_container}>
+              <Link href='/about'><button>Learn about templates</button></Link>
+              <Link href='/templates'><button>Explore templates</button></Link>
+            </div>
           </div>
 
           <div className={styles.intro_template}>
-            <h1 className={styles.title}>I build <span className='highlight'>templates</span> that you can use <span className='highlight'>on the go</span> with so many <span className='highlight'>goodies</span> right out of the box.</h1>
+            <h1 className={styles.title}><span className='highlight'>Customizable</span> templates that you can use <span className='highlight'>on the go</span> that checks all the boxes.</h1>
             <div className={styles.carousel_container}>
               <div className={styles.carousel}>
                 {
@@ -50,12 +56,11 @@ export default function Home({ templates, keywords }) {
                       <div></div>
                       <div></div>
                     </div>
-                    <div className={styles.img_container}>
+                    <div className={styles.carousel_img_container}>
                       <Img src={isDesktop ? t.src_desktop : t.src_mobile}/>
                     </div>
                     <div className={styles.windows_bottom}>
-                      <div></div>
-                      </div>
+                    </div>
                   </div>
                 )
                 }
@@ -75,7 +80,7 @@ export default function Home({ templates, keywords }) {
             </div>
             <br/>
             <br/>
-            <Link href="/templates"><a>view templates &rarr;</a></Link>
+            <Link href="/templates"><a>Learn More &rarr;</a></Link>
           </div>
         </div>
       </Layout>

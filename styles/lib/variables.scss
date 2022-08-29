@@ -1,7 +1,12 @@
-$font_color: #373D3F;
+$font_color: #484848;
 $primary_color: #2D68C4;
-$secondary_color: rgb(118, 118, 118);
+$secondary_color: rgb(17, 10, 148);
 $background_color: rgb(255, 255, 255);
+
+// Template color
+$window_color: #ececec;
+$window_button_color: #fff;
+$window_hover_color: $primary_color;
 
 $sm_font: 12px;
 $lg_font: 24px;

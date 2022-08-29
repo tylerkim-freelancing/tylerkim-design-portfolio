@@ -46,12 +46,11 @@ export default function Slideshow({ templates }) {
                             type: 'just' 
                         }}
                         >
-                        <Img src={isDesktop ? template.src_desktop : template.src_mobile} alt='template thumbnail'/>
+                        <Img src={template.src_desktop} alt='template thumbnail'/>
                     </motion.div>)
                 }
             </div>
             <div className={styles.window_bottom}>
-                <div></div>
             </div>
         </div>
     )

@@ -52,13 +52,13 @@ export default function Nav({ title }) {
     return(
         <>
         <div className={styles.nav_container}>
-            <Link href='/'><motion.img
+            <Link href='/'><motion.h1
                 variants={nav_desktop}
                 initial='scrollUp'
                 animate={ isScrollDown ? 'scrollDown' : 'scrollUp' }
-                src='/logo.png'
                 >
-            </motion.img></Link>
+                TylerKim_design
+            </motion.h1></Link>
             <motion.ul 
                 className={styles.nav}
                 variants={nav_desktop}

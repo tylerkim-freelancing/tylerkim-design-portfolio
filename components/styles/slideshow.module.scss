@@ -9,12 +9,9 @@
     flex-direction: column;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 
-    @include breakpoint(tablet) {
-        width: 85vw;
-    }
-
-    @include breakpoint(mobile) {
+    @include breakpoint(tablet_mobile) {
         width: 80vw;
+        border-radius: 1vw;
     }
 }
 
@@ -23,82 +20,66 @@
     position: relative;
     height: 576px;
 
-    @include breakpoint(tablet) {
-        height: 47vw;
-    }
-
-    @include breakpoint(mobile) {
-        height: 160vw;
+    @include breakpoint(tablet_mobile) {
+        height: 43vw;
     }
 }
 
 .thumbnail {
     position: absolute;
     width: 100%;
-    height: 576px;
+    height: 100%;
     top: 0%;
     left: 0%;
-
-    @include breakpoint(tablet) {
-        height: 47vw;
-    }
-
-    @include breakpoint(mobile) {
-        height: 160vw;
-    }
 }
 
 .window_top {
     width: 100%;
     height: 20px;
-    background-color: $secondary_color;
+    background-color: $window_color;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     display: flex;
     align-items: center;
 
-    @include breakpoint(mobile) {
-        width: 80vw;
-        height: 15px;
+    @include breakpoint(tablet_mobile) {
+        height: 2vw;
+        border-top-left-radius: 1vw;
+        border-top-right-radius: 1vw;
     }
 
     & > div {
         border-radius: 50%;
         width: 7px;
         height: 7px;
-        background-color: #fff;
         margin-left: 10px;
-
-        @include breakpoint(mobile) {
-            display: none;
+        @include breakpoint(tablet_mobile) {
+            width: .6vw;
+            height: .6vw;
+            margin-left: 1vw;
         }
+
+        &:nth-child(1) { background-color: #FF625B; }
+        &:nth-child(2) { background-color: #FFBC44; }
+        &:nth-child(3) { background-color: #32C845; }
     }
+
+   
 }
 
 .window_bottom {
     width: 100%;
     height: 20px;
-    background-color: $secondary_color;
+    background-color: $window_color;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
 
-    & > div {
-        width: 2vw;
+    @include breakpoint(tablet_mobile) {
         height: 2vw;
-        background-color: #fff;
-        border-radius: 50%;
-        display: none;
-
-        @include breakpoint(mobile) {
-            display: block;
-        }
-    }
-    
-    @include breakpoint(mobile) {
-        width: 80vw;
-        height: 15px;
+        border-bottom-left-radius: 1vw;
+        border-bottom-right-radius: 1vw;
     }
 }
