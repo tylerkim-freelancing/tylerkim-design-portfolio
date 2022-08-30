@@ -33,19 +33,19 @@ export default function Home({ templates, keywords }) {
             <h1 className={styles.title}>
               <span className='highlight'>The best</span> portfoilo website solution for you.
             </h1>
-            <Slideshow templates={templates}/>
             <p>
               I am the best freelance developer/designer who can create a portfolio website for a <strong>cheaper</strong> price than your average grocery bill, 
-              and deliver it to you <strong>faster</strong> than Amazon prime. Check out my templates which make that possible.
+              and deliver it to you <strong>faster</strong> than Amazon prime.
             </p>
-            <div className={styles.button_container}>
-              <Link href='/about'><button>Learn about templates</button></Link>
-              <Link href='/templates'><button>Explore templates</button></Link>
-            </div>
+            <Slideshow templates={templates}/>
           </div>
 
           <div className={styles.intro_template}>
             <h1 className={styles.title}><span className='highlight'>Customizable</span> templates that you can use <span className='highlight'>on the go</span> that checks all the boxes.</h1>
+            <p>
+              I have thoughtfully designed my templates so they are ready to serve your contents with unique styles. I also packed them with 
+              the latest essential features that all the modern websites are required to have.
+            </p>
             <div className={styles.carousel_container}>
               <div className={styles.carousel}>
                 {
@@ -66,7 +66,6 @@ export default function Home({ templates, keywords }) {
                 }
               </div>
             </div>
-
             <div className={styles.keywords_container}>
                 {
                   keywords.map((keyword, i) =>
@@ -78,9 +77,10 @@ export default function Home({ templates, keywords }) {
                   </div>)
                 }
             </div>
-            <br/>
-            <br/>
-            <Link href="/templates"><a>Learn More &rarr;</a></Link>
+            <div className={styles.button_container}>
+              <Link href='/about'><button>Learn more &rarr;</button></Link>
+              <Link href='/templates'><button>Explore templates &rarr;</button></Link>
+            </div>
           </div>
         </div>
       </Layout>
