@@ -28,8 +28,8 @@
         border-radius: 5vw;
     }
     @include breakpoint(mobile) {
-        width: 70vw;
-        border-radius: 10vw;
+        width: 300px;
+        border-radius: 50px;
     }
 
     &:hover .window_top, &:hover .window_bottom {
@@ -53,7 +53,7 @@
     }
 
     @include breakpoint(mobile) {
-        height: 143vw;
+        height: 610px;
     }
 }
 
@@ -76,7 +76,7 @@
         border-radius: 5vw;
     }
     @include breakpoint(mobile) {
-        border-radius: 10vw;
+        border-radius: 50px;
     }
 }
 

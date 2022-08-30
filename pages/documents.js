@@ -1,5 +1,6 @@
 import Layout from "../components/layout"
 import styles from '../styles/pages/documents.module.scss'
+import Img from '../components/img'
 
 export default function Documents() {
     return (
@@ -14,54 +15,121 @@ export default function Documents() {
                         to any of the pages upon request with some extra charge.
                     </p>
                     <h4>Home</h4>
-                    <p>: This is your main page where it welcomes your target people. It consists of following sections.</p>
+                    <p>: This is your main page where it welcomes the users.</p>
                     <ul>
-                        <li>a main picture area</li>
-                        <li>a main text area</li>
+                        <li>main image</li>
+                        <li>main title</li>
+                        <li>main paragraph</li>
                         <li>
-                            a preview of your works
+                            preview of your works
                             <ul>
-                                <li>Generally displays 4-6 works</li>
-                                <li>Each work is presented with a card that has a main title and a subtitle</li>
+                                <li>generally displays 4-6 works</li>
+                                <li>each work is presented with a card that has a main title and a subtitle</li>
                             </ul>
                         </li>
                     </ul>
+                    <div className={styles.structure_img_container}>
+                        <Img alt="Reference image for home page structure" src="/images/documents/structure_home.png"/>
+                    </div>
                     <br/>
                     <br/>
                     <h4>About</h4>
-                    <p>: About page is to introduce yourself and describe what you do. It consists of following sections.</p>
+                    <p>: About page where you introduce yourself and describe what you do to your audience.</p>
                     <ul>
-                        <li>a profile picture</li>
-                        <li>two text areas generally used as main paragraph + secondary paragraph</li>
+                        <li>main image(generally a profile picture)</li>
+                        <li>main title</li>
+                        <li>main paragraph</li>
+                        <li>recognition</li>
                         <li>
-                            a personal information area
+                            personal information area
                             <ul>
                                 <li>studio/business location</li>
                                 <li>conatct information</li>
                             </ul>
                         </li>
                     </ul>
+                    <div className={styles.structure_img_container}>
+                        <Img alt="Reference image for about page structure" src="/images/documents/structure_about1.png"/>
+                    </div>
+                    <div className={styles.structure_img_container}>
+                        <Img alt="Reference image for about page structure" src="/images/documents/structure_about2.png"/>
+                    </div>
                     <br/>
                     <br/>
-                    <h4>Gallery</h4>
-                    <p>: This page is like a gallery where you presents all your works with their thumbnails.</p>
+                    <h4>Works</h4>
+                    <p>: The gallery page where you presents all your works with their thumbnail, title, and subtitle.</p>
                     <ul>
                         <li>
-                            a gallery of your works
+                            gallery of your works
                             <ul>
-                                <li>Each work is presetned with a card that has a main title and a subtitle</li>
+                                <li>each work is presetned with a card that has a main title and a subtitle</li>
                             </ul>
                         </li>
                     </ul>
+                    <div className={styles.structure_img_container}>
+                        <Img alt="Reference image for works page structure" src="/images/documents/structure_works.png"/>
+                    </div>
                     <br/>
                     <br/>
-                    <h4>Work</h4>
-                    <p>: This is where you can explain your individual project with details. It consists of following sections.</p>
+                    <h4>[Work]</h4>
+                    <p>: This is where you can explain your individual project with details.</p>
                     <ul>
-                        <li>a main photo of the project</li>
-                        <li>a main tilte and a subtitle</li>
-                        <li>a main paragraph to explain your project</li>
+                        <li>title of your work</li>
+                        <li>subtitle of your work</li>
+                        <li>a rich text area you can insert followings:
+                            <ul>
+                                <li>large headings</li>
+                                <li>small headings</li>
+                                <li>paragraphs</li>
+                                <li>images</li>
+                            </ul>
+                        </li>
                     </ul>
+                    <div className={styles.structure_img_container}>
+                        <Img alt="Reference image for [work] page structure" src="/images/documents/structure_[work].png"/>
+                    </div>
+                    <br/>
+                    <br/>
+                    <h4>*blogs</h4>
+                    <p>: This is an additionally featured page where you can generally use as a blog. This page might as well be used as news, notices, or events page</p>
+                    <ul>
+                        <li>
+                            a list of posts
+                            <ul>
+                                <li>user can sort by updated date</li>
+                                <li>user can search by a keywoord</li>
+                                <li>each post is presetned in a card with title, updated date, description, and keyword tags</li>
+                                <li>a pagination</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div className={styles.structure_img_container}>
+                        <Img alt="Reference image for blogs page structure" src="/images/documents/structure_blogs.png"/>
+                    </div>
+                    <br/>
+                    <br/>
+                    <h4>[post]</h4>
+                    <p>: A post page where you can share idea/information with rich text.</p>
+                    <ul>
+                        <li>post title</li>
+                        <li>updated date</li>
+                        <li>keyword tags</li>
+                        <li>a rich text area you can insert followings:
+                            <ul>
+                                <li>differen sizes of headings (h1-h6)</li>
+                                <li>paragraphs</li>
+                                <li>images</li>
+                                <li>embedded youtube</li>
+                                <li>external links</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div className={styles.structure_img_container}>
+                        <Img alt="Reference image for [post] page structure" src="/images/documents/structure_[post]1.png"/>
+                    </div>
+                    <div className={styles.structure_img_container}>
+                        <Img alt="Reference image for [post] page structure" src="/images/documents/structure_[post]2.png"/>
+                    </div>
                 </div>
 
                 <div className={styles.basic_features}>

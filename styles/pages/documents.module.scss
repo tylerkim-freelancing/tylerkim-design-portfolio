@@ -65,6 +65,23 @@ $component_margin_mobile: 100px;
     }
 }
 
+.structure_img_container {
+    position: relative;
+    width: 1025px;
+    height: 540px;
+    margin: 10px 0;
+
+    @include breakpoint(tablet) {
+        width: 75vw;
+        height: 36vw;
+    }
+
+    @include breakpoint(mobile) {
+        width: 90vw;
+        height: 46vw;
+    }
+}
+
 .basic_features {
     align-self: flex-end;
 

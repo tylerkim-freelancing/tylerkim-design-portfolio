@@ -1,9 +1,9 @@
-import Layout from '../components/layout'
-import styles from '../styles/pages/templates.module.scss'
-import Card from '../components/card'
+import Layout from '../../components/layout'
+import styles from '../../styles/pages/templates.module.scss'
+import Card from '../../components/card'
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
-import { readFile } from '../modules/fileServices'
+import { readFile } from '../../modules/fileServices'
 
 export default function Templates({templates}) {
     const [isDesktop, setIsDesktop] = useState(true)
