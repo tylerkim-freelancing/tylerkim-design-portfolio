@@ -1,7 +1,7 @@
 @import '../../styles/lib/theme.scss';
 
 .active_route {
-    color: $primary_color;
+    font-weight: bold;
 }
 
 .nav_container {
@@ -21,7 +21,6 @@
     & > h1 {
         font-family: 'ShadowsIntoLight';
         cursor: pointer;
-        color: $primary_color;
         font-size: $lg_font;
     }
 
@@ -52,7 +51,6 @@
     & > h1 {
         font-family: 'ShadowsIntoLight';
         cursor: pointer;
-        color: $primary_color;
         font-size: $lg_font;
     }
 

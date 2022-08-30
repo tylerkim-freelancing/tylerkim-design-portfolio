@@ -4,24 +4,6 @@ import { useState, useEffect } from 'react'
 import Img from './img'
 
 export default function Slideshow({ templates }) {
-    const [isDesktop, setIsDesktop] = useState(true)
-    
-    useEffect(() => { 
-        function screenSizeHandler() {
-          if (window.innerWidth > 767) {
-              setIsDesktop(true)
-          } else {
-              setIsDesktop(false)
-          }
-        }
-        screenSizeHandler()
-        window.addEventListener('resize', screenSizeHandler)
-  
-        return function cleanup() {
-          window.removeEventListener('resize', screenSizeHandler)
-        }
-      })
-
     return (
         <div className={styles.container}>
             <div className={styles.window_top}>

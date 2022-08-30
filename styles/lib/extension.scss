@@ -14,10 +14,10 @@
 }
 
 %title_style {
-  color: $font_color;
   font-family: 'BebasNeue';
   font-size: $huge_font;
   font-weight: lighter;
+  // text-align: center;
 
   @include breakpoint(mobile) {
     font-size: $xlg_font;

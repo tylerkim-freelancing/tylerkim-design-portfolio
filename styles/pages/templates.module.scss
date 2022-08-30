@@ -38,7 +38,7 @@ $component_margin: 150px;
         grid-template-columns: auto auto;
     }
 
-    @include breakpoint(tablet_mobile) {
+    @include breakpoint(mobile) {
         grid-template-columns: auto;
     }
 }

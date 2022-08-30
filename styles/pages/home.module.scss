@@ -46,7 +46,6 @@ $component_margin_mobile: 150px;
     margin: 50px 0;
     width: 70%;
     text-align: center;
-
     @include breakpoint(mobile) {
       width: 100%;
     }
@@ -123,7 +122,7 @@ $component_margin_mobile: 150px;
     height: 17vw;
     
     @include breakpoint(mobile) {
-      height: 60vw;
+      height: 61vw;
     }
 }
 
@@ -144,11 +143,9 @@ $component_margin_mobile: 150px;
 
     & > div {
         border-radius: 50%;
-        background-color: $window_button_color;
         margin-left: 0.5vw;
         width: 0.3vw;
         height: 0.3vw;
-
         
         &:nth-child(1) { background-color: #FF625B; }
         &:nth-child(2) { background-color: #FFBC44; }
@@ -232,8 +229,12 @@ to {
 }
 
 .keyword {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
   & > h4 {
     margin-bottom: 20px;
+    text-align: start;
   }
 }
 
@@ -242,8 +243,12 @@ to {
   display: flex;
   gap: 50px;
 
+  & > button {
+    padding: 5px;
+    cursor: pointer;
+  }
+
   @include breakpoint(mobile) {
-    flex-direction: column;
     gap: 10px;
   }
 }

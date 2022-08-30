@@ -19,7 +19,7 @@
 }
 
 .highlight {
-  color: $secondary_color;
+  color: $primary_color;
 }
 
 html {
@@ -37,45 +37,10 @@ a {
   color: inherit;
   text-decoration: none;
   cursor: pointer;
-  font-weight: bold;
     
   &:hover {
     transition: 0.3s;
-    color: $primary_color;
-  }
-}
-
-button {
-  background-color: transparent;
-  border: 1px solid $font_color;
-  border-radius: 5px;
-  color: $font_color;
-  cursor: pointer;
-  min-width: 150px;
-  padding: 5px;
-
-  &:hover {
-    transition: 0.3s;
-    background-color: $primary_color;
-    border-color: $primary_color;
-    color: white;
-  }
-}
-
-input, textarea, select {
-  outline-color: $font_color;
-  background-color: transparent;
-  border: 1px solid $font_color;
-  padding: 5px;
-  color: $font_color;
-
-  &::placeholder {
-    text-align: center;
-    color: $primary_color;
-  }
-
-  &:invalid {
-    outline-color: crimson;
+    text-decoration: underline;
   }
 }
 

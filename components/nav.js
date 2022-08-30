@@ -85,6 +85,13 @@ export default function Nav({ title }) {
                         </a>
                     </li>
                 </Link>
+                <Link href="/documents">
+                    <li>
+                        <a className={ title === 'Documents' ? styles.active_route : 'dummy' }>
+                            Documents
+                        </a>
+                    </li>
+                </Link>
             </motion.ul>
         </div>
 
@@ -127,6 +134,13 @@ export default function Nav({ title }) {
                     <li>
                         <a className={ title === 'Templates' ? styles.active_route : 'dummy' }>
                             Templates
+                        </a>
+                    </li>
+                </Link>
+                <Link href="/documents">
+                    <li>
+                        <a className={ title === 'Documents' ? styles.active_route : 'dummy' }>
+                            Documents
                         </a>
                     </li>
                 </Link>

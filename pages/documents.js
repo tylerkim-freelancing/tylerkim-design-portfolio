@@ -1,9 +1,9 @@
-import Layout from "../../components/layout"
-import styles from '../../styles/pages/templatesAbout.module.scss'
+import Layout from "../components/layout"
+import styles from '../styles/pages/documents.module.scss'
 
-export default function TemplatesAbout() {
+export default function Documents() {
     return (
-        <Layout title='Templates' >
+        <Layout title='Documents' >
             <div className={styles.container}>
                 <h1 className={styles.title}>The <span className="highlight">Blueprint</span> of my templates</h1>
                 <div className={styles.template_structure}>
