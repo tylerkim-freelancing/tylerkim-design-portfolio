@@ -108,8 +108,8 @@ export default function Documents() {
                     </div>
                     <br/>
                     <br/>
-                    <h4>[post]</h4>
-                    <p>: A post page where you can share idea/information with rich text.</p>
+                    <h4>*[post]</h4>
+                    <p>: A post page for blogs where you can share idea/information with rich text.</p>
                     <ul>
                         <li>post title</li>
                         <li>updated date</li>
@@ -139,21 +139,21 @@ export default function Documents() {
                         have to pay for your website. There are few essential features that all the modern website must have to meet the 
                         standard, and all of my templates come with those features as default without extra charge.
                     </p>
-                    <h4>Responsive Design</h4>
+                    <h3>Responsive Design</h3>
                     <p>
                         Website design needs to be optimized to display all the contents properly through various devices. All the traffic to your
                         webiste are coming from a different type of device, it is a must to optimize your website to be responsive to any size of the platform.
                     </p>
                     <br/>
                     <br/>
-                    <h4>SEO (Search Engine Optimization)</h4>
+                    <h3>SEO (Search Engine Optimization)</h3>
                     <p>
                         SEO is a process of improving the visibility of your webiste to the people on the search engine such as Google or Bing.
                         More visible the website becomes, more traffic it gets, and it simply means you will have more business through your website.
                     </p>
                     <br/>
                     <br/>
-                    <h4>Open Graph Meta Tags</h4>
+                    <h3>Open Graph Meta Tags</h3>
                     <p>
                         Open Graph meta tags on your website controls how your shared URL on social media will be displayed. With OG tags, you can
                         share your website's URL just as you intended, and you can give the people a general idea of what your website will be about. 
@@ -161,12 +161,18 @@ export default function Documents() {
                     </p>
                     <br/>
                     <br/>
-                    <h4>CMS (Content Management System)</h4>
+                    <h3>CMS (Content Management System)</h3>
                     <p>
                         A content management system is a software that lets a user to create, modify and delete the content of a website without
                         having any technical knowledge. Obviously, you will need a lot of adjustments on your web contents as you create a new work, 
                         re-organize the portfolio, or modify any context as your idea changes. Instead of paying the developer to change your webiste
                         for you, you can modify your website by yourself through the dedicated control panel.
+                    </p>
+                    <br/>
+                    <br/>
+                    <h3>ADA Accessibility Standards</h3>
+                    <p>
+                        
                     </p>
                 </div>
 
@@ -182,7 +188,7 @@ export default function Documents() {
                         <img src="/images/vercel.png"/>+
                         <img src="/images/sanity.png"/>
                     </div>
-                    <h4>Next JS</h4>
+                    <h3>Next JS</h3>
                     <p>
                         Next JS is a React framework with additional feautures including server-side rendering and static site generation.
                         It is used create the front-end of my templates which the users will visually experience on the browser. The best part
@@ -192,7 +198,7 @@ export default function Documents() {
                     </p>
                     <br/>
                     <br/>
-                    <h4>Vercel</h4>
+                    <h3>Vercel</h3>
                     <p>
                         Vercel is a cloud platform that enables developers to host their front-end software. Vercel makes it very easy for the developers
                         to deploy their websites to a global CDN (Content Delivery Network) which has its globally distributed network of proxy servers
@@ -201,7 +207,7 @@ export default function Documents() {
                     </p>
                     <br/>
                     <br/>
-                    <h4>Sanity</h4>
+                    <h3>Sanity</h3>
                     <p>
                         Sanity is a platform where you can create contents and serve them onto your websites. Its independent content management system
                         provides you more flexbility on choosing the design and layout of your websites as it only holds the content, and you can decide 

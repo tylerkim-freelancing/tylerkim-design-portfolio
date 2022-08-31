@@ -26,7 +26,7 @@ export default function About() {
                 <div className={styles.work_process}>
                     <h1 className={styles.title}><span className='highlight'>How</span> it works</h1>
                     <div className={styles.card}>
-                        <h4 className={styles.title}>Browse my templates</h4>
+                        <h4 className={styles.title}>1. Browse my templates</h4>
                         <p>
                             Go to <Link href={'/templates'}><a target='_blank'><strong>templates</strong></a></Link> page and see what you like. There is a theme
                             setting feature where you can customize the theme of the template. Theme setting window will show you the color code that you used
@@ -34,7 +34,7 @@ export default function About() {
                         </p>
                     </div>
                     <div className={styles.card}>
-                        <h4 className={styles.title}>Request a project</h4>
+                        <h4 className={styles.title}>2. Request a project</h4>
                         <p>
                             You can request a project through either <a target='_blank' href="https://www.fiverr.com/"><strong>Fiverr</strong></a> or 
                             <a target='_blank' href="https://www.upwork.com/"><strong> Upwork</strong></a>. You will get the same quality of the project for the same price,
@@ -43,13 +43,13 @@ export default function About() {
                         </p>
                     </div>
                     <div className={styles.card}>
-                        <h4 className={styles.title}>Revision</h4>
+                        <h4 className={styles.title}>3. Revision</h4>
                         <p>
                             If we come to 
                         </p>
                     </div>
                     <div className={styles.card}>
-                        <h4 className={styles.title}>Done!</h4>
+                        <h4 className={styles.title}>4. Done!</h4>
                         <p>
                             
                         </p>
