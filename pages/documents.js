@@ -238,8 +238,6 @@ export async function getStaticProps() {
   
     return {
       props: {
-        templates,
-        keywords,
         metaData: metaData.items[0]
       }
     }
