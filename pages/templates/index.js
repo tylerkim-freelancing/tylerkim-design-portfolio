@@ -28,7 +28,7 @@ export default function Templates({templates}) {
         <Layout title='Templates'>
             <div className={styles.container}>
               <div className={styles.intro}>
-                <h1>The <span className='highlight'>most advanced</span> templates are here</h1>
+                <h1>The <span className='highlight'>most advanced</span> templates are here.</h1>
                 <p>
                   Feel free to explore the templates and see what you like. You can stick to the current theme of the template you are interested in, but you
                   can also change the theme by changing the color, fonts, and some layout to fit your taste. If you wanna learn more about how my templates

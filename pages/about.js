@@ -24,7 +24,7 @@ export default function About() {
                 </div>
                 
                 <div className={styles.work_process}>
-                    <h1 className={styles.title}><span className='highlight'>How</span> it works</h1>
+                    <h1 className={styles.title}><span className='highlight'>How</span> it works.</h1>
                     <div className={styles.card}>
                         <h4 className={styles.title}>1. Browse my templates</h4>
                         <p>

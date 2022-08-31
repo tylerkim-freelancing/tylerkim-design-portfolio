@@ -58,7 +58,7 @@ $component_margin_mobile: 100px;
 }
 
 .template_structure, .web_stack {
-    align-self: flex-start;
+    align-self: flex-end;
 
     @include breakpoint(smallScreen) {
         align-self: auto;
@@ -82,8 +82,8 @@ $component_margin_mobile: 100px;
     }
 }
 
-.basic_features {
-    align-self: flex-end;
+.overview, .basic_features {
+    align-self: flex-start;
 
     @include breakpoint(smallScreen) {
         align-self: auto;
