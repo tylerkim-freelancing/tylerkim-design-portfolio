@@ -35,7 +35,7 @@ export default function Templates({templates}) {
                   are more superior than the standard templates in the market, click the following. 
                 </p>
                 <br/>
-                <Link href='/templates/about'><a>learn more &rarr;</a></Link>
+                <Link href='/documents'><a>learn more &rarr;</a></Link>
               </div>
                 <div className={styles.gallery}>
                     {

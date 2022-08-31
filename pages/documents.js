@@ -1,9 +1,22 @@
 import Layout from "../components/layout"
 import styles from '../styles/pages/documents.module.scss'
 import Img from '../components/img'
+import Head from 'next/head'
 
-export default function Documents() {
+export default function Documents({ metaData }) {
     return (
+        <>
+        <Head>
+            <meta name="description" content={ ogDescription } />
+            <meta property="og:type" content="website" />
+            <meta property="og:title" content={ ogTitle } />
+            <meta property="og:description" content={ ogDescription } />
+            <meta property="og:image" content={`https:${ogImage.fields.file.url}`} />
+            <meta name="twitter:card" content="summary" /> 
+            <meta name="twitter:title" content={ ogTitle }/> 
+            <meta name="twitter:description" content={ ogDescription } /> 
+            <meta name="twitter:image" content={`https:${ogImage.fields.file.url}`} />
+        </Head>
         <Layout title='Documents' >
             <div className={styles.container}>
                 <h1 className={styles.title}>The <span className="highlight">Blueprint</span> of my templates</h1>
@@ -139,6 +152,15 @@ export default function Documents() {
                         have to pay for your website. There are few essential features that all the modern website must have to meet the 
                         standard, and all of my templates come with those features as default without extra charge.
                     </p>
+                    <h3>CMS (Content Management System)</h3>
+                    <p>
+                        A content management system is a software that lets a user to create, modify and delete the content of a website without
+                        having any technical knowledge. Obviously, you will need a lot of adjustments on your web contents as you create a new work, 
+                        re-organize the portfolio, or modify any context as your idea changes. Instead of paying the developer to change your webiste
+                        for you, you can modify your website by yourself through the dedicated control panel.
+                    </p>
+                    <br/>
+                    <br/>
                     <h3>Responsive Design</h3>
                     <p>
                         Website design needs to be optimized to display all the contents properly through various devices. All the traffic to your
@@ -158,21 +180,6 @@ export default function Documents() {
                         Open Graph meta tags on your website controls how your shared URL on social media will be displayed. With OG tags, you can
                         share your website's URL just as you intended, and you can give the people a general idea of what your website will be about. 
                         You will get OG tags for Facebook, Instagram and Twitter on your website as default.
-                    </p>
-                    <br/>
-                    <br/>
-                    <h3>CMS (Content Management System)</h3>
-                    <p>
-                        A content management system is a software that lets a user to create, modify and delete the content of a website without
-                        having any technical knowledge. Obviously, you will need a lot of adjustments on your web contents as you create a new work, 
-                        re-organize the portfolio, or modify any context as your idea changes. Instead of paying the developer to change your webiste
-                        for you, you can modify your website by yourself through the dedicated control panel.
-                    </p>
-                    <br/>
-                    <br/>
-                    <h3>ADA Accessibility Standards</h3>
-                    <p>
-                        
                     </p>
                 </div>
 
@@ -221,5 +228,18 @@ export default function Documents() {
                 </div>
             </div>
         </Layout>
+        </>
     )
 }
+
+export async function getStaticProps() {
+    const metaData = await client.getEntries({ content_type: 'metaTags', 'fields.page[match]': 'Documents' })
+  
+    return {
+      props: {
+        templates,
+        keywords,
+        metaData: metaData.items[0]
+      }
+    }
+  }
