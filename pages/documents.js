@@ -30,7 +30,7 @@ export default function Documents({ metaData }) {
                         following page layout to fit the general purpose of personal website, and additional section can be added
                         to any of the pages upon request with some extra charge.
                     </p>
-                    <h4>Home</h4>
+                    <h3>- Home</h3>
                     <p>: This is your main page where it welcomes the users.</p>
                     <ul>
                         <li>main image</li>
@@ -49,7 +49,7 @@ export default function Documents({ metaData }) {
                     </div>
                     <br/>
                     <br/>
-                    <h4>About</h4>
+                    <h3>- About</h3>
                     <p>: About page where you introduce yourself and describe what you do to your audience.</p>
                     <ul>
                         <li>main image(generally a profile picture)</li>
@@ -72,7 +72,7 @@ export default function Documents({ metaData }) {
                     </div>
                     <br/>
                     <br/>
-                    <h4>Works</h4>
+                    <h3>- Works</h3>
                     <p>: The gallery page where you presents all your works with their thumbnail, title, and subtitle.</p>
                     <ul>
                         <li>
@@ -87,7 +87,7 @@ export default function Documents({ metaData }) {
                     </div>
                     <br/>
                     <br/>
-                    <h4>[Work]</h4>
+                    <h3>- [Work]</h3>
                     <p>: This is where you can explain your individual project with details.</p>
                     <ul>
                         <li>title of your work</li>
@@ -106,7 +106,7 @@ export default function Documents({ metaData }) {
                     </div>
                     <br/>
                     <br/>
-                    <h4>*blogs</h4>
+                    <h3>- *blogs</h3>
                     <p>: This is an additionally featured page where you can generally use as a blog. This page might as well be used as news, notices, or events page</p>
                     <ul>
                         <li>
@@ -124,7 +124,7 @@ export default function Documents({ metaData }) {
                     </div>
                     <br/>
                     <br/>
-                    <h4>*[post]</h4>
+                    <h3>- *[post]</h3>
                     <p>: A post page for blogs where you can share idea/information with rich text.</p>
                     <ul>
                         <li>post title</li>
@@ -155,34 +155,53 @@ export default function Documents({ metaData }) {
                         have to pay for your website. There are few essential features that all the modern website must have to meet the 
                         standard, and all of my templates come with those features as default without extra charge.
                     </p>
-                    <h3>CMS (Content Management System)</h3>
+                    <h3>- CMS (Content Management System)</h3>
                     <p>
                         A content management system is a software that lets a user to create, modify and delete the content of a website without
                         having any technical knowledge. Obviously, you will need a lot of adjustments on your web contents as you create a new work, 
                         re-organize the portfolio, or modify any context as your idea changes. Instead of paying the developer to change your webiste
                         for you, you can modify your website by yourself through the dedicated control panel.
                     </p>
+                    <div className={styles.structure_img_container}>
+                        <Img alt="Reference image for contentful control panel" src="/images/documents/contentful1.png"/>
+                    </div>
+                    <div className={styles.structure_img_container}>
+                        <Img alt="Reference image for contentful control panel" src="/images/documents/contentful2.png"/>
+                    </div>
                     <br/>
                     <br/>
-                    <h3>Responsive Design</h3>
+               
+                    <h3>- Open Graph Meta Tags</h3>
                     <p>
-                        Website design needs to be optimized to display all the contents properly through various devices. All the traffic to your
-                        webiste are coming from a different type of device, it is a must to optimize your website to be responsive to any size of the platform.
+                        Open Graph meta tags on your website controls how your shared URL on social media will be displayed. With OG tags, you can
+                        share your website's URL just as you intended, and you can give the people a general idea of what your website will be about. 
+                        You will get OG tags for Facebook, Instagram and Twitter on your website as default.
                     </p>
+                    <div className={styles.ogtag_reference}>
+                        <div>
+                            <img alt="shared link without og tags on facebook" src="/images/documents/ogtags_without.png"/>
+                            <p><strong>&rarr;</strong></p>
+                            <img alt="shared link with og tags on facebook" src="/images/documents/ogtags_with.png"/>
+                        </div>
+                        <div>
+                            <img alt="shared link without twittercard tags on twitter" src="/images/documents/twittercard_without.png"/>
+                            <p><strong>&rarr;</strong></p>
+                            <img alt="shared link without twittercard tags on twitter" src="/images/documents/twittercard_with.png"/>
+                        </div>
+                    </div>
                     <br/>
                     <br/>
-                    <h3>SEO (Search Engine Optimization)</h3>
+                    <h3>- SEO (Search Engine Optimization)</h3>
                     <p>
                         SEO is a process of improving the visibility of your webiste to the people on the search engine such as Google or Bing.
                         More visible the website becomes, more traffic it gets, and it simply means you will have more business through your website.
                     </p>
                     <br/>
                     <br/>
-                    <h3>Open Graph Meta Tags</h3>
+                    <h3>- Responsive Design</h3>
                     <p>
-                        Open Graph meta tags on your website controls how your shared URL on social media will be displayed. With OG tags, you can
-                        share your website's URL just as you intended, and you can give the people a general idea of what your website will be about. 
-                        You will get OG tags for Facebook, Instagram and Twitter on your website as default.
+                        Website design needs to be optimized to display all the contents properly through various devices. All the traffic to your
+                        webiste are coming from a different type of device, it is a must to optimize your website to be responsive to any size of the platform.
                     </p>
                 </div>
 
@@ -194,11 +213,11 @@ export default function Documents({ metaData }) {
                         The answer to the question is, 
                     </p>
                     <div className={styles.equation}>
-                        <img src="/images/nextjs.png"/>+
-                        <img src="/images/vercel.png"/>+
-                        <img src="/images/sanity.png"/>
+                        <img alt="next js logo" src="/images/nextjs.png"/>+
+                        <img alt="vercel logo" src="/images/vercel.png"/>+
+                        <img alt="contentful logo" src="/images/contentful.png"/>
                     </div>
-                    <h3>Next JS</h3>
+                    <h3>- Next JS</h3>
                     <p>
                         Next JS is a React framework with additional feautures including server-side rendering and static site generation.
                         It is used create the front-end of my templates which the users will visually experience on the browser. The best part
@@ -208,7 +227,7 @@ export default function Documents({ metaData }) {
                     </p>
                     <br/>
                     <br/>
-                    <h3>Vercel</h3>
+                    <h3>- Vercel</h3>
                     <p>
                         Vercel is a cloud platform that enables developers to host their front-end software. Vercel makes it very easy for the developers
                         to deploy their websites to a global CDN (Content Delivery Network) which has its globally distributed network of proxy servers
@@ -217,7 +236,7 @@ export default function Documents({ metaData }) {
                     </p>
                     <br/>
                     <br/>
-                    <h3>Sanity</h3>
+                    <h3>- Contentful</h3>
                     <p>
                         Sanity is a platform where you can create contents and serve them onto your websites. Its independent content management system
                         provides you more flexbility on choosing the design and layout of your websites as it only holds the content, and you can decide 
