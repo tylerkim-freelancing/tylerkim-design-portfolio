@@ -5,9 +5,11 @@ import Head from 'next/head'
 import client from '../modules/contentfulClient'
 
 export default function Documents({ metaData }) {
+    const { ogTitle, ogDescription, ogImage } = metaData.fields
+
     return (
         <>
-        <Head>
+        {/* <Head>
             <meta name="description" content={ ogDescription } />
             <meta property="og:type" content="website" />
             <meta property="og:title" content={ ogTitle } />
@@ -17,7 +19,7 @@ export default function Documents({ metaData }) {
             <meta name="twitter:title" content={ ogTitle }/> 
             <meta name="twitter:description" content={ ogDescription } /> 
             <meta name="twitter:image" content={`https:${ogImage.fields.file.url}`} />
-        </Head>
+        </Head> */}
         <Layout title='Documents' >
             <div className={styles.container}>
                 <h1 className={styles.title}>The <span className="highlight">Blueprint</span> of my templates</h1>
