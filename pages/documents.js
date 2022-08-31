@@ -2,6 +2,7 @@ import Layout from "../components/layout"
 import styles from '../styles/pages/documents.module.scss'
 import Img from '../components/img'
 import Head from 'next/head'
+import client from '../modules/contentfulClient'
 
 export default function Documents({ metaData }) {
     return (
