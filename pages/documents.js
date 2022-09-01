@@ -26,12 +26,21 @@ export default function Documents({ metaData }) {
                 <div className={styles.overview}>
                     <h2 className={styles.subtitle}><span className="highlight">Overview</span></h2>
                     <p className={styles.description}>
-                        The reason why I created the templates is <strong>"efficiency".</strong> When you want to create a website, considering you are not a programmer, 
+                        The main quality I am concerned about, when it comes to the development process, is <strong>efficiency.</strong> When you want to create a website, assuming you are not a programmer, 
                         there are generally two ways. You can use one of the reputable website builders, and build your website by yourself, or you hire a freelancer to build it for you.
                         The former is quicker and cheaper, but you usually end up with a poorly designed website with missing features. The latter has an advantage of
                         professional designer/developer creating a fine product for you, however it costs a lot more money, and it causes a hassel communicating with your freelancer.
-                        I wanted to maximize the pros and minimize the cons of the both worlds in order to achieve efficient development process, and my solution is
-                        <strong> "prototypes".</strong>
+                        I wanted to maximize the pros and minimize the cons of the both worlds, therefore I've created my own <strong>templates </strong> 
+                        to achieve the efficient development process. 
+                    </p>
+                </div>
+                <div className={styles.why_templates}>
+                    <h2 className={styles.subtitle}>Why <span className="highlight">templates</span>?</h2>
+                    <p className={styles.description}>
+                        Those famous website builders already offer their templates to the users that they can fully customize padding, margin, section, color, and etc.. 
+                        What sets my templates apart from theirs is that my templates are rather focused on usability, performance, and precise design than the customization capability. 
+                        I try to create a solid and stylish guidance so that you do not miss anything but still be creative with the design. It will also bring me and my clients
+                        to the same page faster when talking about the project, so that we do not waste our time. 
                     </p>
                 </div>
                 <div className={styles.template_structure}>
