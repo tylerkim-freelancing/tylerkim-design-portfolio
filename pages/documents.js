@@ -216,6 +216,9 @@ export default function Documents({ metaData }) {
                         SEO is a process of improving the visibility of your webiste to the people on the search engine such as Google or Bing.
                         More visible the website becomes, more traffic it gets, and it simply means you will have more business through your website.
                     </p>
+                    <div className={styles.structure_img_container}>
+                        <Img alt="Reference image for good seo" src="/images/documents/seo.png"/>
+                    </div>
                     <br/>
                     <br/>
                     <h3>- Responsive Design</h3>

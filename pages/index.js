@@ -45,20 +45,20 @@ export default function Home({ templates, keywords, metaData }) {
         <div className={styles.container}>
           <div className={styles.main}>
             <h1 className={styles.title}>
-              <span className='highlight'>The best</span> portfoilo website solution for you.
+              <span className='highlight'>The best</span> portfoilo website solution for you
             </h1>
             <p>
-              I am the best freelance developer/designer who can create a portfolio website that will make you look professional for a <strong>cheaper</strong> price than your average grocery bill, 
-              and deliver it to you <strong>faster</strong> than Amazon prime.
-            </p>
+              I am the best freelance developer/designer who specializes in a portfolio website that will make you look <strong>professional</strong> and <strong>creative. </strong>
+              I can build your premium website <strong>cheaper</strong>, <strong>better</strong>, and <strong>faster</strong> than any other freelancer.
+            </p> 
             <Slideshow templates={templates}/>
           </div>
 
           <div className={styles.intro_template}>
-            <h1 className={styles.title}><span className='highlight'>Customizable</span> templates that you can use <span className='highlight'>on the go</span> that checks all the boxes.</h1>
+            <h1 className={styles.title}>The <span className='highlight'>template-based</span> web development that checks <span className='highlight'>all</span> the boxes</h1>
             <p>
-              I have thoughtfully designed my templates so they are <strong>ready</strong> to serve your contents with unique styles. I also packed them with 
-              the latest <strong>essential features</strong> that all the modern websites are required to have.
+            I have prepared various templates which will become a boilerplate for your website to make it <strong>cheaper</strong>, <strong>better</strong>, and <strong>faster</strong>. 
+            I have packed them with all the <strong>essential</strong> sections and features for a portfolio website, so you can use them right out of the box or <strong>customize</strong> them to fit your purpose perfectly.
             </p>
             <div className={styles.carousel_container}>
               <div className={styles.carousel}>
