@@ -17,6 +17,7 @@ $component_margin_mobile: 150px;
 
 .title {
   @extend %title_style;
+  text-align: center
 }
 
 .subtitle {
@@ -251,4 +252,27 @@ to {
   @include breakpoint(mobile) {
     gap: 10px;
   }
+}
+
+.upgradable {
+  margin-top: $component_margin;
+  width: 1025px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include breakpoint(mobile) {
+    margin-top: $component_margin_mobile;;
+  }
+  
+  & > p {
+    margin: 50px 0;
+    width: 70%;
+    text-align: center;
+    @include breakpoint(mobile) {
+      width: 100%;
+    }
+  }
+
+
 }

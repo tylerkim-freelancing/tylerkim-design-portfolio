@@ -96,6 +96,15 @@ export default function Home({ templates, keywords, metaData }) {
               <Link href='/templates'><button>Explore templates &rarr;</button></Link>
             </div>
           </div>
+          <div className={styles.upgradable}> 
+              <h1 className={styles.title}>Ready for your <span className='highlight'>expansion</span></h1>
+              <p>
+              I know your idea and passion will keep growing. You've got yourself a portfolio website to start presenting your works, 
+              and sometimes later, now you want to take it to the next level. It could be writing journals for subscription or selling 
+              your goods/products from your website. I have prepared additional features that can easily integrate into your website to 
+              support the expansion without breaking the design consistency. In addition, I will constantly update more powerful features in the future.
+              </p>
+          </div>
         </div>
       </Layout>
     </>
