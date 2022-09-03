@@ -9,22 +9,18 @@
     },
     {
         "name": "Search Engine Optimization",
-        "description": "Search Engine Optimization(SEO) is a process to help search engines like Google to crawl your website better, so the website acquires higher priority in the search results. I follow the best practices when I create my templates so they can obtain more user access from the internet."
+        "description": "The Search Engine Optimization(SEO) is a process to help search engines like Google to crawl your website better, so the website acquires higher priority in the search results. I follow the best practices when I create my templates so they can obtain more user access from the internet."
     },
     {
         "name": "Responsive Design",
-        "description": "My templates are designed to be responsive to various device type. You can expect many users accessing your website from different devices without any problems."
+        "description": "I designed my templates to adjust to fit different screen sizes so that they render well regardless of the device type."
     },
     {
-        "name": "Manegable Contents",
-        "description": "All of my tempaltes are provided with the dedicated control panel for you to manage your contents easily without going through hassle to communicate with me."
+        "name": "Content Management System",
+        "description": "The Content Management System(CMS) is software to create and modify digital content. All of my templates are integrated with CMS for you to update your website conveniently."
     },
     {
-        "name": "Upgradable",
-        "description": "My templates are packed with the essential components required for a portfolio website, but you may also upgrade it with additional feature if needed. Blog and E-Commerce are the currently offered additional feature, and more feature will be updated in the future."
-    },
-    {
-        "name": "Optimized for Social Media",
-        "description": "My templates come with Open Graph meta tags, which displays a brief information about your website as intended when you share the link of your website on social media. It makes your share look more legitimate and informative to the users."
+        "name": "Open Graph Meta Tags",
+        "description": "Open Graph is an internet protocol to determine how URLs are displayed when shared on social media. My templates come with default Open Graph tags, and you can also modify them through CMS."
     }
 ]
