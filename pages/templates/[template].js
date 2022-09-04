@@ -41,13 +41,13 @@ export default function Template({ template }) {
 
     const setting_btn = {
       on: {
-        opacity: 1,
-        display: 'block'
-      },
+        x: 0,
+        display: 'flex'
+       },
       off: {
-        opacity: 0,
+        x: -100,
         transitionEnd: {
-          display: 'none'
+        display: 'none'
         }
       }
     }
@@ -60,19 +60,19 @@ export default function Template({ template }) {
         margin: '0px 0px 0px 0px'
       },
       mobile: {
-        width: '450px',
-        height: '800px',
+        width: '350px',
+        height: '600px',
         borderRadius: '15px',
-        margin: '50px 0px 50px 0px'
+        margin: '150px 0px 50px 0px'
       }
     }
 
     const frame = {
       desktop: {
-        display: 'none'
+        opacity: 0
       },
       mobile: {
-        display: 'flex'
+        opacity: 1
       }
     }
     return(
@@ -84,12 +84,12 @@ export default function Template({ template }) {
           <motion.img 
             onClick={() => setIsToggled(true)} 
             className={styles.setting_btn} 
-            src='/setting.svg'
+            src='/setting.png'
             variants={setting_btn}
-            initial='on'
+            initial='off'
             animate={ isToggled ? 'off' : 'on' }
+            transition={{ type: 'just' }}
             />
-
             <motion.div 
               className={styles.info}
               variants={modal}
@@ -99,7 +99,9 @@ export default function Template({ template }) {
                 <img onClick={() => setIsToggled(false)} className={styles.close_btn} src='/close.svg'/>
                 <h2>{ template.name }</h2>
                 <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur condimentum in lacus et finibus. Maecenas lectus nunc, pellentesque et elit nec, blandit molestie tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse eget dui ut erat congue finibus. Maecenas neque nibh, venenatis in tempus aliquam, luctus nec tortor.
+                  * You can change theme color through theme setting<br/>
+                  * Actual website will behave more smoothly<br/>
+                  * Blog page is not included in the basic package
                 </p>
                 {/* View  Ports */}
                 <div style={{ display: isDesktop ? 'flex' : 'none' }} className={styles.viewports}>
@@ -115,12 +117,15 @@ export default function Template({ template }) {
               variants={view}
               initial='desktop'
               animate={ isMobile ? 'mobile' : 'desktop' }
+              transition={{ type: 'just' }}
               >
-              <motion.div className={styles.mobile_top} variants={frame}></motion.div>
+              <motion.img 
+                className={styles.mobile_frame} alt="mobile frame" src="/mobile_frame.png"
+                variants={frame}
+                initial='desktop'
+                animate={ isMobile ? 'mobile' : 'desktop' }
+                />
               <iframe className={styles.template} src={template.url}/>
-              <motion.div className={styles.mobile_bottom} variants={frame}>
-                <div></div>
-              </motion.div>
             </motion.div>
         </div>
       </>

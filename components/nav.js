@@ -31,10 +31,12 @@ export default function Nav({ title }) {
     
     const nav_desktop = {
         scrollUp: {
-            opacity: 1
+            display: "flex",
+            opacity: 1,
         },
         scrollDown: {
-            opacity: 0
+            opacity: 0,
+            transitionEnd: { display: 'none' }
         }
     }
 
@@ -51,19 +53,18 @@ export default function Nav({ title }) {
 
     return(
         <>
-        <div className={styles.nav_container}>
-            <Link href='/'><motion.h1
-                variants={nav_desktop}
-                initial='scrollUp'
-                animate={ isScrollDown ? 'scrollDown' : 'scrollUp' }
-                >
-                TylerKim_design
-            </motion.h1></Link>
-            <motion.ul 
-                className={styles.nav}
-                variants={nav_desktop}
-                initial='scrollUp'
-                animate={ isScrollDown ? 'scrollDown' : 'scrollUp' }>
+        <motion.div 
+            className={styles.nav_container}
+            variants={nav_desktop}
+            initial='scrollUp'
+            animate={ isScrollDown ? 'scrollDown' : 'scrollUp' }>
+            <Link href='/'>
+                <h1>
+                    TylerKim_design
+                </h1>
+            </Link>
+            <ul 
+                className={styles.nav}>
                 <Link href="/">
                     <li>
                         <a className={ title === 'Home' ? styles.active_route : 'dummy' }>
@@ -92,8 +93,8 @@ export default function Nav({ title }) {
                         </a>
                     </li>
                 </Link>
-            </motion.ul>
-        </div>
+            </ul>
+        </motion.div>
 
         {/* Mobile Nav */}
         <div className={styles.nav_mobile_container}>

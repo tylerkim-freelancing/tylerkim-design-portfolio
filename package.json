@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "contentful": "^9.1.34",
+    "draggable": "^4.2.0",
     "framer-motion": "^3.2.1",
     "next": "^12.1.6",
     "react": "17.0.1",
