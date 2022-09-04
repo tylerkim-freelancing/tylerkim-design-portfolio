@@ -261,9 +261,11 @@ to {
   flex-direction: column;
   align-items: center;
 
-  @include breakpoint(mobile) {
-    margin-top: $component_margin_mobile;
+  @include breakpoint(tablet_mobile) {
     width: 100%;
+  }
+  @include breakpoint(tablet_mobile) {
+    margin-top: $component_margin_mobile;
   }
   
   & > p {

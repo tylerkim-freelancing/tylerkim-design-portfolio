@@ -2,18 +2,21 @@
 
 // logo font
 @font-face {
+  font-display: swap;
   font-family: 'ShadowsIntoLight';
   src: url('/fonts/ShadowsIntoLight-Regular.ttf');
 }
 
 // title font 
 @font-face {
+  font-display: swap;
   font-family: 'BebasNeue';
   src: url('/fonts/BebasNeue-Regular.ttf');
 }
 
 // text font 
 @font-face {
+  font-display: swap;
   font-family: 'Roboto';
   src: url('/fonts/Roboto-Regular.ttf');
 }
