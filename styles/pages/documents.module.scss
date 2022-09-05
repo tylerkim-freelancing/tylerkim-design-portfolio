@@ -36,7 +36,7 @@ $component_margin_mobile: 100px;
         }
 
         & > h3 {
-            margin-bottom: 50px;
+            margin-bottom: 25px;
 
             @include breakpoint(mobile) {
                 margin-bottom: 25px;
@@ -44,28 +44,29 @@ $component_margin_mobile: 100px;
         }
     }
 
-    ul {
+    ul, ol {
         padding-left: 50px;
-    }
-    li {
-        line-height: 1.5em;
-        list-style: disc;
-
-        ul {
-            padding-left: 20px;
+        li {
+            line-height: 1.5em;
+    
+            ul, ol {
+                padding-left: 20px;
+            }
+    
+            li  {
+                list-style: circle;
+            }
         }
-
-        li  {
-            list-style: circle;
-        }
     }
+    ul > li { list-style: disc; }
+    ol > li { list-style: decimal; }
 }
 
 .title {
     @extend %title_style;
 }
 
-.overview, .template_structure, .web_stack {
+.overview, .template_structure, .basic_features {
     align-self: flex-start;
 
     @include breakpoint(smallScreen) {
@@ -90,7 +91,7 @@ $component_margin_mobile: 100px;
     }
 }
 
-.why_templates, .basic_features {
+.how_does_it_work, .upgradable, .web_stack {
     align-self: flex-end;
 
     @include breakpoint(smallScreen) {

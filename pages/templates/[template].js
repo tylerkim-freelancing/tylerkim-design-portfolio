@@ -69,9 +69,13 @@ export default function Template({ template }) {
 
     const frame = {
       desktop: {
-        opacity: 0
+        opacity: 0,
+        transitionEnd:{
+          display: 'none'
+        }
       },
       mobile: {
+        display: 'block',
         opacity: 1
       }
     }

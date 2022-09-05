@@ -26,32 +26,45 @@ export default function Documents({ metaData }) {
                 <div className={styles.overview}>
                     <h2 className={styles.subtitle}><span className="highlight">Overview</span></h2>
                     <p className={styles.description}>
-                        The main quality I am concerned about, when it comes to the development process, is <strong>efficiency.</strong> When you want to create a website, assuming you are not a programmer, 
-                        there are generally two ways. You can use one of the reputable website builders, and build your website by yourself, or you hire a freelancer to build it for you.
-                        The former is quicker and cheaper, but you usually end up with a poorly designed website with missing features. The latter has an advantage of
-                        professional designer/developer creating a fine product for you, however it costs a lot more money, and it causes a hassel communicating with your freelancer.
-                        I wanted to maximize the pros and minimize the cons of the both worlds, therefore I've created my own <strong>templates </strong> 
-                        to achieve the efficient development process. 
+                    When you want to create a portfolio website, assuming you are not a programmer, 
+                    there are generally two ways. You can use one of the reputable website builders and build your website yourself, or hire a freelancer to make one for you. The former 
+                    would be a cheaper solution, but you usually end up with a poorly designed website with missing features. The latter offers a high-quality product personally designed 
+                    for you, but it costs a lot more and goes with the hassle of communicating with your freelancer. I have successfully adopted the pros and discarded the cons from both 
+                    worlds by creating a <strong>well-designed</strong> template with all the <strong>essential features</strong> and integrating the client's needs into the template.
                     </p>
                 </div>
-                <div className={styles.why_templates}>
-                    <h2 className={styles.subtitle}>Why <span className="highlight">templates</span>?</h2>
+
+                <div className={styles.how_does_it_work}>
+                    <h2 className={styles.subtitle}><span className="highlight">How</span> does it work?</h2>
                     <p className={styles.description}>
-                        Those famous website builders already offer their templates to the users that they can fully customize padding, margin, section, color, and etc.. 
-                        What sets my templates apart from theirs is that my templates are rather focused on usability, performance, and precise design than the customization capability. 
-                        I try to create a solid and stylish guidance so that you do not miss anything but still be creative with the design. It will also bring me and my clients
-                        to the same page faster when talking about the project, so that we do not waste our time. 
+                        My template will be the foundation of your website. They come with all the essential factors you would need for a portfolio website plus upgradable features(blog, e-commerce, and etc..), and you can flexibly transform one of them into your personal website.
+                        The benefits are the followings:
                     </p>
+                    <ul>
+                        <li>Fast production time</li>
+                        <li>Professional looking design</li>
+                        <li>Optimization for responsive design, search engine, performance, and accessibility</li>
+                        <li>Customizable color-theme</li>
+                        <li>Convenient theme swap from one template from another</li>
+                        <li>Constant updates with more designs and upgradable features</li>
+                    </ul>
+                    <p className={styles.description}>
+                    The development process is a lot simpler than what the other freelancers can offer. My templates completed most of the groundwork and are ready to be customized. The process will take the following five steps:                    </p>
+                    <ol>
+                        <li>Explore my templates, and choose one you like</li>
+                        <li>Request a project with the template name, color codes of your customization</li>
+                        <li>Delivery of your project within 1-2 business days</li>
+                        <li>Revision sessions</li>
+                        <li>Hosting your project under my instruction</li>
+                    </ol>
                 </div>
                 <div className={styles.template_structure}>
-                    <h2 className={styles.subtitle}>Thoughtfully designed <span className="highlight">layout</span> with a consistent structure</h2>
+                    <h2 className={styles.subtitle}>Thoughtfully designed page <span className="highlight">structure</span> and <span className="highlight">layout</span></h2>
                     <p className={styles.description}>
-                        All of my templates come with consistent page structure but layed out differently. I came up with the 
-                        following page layout to fit the general purpose of personal website, and additional section can be added
-                        to any of the pages upon request with some extra charge.
+                    All of my templates come with a consistent page structure and layout. I have designed them to fit the general purpose of a portfolio website, but you can also change the page layout or add more sections to any of the pages upon an appropriate request.
                     </p>
                     <h3>- Home</h3>
-                    <p>: This is your main page where it welcomes the users.</p>
+                    <p>: This is your main page.</p>
                     <ul>
                         <li>main image</li>
                         <li>main title</li>
@@ -70,7 +83,7 @@ export default function Documents({ metaData }) {
                     <br/>
                     <br/>
                     <h3>- About</h3>
-                    <p>: About page where you introduce yourself and describe what you do to your audience.</p>
+                    <p>: This is your about page to introduce yourself to your audience.</p>
                     <ul>
                         <li>main image(generally a profile picture)</li>
                         <li>main title</li>
@@ -93,7 +106,7 @@ export default function Documents({ metaData }) {
                     <br/>
                     <br/>
                     <h3>- Works</h3>
-                    <p>: The gallery page where you presents all your works with their thumbnail, title, and subtitle.</p>
+                    <p>: The gallery page where you present all your works with their thumbnail, title, and subtitle.</p>
                     <ul>
                         <li>
                             gallery of your works
@@ -108,7 +121,7 @@ export default function Documents({ metaData }) {
                     <br/>
                     <br/>
                     <h3>- [Work]</h3>
-                    <p>: This is where you can explain your individual project with details.</p>
+                    <p>: This is a page where you can explain the individual project with details.</p>
                     <ul>
                         <li>title of your work</li>
                         <li>subtitle of your work</li>
@@ -124,48 +137,41 @@ export default function Documents({ metaData }) {
                     <div className={styles.structure_img_container}>
                         <Img alt="Reference image for [work] page structure" src="/images/documents/structure_[work].png"/>
                     </div>
-                    <br/>
-                    <br/>
-                    <h3>- *blogs</h3>
-                    <p>: This is an additionally featured page where you can generally use as a blog. This page might as well be used as news, notices, or events page</p>
-                    <ul>
-                        <li>
-                            a list of posts
-                            <ul>
-                                <li>user can sort by updated date</li>
-                                <li>user can search by a keywoord</li>
-                                <li>each post is presetned in a card with title, updated date, description, and keyword tags</li>
-                                <li>a pagination</li>
-                            </ul>
-                        </li>
-                    </ul>
+                </div>
+
+                <div className={styles.upgradable}>
+                    <h2 className={styles.subtitle}><span className='highlight'>Upgradable</span> features</h2>
+                    <p className={styles.description}>
+                        I believe in the idea that your portfolio website can scale up to become a blog, e-commerce, and more. I offer additional features that can easily integrate into your portfolio website to support your expansion. Those features are engineered to keep the design consistency with the template your website is based on.
+                    </p>
+                    <h3>- Blog</h3>
+                    <p>
+                    You will have an additional blog page on your website. You can write a blog post with different sizes of headings, 
+                    paragraph text, embedded youtube videos, images, and external links. Your users can sort the posts by their updated date 
+                    and search them by keywords. This page is not only limited to a blog but can work as a journal, news, updates, or event page 
+                    for your audience by changing its route name. This page is currently demonstrated on my templates with the route name *blog.
+                    </p>
                     <div className={styles.structure_img_container}>
                         <Img alt="Reference image for blogs page structure" src="/images/documents/structure_blogs.png"/>
                     </div>
-                    <br/>
-                    <br/>
-                    <h3>- *[post]</h3>
-                    <p>: A post page for blogs where you can share idea/information with rich text.</p>
-                    <ul>
-                        <li>post title</li>
-                        <li>updated date</li>
-                        <li>keyword tags</li>
-                        <li>a rich text area you can insert followings:
-                            <ul>
-                                <li>differen sizes of headings (h1-h6)</li>
-                                <li>paragraphs</li>
-                                <li>images</li>
-                                <li>embedded youtube</li>
-                                <li>external links</li>
-                            </ul>
-                        </li>
-                    </ul>
                     <div className={styles.structure_img_container}>
                         <Img alt="Reference image for [post] page structure" src="/images/documents/structure_[post]1.png"/>
                     </div>
                     <div className={styles.structure_img_container}>
                         <Img alt="Reference image for [post] page structure" src="/images/documents/structure_[post]2.png"/>
                     </div>
+                    <br/>
+                    <br/>
+                    <h3>- E-Commerce</h3>
+                    <p>
+                        will be updated soon!
+                    </p>
+                    <br/>
+                    <br/>
+                    <h3>- Progressive Web App</h3>
+                    <p>
+                        will be updated soon!
+                    </p>
                 </div>
 
                 <div className={styles.basic_features}>
