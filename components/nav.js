@@ -98,16 +98,17 @@ export default function Nav({ title }) {
         </div>
 
         {/* Mobile Nav */}
-        <div className={styles.nav_mobile_container}>
-            <Link href='/'><motion.h1
-                variants={nav_desktop}
-                initial='scrollUp'
-                animate={ isScrollDown ? 'scrollDown' : 'scrollUp' }
-                >
-                TylerKim_design
-            </motion.h1></Link>
-            <img onClick={() => setIsToggled(prevState => !prevState)} className={styles.dropdown_btn} src={`/${isToggled ? 'close.svg' : 'menu.svg'}`}/>
-        </div>  
+
+        <Link href='/'><motion.h1
+            variants={nav_desktop}
+            initial='scrollUp'
+            animate={ isScrollDown ? 'scrollDown' : 'scrollUp' }
+            className={styles.logo_mobile}
+            >
+            TylerKim_design
+        </motion.h1></Link>
+        <img onClick={() => setIsToggled(prevState => !prevState)} className={styles.dropdown_btn} src={`/${isToggled ? 'close.svg' : 'menu.svg'}`}/>
+
         <motion.ul 
             className={styles.nav_mobile}
             variants={nav_mobile}

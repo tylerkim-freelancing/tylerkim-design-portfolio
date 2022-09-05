@@ -231,8 +231,12 @@ to {
 
 .keyword {
   background-color: #f4f4f4;
-  padding: 20px;
+  padding: 50px;
   border-radius: 10px;
+
+  @include breakpoint(mobile) {
+    padding: 25px;
+  }
   & > h4 {
     margin-bottom: 20px;
     text-align: start;
@@ -242,6 +246,7 @@ to {
 .button_container {
   margin-top: 100px;
   display: flex;
+  justify-content: center;
   gap: 50px;
 
   & > button {
@@ -251,79 +256,5 @@ to {
 
   @include breakpoint(mobile) {
     gap: 10px;
-  }
-}
-
-.upgradable {
-  margin-top: $component_margin;
-  width: 1025px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  @include breakpoint(tablet_mobile) {
-    width: 100%;
-  }
-  @include breakpoint(tablet_mobile) {
-    margin-top: $component_margin_mobile;
-  }
-  
-  & > p {
-    margin: 50px 0;
-    width: 70%;
-    text-align: center;
-    @include breakpoint(mobile) {
-      width: 100%;
-    }
-  }
-}
-
-.card_container {
-  width: 1025px;
-  display: flex;
-  align-items: center;
-  gap: 25px;
-  margin-bottom: 50px;
-
-  @include breakpoint(tablet_mobile) {
-    width: 100%;
-  }
-  @include breakpoint(tablet) {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-    justify-content: center;
-  }
-
-  @include breakpoint(mobile) {
-    flex-direction: column;
-  }
-
-  & > h2 { 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width:  250px;
-    height: 300px;
-  }
-}
-
-.card {
-  box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
-  border-radius: 15px;
-  width: 250px;
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 25px;
-
-  & > img {
-    width: 50px;
-    height: 50px;
-  }
-
-  & > p {
-    margin-top: 50px;
   }
 }

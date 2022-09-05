@@ -96,40 +96,6 @@ export default function Home({ templates, keywords, metaData }) {
               <Link href='/templates'><button>Explore templates &rarr;</button></Link>
             </div>
           </div>
-          <div className={styles.upgradable}> 
-              <h1 className={styles.title}>Ready for the <span className='highlight'>expansion</span></h1>
-              <p>
-              I know your idea and passion will keep growing. You've got yourself a portfolio website to start presenting your works, 
-              and sometimes later, you may want to take it to the <strong>next level</strong>. It could be writing journals for subscription or selling 
-              your goods/products on your website. I have prepared <strong>additional features</strong> that can easily integrate into your website to 
-              support the expansion without breaking the design consistency. In addition, I will constantly update <strong>more</strong> powerful features 
-              in the future to back you up.
-              </p>
-              <div className={styles.card_container}>
-                <div className={styles.card}>
-                  <h2 className={styles.subtitle}>Blog</h2>
-                  <img alt='blog icon' src='/blog.png'/>
-                  <p>
-                    You can write blog posts, news, updates, or journals depending on your needs.
-                  </p>
-                </div>
-                <div className={styles.card}>
-                  <h2 className={styles.subtitle}>E-Commerce</h2>
-                  <img alt='e-commerce icon' src='/shopping.png'/>
-                  <p>
-                    COMING SOON!
-                  </p>
-                </div>
-                <div className={styles.card}>
-                  <h2 className={styles.subtitle}>PWA</h2>
-                  <img alt='pwa icon' src='/mobile-app.png'/>
-                  <p>
-                    COMING SOON!
-                  </p>
-                </div>
-                <h2>and more...</h2>
-              </div>
-          </div>
         </div>
       </Layout>
     </>

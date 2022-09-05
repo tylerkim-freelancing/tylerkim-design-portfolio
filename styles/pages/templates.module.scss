@@ -24,6 +24,18 @@ $component_margin: 150px;
             width: 100%;
         }
     }
+
+    & > ul {
+        margin-top: 50px;
+        padding-left: 50px;
+        & > li { 
+            list-style: disc; 
+            margin-bottom: 10px;
+            & > img {
+                width: 1em;
+            }
+        }
+    }
 }
 
 .gallery {

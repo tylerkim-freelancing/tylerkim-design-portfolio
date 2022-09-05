@@ -29,13 +29,18 @@ export default function Templates({templates}) {
             <div className={styles.container}>
               <div className={styles.intro}>
                 <h1>The <span className='highlight'>most advanced</span> templates are here.</h1>
-                <p>
+                {/* <p>
                   Feel free to explore the templates and see what you like. You can stick to the current theme of the template you are interested in, but you
                   can also change the theme by changing the color, fonts, and some layout to fit your taste. If you wanna learn more about how my templates
                   are more superior than the standard templates in the market, click the following. 
-                </p>
-                <br/>
-                <Link href='/documents'><a>learn more &rarr;</a></Link>
+                </p> */}
+                  <ul>
+                    <li>All the templates are serving the content of an imaginary artist named <strong>John Doe</strong>.</li>
+                    <li>Basic package comes with <strong>Home</strong>, <strong>About</strong>, <strong>Works</strong> pages.</li>
+                    <li><strong>*Blog</strong> page is an additional feature you get when you upgrade your website.</li>
+                    <li>You can change the color theme of the template by clicking <img alt="paint icon" src='/theme.png'/> button.</li>
+                    <li>A new template will be launched <strong>every two weeks</strong>.</li>
+                  </ul>
               </div>
                 <div className={styles.gallery}>
                     {
