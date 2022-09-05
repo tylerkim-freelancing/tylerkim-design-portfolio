@@ -53,17 +53,20 @@ export default function Nav({ title }) {
 
     return(
         <>
-        <motion.div 
-            className={styles.nav_container}
-            variants={nav_desktop}
-            initial='scrollUp'
-            animate={ isScrollDown ? 'scrollDown' : 'scrollUp' }>
+        <div 
+            className={styles.nav_container}>
             <Link href='/'>
-                <h1>
+                <motion.h1
+                      variants={nav_desktop}
+                      initial='scrollUp'
+                    animate={ isScrollDown ? 'scrollDown' : 'scrollUp' }>
                     TylerKim_design
-                </h1>
+                </motion.h1>
             </Link>
-            <ul 
+            <motion.ul 
+                variants={nav_desktop}
+                initial='scrollUp'
+                animate={ isScrollDown ? 'scrollDown' : 'scrollUp' }
                 className={styles.nav}>
                 <Link href="/">
                     <li>
@@ -93,8 +96,8 @@ export default function Nav({ title }) {
                         </a>
                     </li>
                 </Link>
-            </ul>
-        </motion.div>
+            </motion.ul>
+        </div>
 
         {/* Mobile Nav */}
         <div className={styles.nav_mobile_container}>
