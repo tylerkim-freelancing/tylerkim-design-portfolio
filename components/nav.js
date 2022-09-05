@@ -31,12 +31,10 @@ export default function Nav({ title }) {
     
     const nav_desktop = {
         scrollUp: {
-            display: "flex",
             opacity: 1,
         },
         scrollDown: {
             opacity: 0,
-            transitionEnd: { display: 'none' }
         }
     }
 

@@ -61,6 +61,10 @@ $component_margin: 200px;
     display: flex;
     flex-direction: column;
     width: 1025px;
+
+    @include breakpoint(tablet_mobile) {
+        width: 100%;
+    }
 }
 
 .card {
@@ -79,6 +83,10 @@ $component_margin: 200px;
     display: flex;
     flex-direction: column;
     width: 1025px;
+
+    @include breakpoint(tablet_mobile) {
+        width: 100%;
+    }
 
     & > p {
         margin-top: 50px;
