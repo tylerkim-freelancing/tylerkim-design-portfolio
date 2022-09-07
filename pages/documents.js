@@ -224,6 +224,11 @@ export default function Documents({ metaData }) {
                         Website design needs to be optimized to display all the contents properly through various devices. All the traffic to your
                         webiste are coming from a different type of device, it is a must to optimize your website to be responsive to any size of the platform.
                     </p>
+                    <div className={styles.responsive_reference}>
+                        <img alt="a template in desktop view" src="/images/templates/desktop/newtro.png"/>
+                        <p><strong>&rarr;</strong></p>
+                        <img alt="a template in mobile view" src="/images/templates/mobile/newtro.png"/>
+                    </div>
                 </div>
 
                 <div className={styles.web_stack}>

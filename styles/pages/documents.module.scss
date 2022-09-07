@@ -117,6 +117,26 @@ $component_margin_mobile: 100px;
     }
 }
 
+.responsive_reference {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+
+    & > img {
+        height: 20vw;
+        max-height: 400px;
+        @include breakpoint(tablet_mobile) {
+            height: 30vw;
+        }
+    }
+
+    & > p {
+        margin: 0 20px;
+    }
+}
+
 .equation {
     align-self: center;
     display: flex;
