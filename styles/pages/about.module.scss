@@ -56,6 +56,17 @@ $component_margin: 200px;
     }
 }
 
+.template_based {
+    margin-top: $component_margin;
+    display: flex;
+    flex-direction: column;
+    width: 1025px;
+
+    @include breakpoint(tablet_mobile) {
+        width: 100%;
+    }
+}
+
 .work_process {
     margin-top: $component_margin;
     display: flex;

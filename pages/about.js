@@ -14,13 +14,17 @@ export default function About() {
                     <div id='contact' className={styles.about_me}>
                         <h1 className={styles.title}><span className='highlight'>Tyler Kim</span><br/>A Web Developer</h1>
                         <p>
-                            Hi! My name is Tyler Kim, the best web developer/designer who specialized in personal websites that can potentially grow into a business. 
-                            I always admire people who are so passionate with their creative works, and I would love to help them delivering the idea
-                            to the people.
+                        Hey! I'm Tyler Kim, the best web developer/designer, and I have the best web solution for your portfolio website. 
+                        I admire people who are passionate about their unique craftsmanship, and it is my passion to make them 
+                        look more professional and get them the attention that they deserve. 
                         </p>
                         <h4>TylerKim.design@gmail.com</h4>
                         <h4>917 888 8888</h4>
                     </div>
+                </div>
+
+                <div className={styles.template_based}>
+                    <h1 className={styles.title}>What is the <span className='highlight'>template-based</span> web development?</h1>
                 </div>
                 
                 <div className={styles.work_process}>
