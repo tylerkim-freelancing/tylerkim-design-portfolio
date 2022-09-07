@@ -249,11 +249,6 @@ to {
   justify-content: center;
   gap: 50px;
 
-  & > button {
-    padding: 5px;
-    cursor: pointer;
-  }
-
   @include breakpoint(mobile) {
     gap: 10px;
   }

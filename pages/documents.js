@@ -35,7 +35,7 @@ export default function Documents({ metaData }) {
                 </div>
 
                 <div className={styles.how_does_it_work}>
-                    <h2 className={styles.subtitle}><span className="highlight">How</span> does it work?</h2>
+                    <h2 className={styles.subtitle}><span className="highlight">Why</span> using template?</h2>
                     <p className={styles.description}>
                         My template will be the foundation of your website. They come with all the essential factors you would need for a portfolio website plus upgradable features(blog, e-commerce, and etc..), and you can flexibly transform one of them into your personal website.
                         The benefits are the followings:
@@ -48,22 +48,14 @@ export default function Documents({ metaData }) {
                         <li>Convenient theme swap from one template from another</li>
                         <li>Constant updates with more designs and upgradable features</li>
                     </ul>
-                    <p className={styles.description}>
-                    The development process is a lot simpler than what the other freelancers can offer. My templates completed most of the groundwork and are ready to be customized. The process will take the following five steps:                    </p>
-                    <ol>
-                        <li>Explore my templates, and choose one you like</li>
-                        <li>Request a project with the template name, color codes of your customization</li>
-                        <li>Delivery of your project within 1-2 business days</li>
-                        <li>Revision sessions</li>
-                        <li>Hosting your project under my instruction</li>
-                    </ol>
                 </div>
+
                 <div className={styles.template_structure}>
                     <h2 className={styles.subtitle}>Thoughtfully designed page <span className="highlight">structure</span> and <span className="highlight">layout</span></h2>
                     <p className={styles.description}>
                     All of my templates come with a consistent page structure and layout. I have designed them to fit the general purpose of a portfolio website, but you can also change the page layout or add more sections to any of the pages upon an appropriate request.
                     </p>
-                    <h3>- Home</h3>
+                    <h3>&diams; Home</h3>
                     <p>: This is your main page.</p>
                     <ul>
                         <li>main image</li>
@@ -82,7 +74,7 @@ export default function Documents({ metaData }) {
                     </div>
                     <br/>
                     <br/>
-                    <h3>- About</h3>
+                    <h3>&diams; About</h3>
                     <p>: This is your about page to introduce yourself to your audience.</p>
                     <ul>
                         <li>main image(generally a profile picture)</li>
@@ -105,7 +97,7 @@ export default function Documents({ metaData }) {
                     </div>
                     <br/>
                     <br/>
-                    <h3>- Works</h3>
+                    <h3>&diams; Works</h3>
                     <p>: The gallery page where you present all your works with their thumbnail, title, and subtitle.</p>
                     <ul>
                         <li>
@@ -120,7 +112,7 @@ export default function Documents({ metaData }) {
                     </div>
                     <br/>
                     <br/>
-                    <h3>- [Work]</h3>
+                    <h3>&diams; [Work]</h3>
                     <p>: This is a page where you can explain the individual project with details.</p>
                     <ul>
                         <li>title of your work</li>
@@ -144,7 +136,7 @@ export default function Documents({ metaData }) {
                     <p className={styles.description}>
                         I believe in the idea that your portfolio website can scale up to become a blog, e-commerce, and more. I offer additional features that can easily integrate into your portfolio website to support your expansion. Those features are engineered to keep the design consistency with the template your website is based on.
                     </p>
-                    <h3>- Blog</h3>
+                    <h3>&diams; Blog</h3>
                     <p>
                     You will have an additional blog page on your website. You can write a blog post with different sizes of headings, 
                     paragraph text, embedded youtube videos, images, and external links. Your users can sort the posts by their updated date 
@@ -162,13 +154,13 @@ export default function Documents({ metaData }) {
                     </div>
                     <br/>
                     <br/>
-                    <h3>- E-Commerce</h3>
+                    <h3>&diams; E-Commerce</h3>
                     <p>
                         will be updated soon!
                     </p>
                     <br/>
                     <br/>
-                    <h3>- Progressive Web App</h3>
+                    <h3>&diams; Progressive Web App</h3>
                     <p>
                         will be updated soon!
                     </p>
@@ -181,7 +173,7 @@ export default function Documents({ metaData }) {
                         have to pay for your website. There are few essential features that all the modern website must have to meet the 
                         standard, and all of my templates come with those features as default without extra charge.
                     </p>
-                    <h3>- CMS (Content Management System)</h3>
+                    <h3>&diams; CMS (Content Management System)</h3>
                     <p>
                         A content management system is a software that lets a user to create, modify and delete the content of a website without
                         having any technical knowledge. Obviously, you will need a lot of adjustments on your web contents as you create a new work, 
@@ -197,7 +189,7 @@ export default function Documents({ metaData }) {
                     <br/>
                     <br/>
                
-                    <h3>- Open Graph Meta Tags</h3>
+                    <h3>&diams; Open Graph Meta Tags</h3>
                     <p>
                         Open Graph meta tags on your website controls how your shared URL on social media will be displayed. With OG tags, you can
                         share your website's URL just as you intended, and you can give the people a general idea of what your website will be about. 
@@ -217,7 +209,7 @@ export default function Documents({ metaData }) {
                     </div>
                     <br/>
                     <br/>
-                    <h3>- SEO (Search Engine Optimization)</h3>
+                    <h3>&diams; SEO (Search Engine Optimization)</h3>
                     <p>
                         SEO is a process of improving the visibility of your webiste to the people on the search engine such as Google or Bing.
                         More visible the website becomes, more traffic it gets, and it simply means you will have more business through your website.
@@ -227,7 +219,7 @@ export default function Documents({ metaData }) {
                     </div>
                     <br/>
                     <br/>
-                    <h3>- Responsive Design</h3>
+                    <h3>&diams; Responsive Design</h3>
                     <p>
                         Website design needs to be optimized to display all the contents properly through various devices. All the traffic to your
                         webiste are coming from a different type of device, it is a must to optimize your website to be responsive to any size of the platform.
@@ -243,10 +235,10 @@ export default function Documents({ metaData }) {
                     </p>
                     <div className={styles.equation}>
                         <img alt="next js logo" src="/images/nextjs.png"/>+
-                        <img alt="vercel logo" src="/images/vercel.png"/>+
+                        <img alt="netlify logo" src="/images/netlify.png"/>+
                         <img alt="contentful logo" src="/images/contentful.png"/>
                     </div>
-                    <h3>- Next JS</h3>
+                    <h3>&diams; Next JS</h3>
                     <p>
                         Next JS is a React framework with additional feautures including server-side rendering and static site generation.
                         It is used create the front-end of my templates which the users will visually experience on the browser. The best part
@@ -256,7 +248,7 @@ export default function Documents({ metaData }) {
                     </p>
                     <br/>
                     <br/>
-                    <h3>- Vercel</h3>
+                    <h3>&diams; Netlify</h3>
                     <p>
                         Vercel is a cloud platform that enables developers to host their front-end software. Vercel makes it very easy for the developers
                         to deploy their websites to a global CDN (Content Delivery Network) which has its globally distributed network of proxy servers
@@ -265,7 +257,7 @@ export default function Documents({ metaData }) {
                     </p>
                     <br/>
                     <br/>
-                    <h3>- Contentful</h3>
+                    <h3>&diams; Contentful</h3>
                     <p>
                         Sanity is a platform where you can create contents and serve them onto your websites. Its independent content management system
                         provides you more flexbility on choosing the design and layout of your websites as it only holds the content, and you can decide 

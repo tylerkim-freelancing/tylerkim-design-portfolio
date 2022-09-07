@@ -92,7 +92,7 @@ export default function Home({ templates, keywords, metaData }) {
                 }
             </div>
             <div className={styles.button_container}>
-              <Link href='/documents'><button>Learn more &rarr;</button></Link>
+              <Link href='/about'><button>Learn more &rarr;</button></Link>
               <Link href='/templates'><button>Explore templates &rarr;</button></Link>
             </div>
           </div>

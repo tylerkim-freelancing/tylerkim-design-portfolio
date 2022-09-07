@@ -7,55 +7,81 @@ export default function About() {
     return(
         <Layout title='About'>
             <div className={styles.container}>
-                <div className={styles.main}>
-                    <div className={styles.profile_container}>
-                        <Img src='/images/profile.jpg'/>
-                    </div>
-                    <div id='contact' className={styles.about_me}>
-                        <h1 className={styles.title}><span className='highlight'>Tyler Kim</span><br/>A Web Developer</h1>
-                        <p>
-                        Hey! I'm Tyler Kim, the best web developer/designer, and I have the best web solution for your portfolio website. 
-                        I admire people who are passionate about their unique craftsmanship, and it is my passion to make them 
-                        look more professional and get them the attention that they deserve. 
-                        </p>
-                        <h4>TylerKim.design@gmail.com</h4>
-                        <h4>917 888 8888</h4>
-                    </div>
+                <div id='contact' className={styles.about_me}>
+                    <h1 className={styles.title}><span className='highlight'>Tyler Kim</span><br/>Web Developer/Designer</h1>
+                    <p>
+                    Hey! I'm Tyler Kim, the best web developer/designer, and I have the best web solution for your portfolio website. 
+                    I admire people who are passionate about their unique craftsmanship, and it is my passion to make them 
+                    look more professional and get them the attention that they deserve. 
+                    </p>
+                    <h4>TylerKim.design@gmail.com</h4>
+                    <h4>917 888 8888</h4>
                 </div>
 
                 <div className={styles.template_based}>
                     <h1 className={styles.title}>What is the <span className='highlight'>template-based</span> web development?</h1>
+                    <p>
+                    I create <strong>uniquely styled</strong> templates ready to serve your portfolio content with <strong>high performance</strong>. 
+                    My templates are conveniently usable right out of the box, but you may request me to modify them to fit your case precisely. 
+                    You would waste a lot of time 
+                    discussing with your freelancer for design agreement, walking through technical requirements together, and compromising on the price. 
+                    Time is money, and I do not waste it by laying the groundwork beforehand through my templates so I can provide you with a high-quality 
+                    project <strong>cheaper</strong>.
+                    </p>
+                    <br/>
+                    <br/>
+                    <Link href='/documents'><button>Learn more about the templates &rarr;</button></Link>
                 </div>
                 
                 <div className={styles.work_process}>
-                    <h1 className={styles.title}><span className='highlight'>How</span> it works.</h1>
+                    <h1 className={styles.title}><span className='highlight'>How</span> does it work?</h1>
                     <div className={styles.card}>
                         <h4 className={styles.title}>1. Browse my templates</h4>
                         <p>
-                            Go to <Link href={'/templates'}><a target='_blank'><strong>templates</strong></a></Link> page and see what you like. There is a theme
-                            setting feature where you can customize the theme of the template. Theme setting window will show you the color code that you used
-                            for each component. you can remember them and tell me when you request a project.
+                            Go to <Link href={'/templates'}><a target='_blank'><strong>Templates(click)</strong></a></Link> page and see what you like. You can find open the theme
+                            setting panel by clicking <img alt='theme setting button' src='/theme.png'/> where you can customize the color theme of the template. Keep exploring the 
+                            templates until you find the best one for yourself with the perfect customization.
                         </p>
                     </div>
                     <div className={styles.card}>
                         <h4 className={styles.title}>2. Request a project</h4>
                         <p>
-                            You can request a project through either <a target='_blank' href="https://www.fiverr.com/"><strong>Fiverr</strong></a> or 
-                            <a target='_blank' href="https://www.upwork.com/"><strong> Upwork</strong></a>. You will get the same quality of the project for the same price,
-                            however, as of writting this moment, Fiverr charges you 5.5% of payment processing fee while Upwork offers 3%. When you request a project,
-                            please let me know the name of the template you liked, the color codes of your customization, and any additional feature you need for your website.
+                            You can request a project through either <a target='_blank' href="https://www.fiverr.com/"><strong>Fiverr(click)</strong></a> or 
+                            <a target='_blank' href="https://www.upwork.com/"><strong> Upwork(click)</strong></a>. There will be no difference between the two 
+                            platforms except for the payment processing fee. When you request a project, please let me know the name of the template you've selected with 
+                            the color codes of your customization, the pricing plan you are getting, and any modification request to the template. 
                         </p>
                     </div>
                     <div className={styles.card}>
-                        <h4 className={styles.title}>3. Revision</h4>
+                        <h4 className={styles.title}>3. Upload your projects</h4>
                         <p>
-                            If we come to 
+                        You will be managing your website content through the headless CMS server called <a target='_blank' href="https://www.contentful.com/features/"><strong>Contentful(click)</strong></a>. I will build your management environment on Contentful using your GitHub account(I will help you make one if you don't have one). 
+                        When the setup gets completed, you will be asked to upload your projects for your portfolio website to Contentful as guided.
                         </p>
                     </div>
                     <div className={styles.card}>
-                        <h4 className={styles.title}>4. Done!</h4>
+                        <h4 className={styles.title}>4. Proposal</h4>
                         <p>
-                            
+                            I will deliver a proposal website based on your request and projects within <strong>1-2 business days</strong>. 
+                        </p>
+                    </div>
+                    <div className={styles.card}>
+                        <h4 className={styles.title}>5. Revision</h4>
+                        <p>
+                        You will have <strong>two free</strong> revision sessions for your project. For each revision session, you can let me know what to change for your satisfaction, and I will deliver you the improved proposal. 
+                        </p>
+                    </div>
+                    <div className={styles.card}>
+                        <h4 className={styles.title}>6. Hosting</h4>
+                        <p>
+                        After the revision, I will deploy your project through the Netlify server using the same GitHub account you used to upload your projects for you. 
+                        </p>
+                    </div>
+                    <div className={styles.card}>
+                        <h4 className={styles.title}>+ Upgrades</h4>
+                        <p>
+                        You can always upgrade your portfolio website with the additional feature I offer(the blog page is currently available, and I will update more in the future). 
+                        In addition, you can easily swap the design theme from the current one to another using a different template and wait for more template updates every two weeks. 
                         </p>
                     </div>
                 </div>
@@ -63,8 +89,8 @@ export default function About() {
                 <div className={styles.and_more}>
                     <h1 className={styles.title}>And <span className='highlight'>more</span>...</h1>
                     <p>
-                        If you have a question that I could not clear out for you, or if there is a project in your mind besides just using my template, 
-                        please contact me through my <a href="#contact"><strong> email</strong></a> or <a href="#contact"><strong> text</strong></a>. I will be more than happy to assist you in any possible way!
+                    If you have a question I failed to clarify, or if there is any project in your mind besides the portfolio website, you contact me by 
+                    <a href="#contact"><strong> email</strong></a> or <a href="#contact"><strong> text</strong></a>. I will be more than happy to assist you in any possible way!
                     </p>
                 </div>
             </div>
