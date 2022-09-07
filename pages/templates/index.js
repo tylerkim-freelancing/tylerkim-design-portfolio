@@ -36,7 +36,7 @@ export default function Templates({templates}) {
                 </p> */}
                   <ul>
                     <li>All the templates are serving the content of an imaginary artist named <strong>John Doe</strong>.</li>
-                    <li>Basic package comes with <strong>Home</strong>, <strong>About</strong>, <strong>Works</strong> pages.</li>
+                    <li>Basic package comes with <strong>Home</strong>, <strong>About</strong>, and <strong>Works</strong> pages.</li>
                     <li><strong>*Blog</strong> page is an additional feature you get when you upgrade your website.</li>
                     <li>You can change the color theme of the template by clicking <img alt="paint icon" src='/theme.png'/> button.</li>
                     <li>A new template will be launched <strong>every two weeks</strong>.</li>
