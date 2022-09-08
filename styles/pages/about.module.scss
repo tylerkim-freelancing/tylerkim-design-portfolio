@@ -9,6 +9,10 @@ $component_margin: 200px;
 .subtitle {
     @extend %title_style;
     font-size: $xlg_font;
+
+    @include breakpoint(mobile) {
+        font-size: $lg_font;
+    }
 }
 
 .container {
@@ -87,9 +91,6 @@ $component_margin: 200px;
 
 .card {
     margin-top: 100px;
-    & > h4 {
-        font-size: $xlg_font;
-    }
     & > p {
         margin-top: 50px;
         max-width: 800px;

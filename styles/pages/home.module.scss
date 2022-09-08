@@ -3,14 +3,6 @@
 $component_margin: 200px;
 $component_margin_mobile: 150px;
 
-.list {
-  margin: 50px 0;
-  padding-left: 50px;
-  & > li {
-    list-style-type: disc;
-  }
-}
-
 .container {
   @extend %page_container;
 }

@@ -28,6 +28,10 @@ $component_margin: 150px;
     & > ul {
         margin-top: 50px;
         padding-left: 50px;
+
+        @include breakpoint(mobile) {
+            padding-left: 25px;
+        }
         & > li { 
             list-style: disc; 
             margin-bottom: 10px;

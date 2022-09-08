@@ -35,7 +35,7 @@ export default function About({ metaData }) {
                         look more professional and get them the attention that they deserve. 
                         </p>
                         <h4>TylerKim.design@gmail.com</h4>
-                        <h4>917 888 8888</h4>
+                        <h4><a href='tel:917-473-1447'>917 473 1447</a></h4>
                     </div>
                 </div>
 
@@ -57,7 +57,7 @@ export default function About({ metaData }) {
                 <div className={styles.work_process}>
                     <h1 className={styles.title}><span className='highlight'>How</span> does it work?</h1>
                     <div className={styles.card}>
-                        <h4 className={styles.title}>1. Browse my templates</h4>
+                        <h4 className={styles.subtitle}>1. Browse my templates</h4>
                         <p>
                             Go to <Link href={'/templates'}><a href='/templates' target='_blank'><strong>Templates(click)</strong></a></Link> page and see what you like. You can find open the theme
                             setting panel by clicking <img alt='theme setting button' src='/theme.png'/> where you can customize the color theme of the template. Keep exploring the 
@@ -65,7 +65,7 @@ export default function About({ metaData }) {
                         </p>
                     </div>
                     <div className={styles.card}>
-                        <h4 className={styles.title}>2. Request a project</h4>
+                        <h4 className={styles.subtitle}>2. Request a project</h4>
                         <p>
                             You can request a project through either <a target='_blank' href="https://www.fiverr.com/"><strong>Fiverr(click)</strong></a> or 
                             <a target='_blank' href="https://www.upwork.com/"><strong> Upwork(click)</strong></a>. There will be no difference between the two 
@@ -74,32 +74,32 @@ export default function About({ metaData }) {
                         </p>
                     </div>
                     <div className={styles.card}>
-                        <h4 className={styles.title}>3. Upload your projects</h4>
+                        <h4 className={styles.subtitle}>3. Upload your projects</h4>
                         <p>
                         You will be managing your website content through the headless CMS server called <a target='_blank' href="https://www.contentful.com/features/"><strong>Contentful(click)</strong></a>. I will build your management environment on Contentful using your GitHub account(I will help you make one if you don't have one). 
                         When the setup gets completed, you will be asked to upload your projects for your portfolio website to Contentful as guided.
                         </p>
                     </div>
                     <div className={styles.card}>
-                        <h4 className={styles.title}>4. Proposal</h4>
+                        <h4 className={styles.subtitle}>4. Proposal</h4>
                         <p>
                             I will deliver a proposal website based on your request and projects within <strong>1-2 business days</strong>. 
                         </p>
                     </div>
                     <div className={styles.card}>
-                        <h4 className={styles.title}>5. Revision</h4>
+                        <h4 className={styles.subtitle}>5. Revision</h4>
                         <p>
                         You will have <strong>two free</strong> revision sessions for your project. For each revision session, you can let me know what to change for your satisfaction, and I will deliver you the improved proposal. 
                         </p>
                     </div>
                     <div className={styles.card}>
-                        <h4 className={styles.title}>6. Hosting</h4>
+                        <h4 className={styles.subtitle}>6. Hosting</h4>
                         <p>
                         After the revision, I will deploy your project through the Netlify server using the same GitHub account you used to upload your projects for you. 
                         </p>
                     </div>
                     <div className={styles.card}>
-                        <h4 className={styles.title}>+ Upgrades</h4>
+                        <h4 className={styles.subtitle}>+ Upgrades</h4>
                         <p>
                         You can always upgrade your portfolio website with the additional feature I offer(the blog page is currently available, and I will update more in the future). 
                         In addition, you can easily swap the design theme from the current one to another using a different template and wait for more template updates every two weeks. 
