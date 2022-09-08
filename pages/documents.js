@@ -238,8 +238,8 @@ export default function Documents({ metaData }) {
                     </p>
                     <div className={styles.equation}>
                         <img alt="next js logo" src="/images/nextjs.png"/>+
-                        <img alt="netlify logo" src="/images/netlify.png"/>+
-                        <img alt="contentful logo" src="/images/contentful.png"/>
+                        <img alt="contentful logo" src="/images/contentful.png"/>+
+                        <img alt="netlify logo" src="/images/netlify.png"/>
                     </div>
                     <h3>&#128062; Next.JS</h3>
                     <p>
@@ -250,21 +250,20 @@ export default function Documents({ metaData }) {
                     </p>
                     <br/>
                     <br/>
-                    <h3>&#128062; Netlify</h3>
+                    <h3>&#128062; Contentful</h3>
                     <p>
-                        Vercel is a cloud platform that enables developers to host their front-end software. Vercel makes it very easy for the developers
-                        to deploy their websites to a global CDN (Content Delivery Network) which has its globally distributed network of proxy servers
-                        to rapidly serve the static pages of web applications to the users without geographical limit. Next JS and Vercel makes a great
-                        synergy where Next JS generates the static pages and Vercel delivers them as fast as possible.
+                    Contentful is a popular headless CMS platform where you can create your data assets and connect them with your application. 
+                    It has a user-friendly UI that is easy to learn and offers a free plan with a generous amount of data usage and API calls. 
+                    In general cases, 2,000,000 API calls/month and a 750GB/month bandwidth limit will be more than enough for a portfolio website.
                     </p>
                     <br/>
                     <br/>
-                    <h3>&#128062; Contentful</h3>
+                    <h3>&#128062; Netlify</h3>
                     <p>
-                        Sanity is a platform where you can create contents and serve them onto your websites. Its independent content management system
-                        provides you more flexbility on choosing the design and layout of your websites as it only holds the content, and you can decide 
-                        how to display them. It ultimately lets you easily switch between templates and scale up your websites with additional features
-                        such as blogs and e-commerce.
+                    Netlify is the platform where you can easily deploy and host the Next.JS project. Its advanced CDNs are globally 
+                    distributed and ready to deliver your website to users at high speed. Netlify's free plan offers a 100GB/month 
+                    bandwidth and 300mins/month build time which is more than enough for a portfolio website, and it even lets 
+                    you host your website for commercial use. 
                     </p>
                 </div>
             </div>
