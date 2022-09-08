@@ -2,6 +2,7 @@ import Layout from '../components/layout'
 import styles from '../styles/pages/about.module.scss'
 import Head from 'next/head'
 import Link from 'next/link'
+import client from '../modules/contentfulClient'
 
 export default function About({ metaData }) {
     const { ogTitle, ogDescription, ogImage } = metaData.fields
