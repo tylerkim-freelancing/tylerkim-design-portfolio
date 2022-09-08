@@ -3,6 +3,7 @@ import styles from '../styles/pages/about.module.scss'
 import Head from 'next/head'
 import Link from 'next/link'
 import client from '../modules/contentfulClient'
+import Img from '../components/img'
 
 export default function About({ metaData }) {
     const { ogTitle, ogDescription, ogImage } = metaData.fields
@@ -22,15 +23,20 @@ export default function About({ metaData }) {
       </Head>
         <Layout title='About'>
             <div className={styles.container}>
-                <div id='contact' className={styles.about_me}>
-                    <h1 className={styles.title}><span className='highlight'>Tyler Kim</span><br/>Web Developer/Designer</h1>
-                    <p>
-                    Hey! I'm Tyler Kim, the best web developer/designer, and I have the best web solution for your portfolio website. 
-                    I admire people who are passionate about their unique craftsmanship, and it is my passion to make them 
-                    look more professional and get them the attention that they deserve. 
-                    </p>
-                    <h4>TylerKim.design@gmail.com</h4>
-                    <h4>917 888 8888</h4>
+                <div className={styles.main}>
+                    <div className={styles.logo_container}>
+                        <Img src='/logo.jpg' alt='logo image'/>
+                    </div>
+                    <div id='contact' className={styles.about_me}>
+                        <h1 className={styles.title}><span className='highlight'>Tyler Kim</span><br/>Web Developer/Designer</h1>
+                        <p>
+                        Hey! I'm Tyler Kim, the best web developer/designer, and I have the best web solution for your portfolio website. 
+                        I admire people who are passionate about their unique craftsmanship, and it is my passion to make them 
+                        look more professional and get them the attention that they deserve. 
+                        </p>
+                        <h4>TylerKim.design@gmail.com</h4>
+                        <h4>917 888 8888</h4>
+                    </div>
                 </div>
 
                 <div className={styles.template_based}>

@@ -55,7 +55,7 @@ export default function Documents({ metaData }) {
                     <p className={styles.description}>
                     All of my templates come with a consistent page structure and layout. I have designed them to fit the general purpose of a portfolio website, but you can also change the page layout or add more sections to any of the pages upon an appropriate request.
                     </p>
-                    <h3>&diams; Home</h3>
+                    <h3>&#128062; Home</h3>
                     <p>: This is your main page.</p>
                     <ul>
                         <li>main image</li>
@@ -74,7 +74,7 @@ export default function Documents({ metaData }) {
                     </div>
                     <br/>
                     <br/>
-                    <h3>&diams; About</h3>
+                    <h3>&#128062; About</h3>
                     <p>: This is your about page to introduce yourself to your audience.</p>
                     <ul>
                         <li>main image(generally a profile picture)</li>
@@ -97,7 +97,7 @@ export default function Documents({ metaData }) {
                     </div>
                     <br/>
                     <br/>
-                    <h3>&diams; Works</h3>
+                    <h3>&#128062; Works</h3>
                     <p>: The gallery page where you present all your works with their thumbnail, title, and subtitle.</p>
                     <ul>
                         <li>
@@ -112,7 +112,7 @@ export default function Documents({ metaData }) {
                     </div>
                     <br/>
                     <br/>
-                    <h3>&diams; [Work]</h3>
+                    <h3>&#128062; [Work]</h3>
                     <p>: This is a page where you can explain the individual project with details.</p>
                     <ul>
                         <li>title of your work</li>
@@ -136,7 +136,7 @@ export default function Documents({ metaData }) {
                     <p className={styles.description}>
                         I believe in the idea that your portfolio website can scale up to become a blog, e-commerce, and more. I offer additional features that can easily integrate into your portfolio website to support your expansion. Those features are engineered to keep the design consistency with the template your website is based on.
                     </p>
-                    <h3>&diams; Blog</h3>
+                    <h3>&#128062; Blog</h3>
                     <p>
                     You will have an additional blog page on your website. You can write a blog post with different sizes of headings, 
                     paragraph text, embedded youtube videos, images, and external links. Your users can sort the posts by their updated date 
@@ -154,13 +154,13 @@ export default function Documents({ metaData }) {
                     </div>
                     <br/>
                     <br/>
-                    <h3>&diams; E-Commerce</h3>
+                    <h3>&#128062; E-Commerce</h3>
                     <p>
                         will be updated soon!
                     </p>
                     <br/>
                     <br/>
-                    <h3>&diams; Progressive Web App</h3>
+                    <h3>&#128062; Progressive Web App</h3>
                     <p>
                         will be updated soon!
                     </p>
@@ -171,7 +171,7 @@ export default function Documents({ metaData }) {
                     <p className={styles.description}>
                         My templates are packed with all the essential features you would need for a portfolio website <strong>without extra charge</strong>.    
                     </p>
-                    <h3>&diams; CMS (Content Management System)</h3>
+                    <h3>&#128062; CMS (Content Management System)</h3>
                     <p>
                     A content management system(CMS) is software that lets a user create, modify and delete the content of a website without having any technical knowledge. 
                     You will need a lot of adjustments on your web content as you need to add a new project, re-organize the portfolio, 
@@ -188,7 +188,7 @@ export default function Documents({ metaData }) {
                     <br/>
                     <br/>
                
-                    <h3>&diams; Open Graph Meta Tags</h3>
+                    <h3>&#128062; Open Graph Meta Tags</h3>
                     <p>
                     Open Graph meta tags(OG tags) on your website control how your shared URL on social media will be displayed. With OG tags, 
                     you can share your website's URL just as you intended and give people a general idea of what your website will be about before visiting. 
@@ -208,7 +208,7 @@ export default function Documents({ metaData }) {
                     </div>
                     <br/>
                     <br/>
-                    <h3>&diams; SEO (Search Engine Optimization)</h3>
+                    <h3>&#128062; SEO (Search Engine Optimization)</h3>
                     <p>
                     SEO is a process of improving the visibility of your website to people on search engines such as Google or Bing. 
                     The more visible the website becomes, the more traffic it gets, which means you will have more business through your website. 
@@ -219,7 +219,7 @@ export default function Documents({ metaData }) {
                     </div>
                     <br/>
                     <br/>
-                    <h3>&diams; Responsive Design</h3>
+                    <h3>&#128062; Responsive Design</h3>
                     <p>
                     I design my templates to render well on a variety of devices.               
                     </p>
@@ -230,29 +230,27 @@ export default function Documents({ metaData }) {
                     </div>
                 </div>
 
-                {/* <div className={styles.web_stack}>
+                <div className={styles.web_stack}>
                     <h2 className={styles.subtitle}>Built with the most efficient <span className="highlight">web stack</span></h2>
                     <p className={styles.description}>
-                        There are tons of different way to build a web application by combining different type of server, framework, third party software, and databases. 
-                        I spent days and nights to figure out the best way to build a personal website that can also grow into a business, as efficient as possible.
-                        The answer to the question is, 
+                    A web stack is a collection of software required to build a web application, and there are many options out there to choose from. 
+                    I have carefully determined the most efficient web stack for your project in terms of the technological and economical aspects. 
                     </p>
                     <div className={styles.equation}>
                         <img alt="next js logo" src="/images/nextjs.png"/>+
                         <img alt="netlify logo" src="/images/netlify.png"/>+
                         <img alt="contentful logo" src="/images/contentful.png"/>
                     </div>
-                    <h3>&diams; Next JS</h3>
+                    <h3>&#128062; Next.JS</h3>
                     <p>
-                        Next JS is a React framework with additional feautures including server-side rendering and static site generation.
-                        It is used create the front-end of my templates which the users will visually experience on the browser. The best part
-                        of Next JS is that it generates the static site of each web page at the build time, meaning all the contents of a web page
-                        is populated and rendered, and the web page is all ready to be served to the users. This results in very fast loading speed and
-                        having advantage in SEO.
+                    Next.JS is a React framework with additional features like server-side rendering and static site generation. 
+                    I use Next.JS to create the front-end of my templates which the users will visually experience on the browser. 
+                    The best part of this framework is that it can render web pages at the build time or on the server side upon a request 
+                    and have them ready to serve the users. Users will have a better experience, and search engines will crawl your website better.
                     </p>
                     <br/>
                     <br/>
-                    <h3>&diams; Netlify</h3>
+                    <h3>&#128062; Netlify</h3>
                     <p>
                         Vercel is a cloud platform that enables developers to host their front-end software. Vercel makes it very easy for the developers
                         to deploy their websites to a global CDN (Content Delivery Network) which has its globally distributed network of proxy servers
@@ -261,14 +259,14 @@ export default function Documents({ metaData }) {
                     </p>
                     <br/>
                     <br/>
-                    <h3>&diams; Contentful</h3>
+                    <h3>&#128062; Contentful</h3>
                     <p>
                         Sanity is a platform where you can create contents and serve them onto your websites. Its independent content management system
                         provides you more flexbility on choosing the design and layout of your websites as it only holds the content, and you can decide 
                         how to display them. It ultimately lets you easily switch between templates and scale up your websites with additional features
                         such as blogs and e-commerce.
                     </p>
-                </div> */}
+                </div>
             </div>
         </Layout>
         </>
