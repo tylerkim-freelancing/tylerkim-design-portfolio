@@ -28,7 +28,7 @@ export default function Slideshow({ templates }) {
                             type: 'just' 
                         }}
                         >
-                        <Img src={template.src_desktop} alt='template thumbnail'/>
+                        <Img src={template.src_desktop} alt={template.name} priority={true}/>
                     </motion.div>)
                 }
             </div>

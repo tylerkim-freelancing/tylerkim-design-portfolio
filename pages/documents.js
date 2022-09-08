@@ -9,7 +9,7 @@ export default function Documents({ metaData }) {
 
     return (
         <>
-        {/* <Head>
+        <Head>
             <meta name="description" content={ ogDescription } />
             <meta property="og:type" content="website" />
             <meta property="og:title" content={ ogTitle } />
@@ -19,7 +19,7 @@ export default function Documents({ metaData }) {
             <meta name="twitter:title" content={ ogTitle }/> 
             <meta name="twitter:description" content={ ogDescription } /> 
             <meta name="twitter:image" content={`https:${ogImage.fields.file.url}`} />
-        </Head> */}
+        </Head>
         <Layout title='Documents' >
             <div className={styles.container}>
                 <h1 className={styles.title}>The <span className="highlight">Blueprint</span> of my templates</h1>
@@ -70,7 +70,7 @@ export default function Documents({ metaData }) {
                         </li>
                     </ul>
                     <div className={styles.structure_img_container}>
-                        <Img alt="Reference image for home page structure" src="/images/documents/structure_home.png"/>
+                        <Img priority={true} alt="Reference image for home page structure" src="/images/documents/structure_home.png"/>
                     </div>
                     <br/>
                     <br/>
@@ -90,10 +90,10 @@ export default function Documents({ metaData }) {
                         </li>
                     </ul>
                     <div className={styles.structure_img_container}>
-                        <Img alt="Reference image for about page structure" src="/images/documents/structure_about1.png"/>
+                        <Img priority={true} alt="Reference image for about page structure" src="/images/documents/structure_about1.png"/>
                     </div>
                     <div className={styles.structure_img_container}>
-                        <Img alt="Reference image for about page structure" src="/images/documents/structure_about2.png"/>
+                        <Img priority={true} alt="Reference image for about page structure" src="/images/documents/structure_about2.png"/>
                     </div>
                     <br/>
                     <br/>
@@ -108,7 +108,7 @@ export default function Documents({ metaData }) {
                         </li>
                     </ul>
                     <div className={styles.structure_img_container}>
-                        <Img alt="Reference image for works page structure" src="/images/documents/structure_works.png"/>
+                        <Img priority={true} alt="Reference image for works page structure" src="/images/documents/structure_works.png"/>
                     </div>
                     <br/>
                     <br/>
@@ -127,7 +127,7 @@ export default function Documents({ metaData }) {
                         </li>
                     </ul>
                     <div className={styles.structure_img_container}>
-                        <Img alt="Reference image for [work] page structure" src="/images/documents/structure_[work].png"/>
+                        <Img priority={true} alt="Reference image for [work] page structure" src="/images/documents/structure_[work].png"/>
                     </div>
                 </div>
 
@@ -144,13 +144,13 @@ export default function Documents({ metaData }) {
                     for your audience by changing its route name. This page is currently demonstrated on my templates with the route name *blog.
                     </p>
                     <div className={styles.structure_img_container}>
-                        <Img alt="Reference image for blogs page structure" src="/images/documents/structure_blogs.png"/>
+                        <Img priority={true} alt="Reference image for blogs page structure" src="/images/documents/structure_blogs.png"/>
                     </div>
                     <div className={styles.structure_img_container}>
-                        <Img alt="Reference image for [post] page structure" src="/images/documents/structure_[post]1.png"/>
+                        <Img priority={true} alt="Reference image for [post] page structure" src="/images/documents/structure_[post]1.png"/>
                     </div>
                     <div className={styles.structure_img_container}>
-                        <Img alt="Reference image for [post] page structure" src="/images/documents/structure_[post]2.png"/>
+                        <Img priority={true} alt="Reference image for [post] page structure" src="/images/documents/structure_[post]2.png"/>
                     </div>
                     <br/>
                     <br/>
@@ -180,10 +180,10 @@ export default function Documents({ metaData }) {
                     CMS called Contentful, and it offers generous community plan for free, which is generally enough to run a portfolio website.
                     </p>
                     <div className={styles.structure_img_container}>
-                        <Img alt="Reference image for contentful control panel" src="/images/documents/contentful1.png"/>
+                        <Img priority={true} alt="Reference image for contentful control panel" src="/images/documents/contentful1.png"/>
                     </div>
                     <div className={styles.structure_img_container}>
-                        <Img alt="Reference image for contentful control panel" src="/images/documents/contentful2.png"/>
+                        <Img priority={true} alt="Reference image for contentful control panel" src="/images/documents/contentful2.png"/>
                     </div>
                     <br/>
                     <br/>
@@ -215,7 +215,7 @@ export default function Documents({ metaData }) {
                     All my templates are optimized to score above 95 on Google's lighthouse report.
                     </p>
                     <div className={styles.structure_img_container}>
-                        <Img alt="Reference image for good seo" src="/images/documents/seo.png"/>
+                        <Img priority={true} alt="Reference image for good seo" src="/images/documents/seo.png"/>
                     </div>
                     <br/>
                     <br/>

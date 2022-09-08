@@ -2,10 +2,13 @@ import styles from '../../styles/pages/[template].module.scss'
 import { readFile } from '../../modules/fileServices'
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
+import client from '../../modules/contentfulClient'
 import Link from 'next/link'
 import Head from 'next/head'
 
-export default function Template({ template }) {
+export default function Template({ template, metaData }) {
+    const { ogTitle, ogDescription, ogImage } = metaData.fields
+
     const [isToggled, setIsToggled] = useState(true)
     const [isDesktop, setIsDesktop] = useState(true)
     const [isMobile, setIsMobile] = useState(false)
@@ -83,12 +86,22 @@ export default function Template({ template }) {
       <>
       <Head>
         <title>Template | { template.name }</title>
+        <meta name="description" content={ ogDescription } />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content={ ogTitle } />
+        <meta property="og:description" content={ ogDescription } />
+        <meta property="og:image" content={`https:${ogImage.fields.file.url}`} />
+        <meta name="twitter:card" content="summary" /> 
+        <meta name="twitter:title" content={ ogTitle }/> 
+        <meta name="twitter:description" content={ ogDescription } /> 
+        <meta name="twitter:image" content={`https:${ogImage.fields.file.url}`} />
       </Head>
         <div className={styles.container}>
           <motion.img 
             onClick={() => setIsToggled(true)} 
             className={styles.setting_btn} 
             src='/setting.png'
+            alt='setting button'
             variants={setting_btn}
             initial='off'
             animate={ isToggled ? 'off' : 'on' }
@@ -109,12 +122,12 @@ export default function Template({ template }) {
                 </p>
                 {/* View  Ports */}
                 <div style={{ display: isDesktop ? 'flex' : 'none' }} className={styles.viewports}>
-                  <img onClick={() => setIsMobile(false)} className={styles.desktop} src={`/desktop${isMobile ? '' : '_active'}.png`}/>
-                  <img onClick={() => setIsMobile(true)} className={styles.smartphone} src={`/smartphone${isMobile ? '_active' : ''}.png`}/>
+                  <img alt='desktop icon' onClick={() => setIsMobile(false)} className={styles.desktop} src={`/desktop${isMobile ? '' : '_active'}.png`}/>
+                  <img alt='mobile icon' onClick={() => setIsMobile(true)} className={styles.smartphone} src={`/smartphone${isMobile ? '_active' : ''}.png`}/>
                 </div>
                 {/* alert */}
                 <p style={{ display: isDesktop ? 'none' : 'block' }} className={styles.alert}>*Cannot display the desktop view of the template on your current device. In order to see the desktop view, switch to a device with a bigger screen.</p>
-                <Link href='/templates'><a>more templates&rarr;</a></Link>
+                <Link href='/templates'><a href='/templates'>more templates&rarr;</a></Link>
             </motion.div>
             <motion.div 
               className={styles.template_container}
@@ -124,7 +137,9 @@ export default function Template({ template }) {
               transition={{ type: 'just' }}
               >
               <motion.img 
-                className={styles.mobile_frame} alt="mobile frame" src="/mobile_frame.png"
+                className={styles.mobile_frame} 
+                alt="mobile frame" 
+                src="/mobile_frame.png"
                 variants={frame}
                 initial='desktop'
                 animate={ isMobile ? 'mobile' : 'desktop' }
@@ -155,10 +170,12 @@ export async function getStaticPaths() {
   export async function getStaticProps({ params }) {
     const templates = JSON.parse(await readFile('/data/templates.json'))
     const template = templates.find(t => t.name === params.template)
+    const metaData = await client.getEntries({ content_type: 'metaTags', 'fields.page[match]': 'Template', 'fields.ogTitle[match]': `Template | ${template.name}` })
   
     return {
       props: {
-        template
+        template,
+        metaData: metaData.items[0]
       }
     }
   }

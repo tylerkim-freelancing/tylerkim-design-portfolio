@@ -1,10 +1,24 @@
 import Layout from '../components/layout'
 import styles from '../styles/pages/about.module.scss'
-import Img from '../components/img'
+import Head from 'next/head'
 import Link from 'next/link'
 
-export default function About() {
+export default function About({ metaData }) {
+    const { ogTitle, ogDescription, ogImage } = metaData.fields
+
     return(
+        <>
+        <Head>
+            <meta name="description" content={ ogDescription } />
+            <meta property="og:type" content="website" />
+            <meta property="og:title" content={ ogTitle } />
+            <meta property="og:description" content={ ogDescription } />
+            <meta property="og:image" content={`https:${ogImage.fields.file.url}`} />
+            <meta name="twitter:card" content="summary" /> 
+            <meta name="twitter:title" content={ ogTitle }/> 
+            <meta name="twitter:description" content={ ogDescription } /> 
+            <meta name="twitter:image" content={`https:${ogImage.fields.file.url}`} />
+      </Head>
         <Layout title='About'>
             <div className={styles.container}>
                 <div id='contact' className={styles.about_me}>
@@ -38,7 +52,7 @@ export default function About() {
                     <div className={styles.card}>
                         <h4 className={styles.title}>1. Browse my templates</h4>
                         <p>
-                            Go to <Link href={'/templates'}><a target='_blank'><strong>Templates(click)</strong></a></Link> page and see what you like. You can find open the theme
+                            Go to <Link href={'/templates'}><a href='/templates' target='_blank'><strong>Templates(click)</strong></a></Link> page and see what you like. You can find open the theme
                             setting panel by clicking <img alt='theme setting button' src='/theme.png'/> where you can customize the color theme of the template. Keep exploring the 
                             templates until you find the best one for yourself with the perfect customization.
                         </p>
@@ -95,5 +109,16 @@ export default function About() {
                 </div>
             </div>
         </Layout>
+        </>
     )
 }
+
+export async function getStaticProps() {
+    const metaData = await client.getEntries({ content_type: 'metaTags', 'fields.page[match]': 'About' })
+  
+    return {
+      props: {
+        metaData: metaData.items[0]
+      }
+    }
+  }

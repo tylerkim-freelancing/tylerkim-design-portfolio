@@ -1,12 +1,14 @@
 import Layout from '../../components/layout'
 import styles from '../../styles/pages/templates.module.scss'
 import Card from '../../components/card'
-import Link from 'next/link'
+import Head from 'next/head'
+import client from '../../modules/contentfulClient'
 import { useState, useEffect } from 'react'
 import { readFile } from '../../modules/fileServices'
 
-export default function Templates({templates}) {
+export default function Templates({ templates, metaData }) {
     const [isDesktop, setIsDesktop] = useState(true)
+    const { ogTitle, ogDescription, ogImage } = metaData.fields
     
     useEffect(() => { 
         function screenSizeHandler() {
@@ -25,6 +27,18 @@ export default function Templates({templates}) {
       })
     
     return(
+      <>
+       <Head>
+            <meta name="description" content={ ogDescription } />
+            <meta property="og:type" content="website" />
+            <meta property="og:title" content={ ogTitle } />
+            <meta property="og:description" content={ ogDescription } />
+            <meta property="og:image" content={`https:${ogImage.fields.file.url}`} />
+            <meta name="twitter:card" content="summary" /> 
+            <meta name="twitter:title" content={ ogTitle }/> 
+            <meta name="twitter:description" content={ ogDescription } /> 
+            <meta name="twitter:image" content={`https:${ogImage.fields.file.url}`} />
+        </Head>
         <Layout title='Templates'>
             <div className={styles.container}>
               <div className={styles.intro}>
@@ -49,15 +63,18 @@ export default function Templates({templates}) {
                 </div>
             </div>
         </Layout>
+      </>
     )
 }
 
 export async function getStaticProps() {
     const templates = JSON.parse(await readFile('/data/templates.json'))
+    const metaData = await client.getEntries({ content_type: 'metaTags', 'fields.page[match]': 'Templates' })
 
     return {
       props: {
-        templates
+        templates,
+        metaData: metaData.items[0]
       }
     }
   }

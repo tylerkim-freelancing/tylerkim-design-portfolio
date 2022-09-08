@@ -71,7 +71,7 @@ export default function Home({ templates, keywords, metaData }) {
                       <div></div>
                     </div>
                     <div className={styles.carousel_img_container}>
-                      <Img src={isDesktop ? t.src_desktop : t.src_mobile}/>
+                      <Img priority={true} quality={50} src={isDesktop ? t.src_desktop : t.src_mobile} alt={t.name}/>
                     </div>
                     <div className={styles.windows_bottom}>
                     </div>
