@@ -68,28 +68,36 @@ export default function Nav({ title }) {
                 className={styles.nav}>
                 <Link href="/">
                     <li>
-                        <a className={ title === 'Home' ? styles.active_route : 'dummy' }>
+                        <a 
+                        href="/"
+                        className={ title === 'Home' ? styles.active_route : 'dummy' }>
                             Home
                         </a>
                     </li>
                 </Link>
                 <Link href="/about">
                     <li>
-                        <a className={ title === 'About' ? styles.active_route : 'dummy' }>
+                        <a 
+                        href="/about"
+                        className={ title === 'About' ? styles.active_route : 'dummy' }>
                             About
                         </a>
                     </li>
                 </Link>
                 <Link href="/templates">
                     <li>
-                        <a className={ title === 'Templates' ? styles.active_route : 'dummy' }>
+                        <a 
+                        href="/templates"
+                        className={ title === 'Templates' ? styles.active_route : 'dummy' }>
                             Templates
                         </a>
                     </li>
                 </Link>
                 <Link href="/documents">
                     <li>
-                        <a className={ title === 'Documents' ? styles.active_route : 'dummy' }>
+                        <a 
+                        href="/documents"
+                        className={ title === 'Documents' ? styles.active_route : 'dummy' }>
                             Documents
                         </a>
                     </li>
@@ -121,28 +129,36 @@ export default function Nav({ title }) {
             >
                 <Link href="/">
                     <li>
-                        <a className={ title === 'Home' ? styles.active_route : 'dummy' }>
+                        <a 
+                        href="/"
+                        className={ title === 'Home' ? styles.active_route : 'dummy' }>
                             Home
                         </a>
                     </li>
                 </Link>
                 <Link href="/about">
                     <li>
-                        <a className={ title === 'About' ? styles.active_route : 'dummy' }>
+                        <a 
+                        href="/about"
+                        className={ title === 'About' ? styles.active_route : 'dummy' }>
                             About
                         </a>
                     </li>
                 </Link>
                 <Link href="/templates">
                     <li>
-                        <a className={ title === 'Templates' ? styles.active_route : 'dummy' }>
+                        <a 
+                        href="/templates"
+                        className={ title === 'Templates' ? styles.active_route : 'dummy' }>
                             Templates
                         </a>
                     </li>
                 </Link>
                 <Link href="/documents">
                     <li>
-                        <a className={ title === 'Documents' ? styles.active_route : 'dummy' }>
+                        <a 
+                        href="/documents"
+                        className={ title === 'Documents' ? styles.active_route : 'dummy' }>
                             Documents
                         </a>
                     </li>
