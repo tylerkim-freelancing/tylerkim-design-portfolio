@@ -167,18 +167,17 @@ export default function Documents({ metaData }) {
                 </div>
 
                 <div className={styles.basic_features}>
-                    <h2 className={styles.subtitle}>Comes with all the <span className="highlight">basic features</span> you need for a website</h2>
+                    <h2 className={styles.subtitle}>Comes with all the <span className="highlight">essential features</span> you need for a website</h2>
                     <p className={styles.description}>
-                        When you hire a freelancer to make your personal website, each additional page and feature is extra money you will 
-                        have to pay for your website. There are few essential features that all the modern website must have to meet the 
-                        standard, and all of my templates come with those features as default without extra charge.
+                        My templates are packed with all the essential features you would need for a portfolio website <strong>without extra charge</strong>.    
                     </p>
                     <h3>&diams; CMS (Content Management System)</h3>
                     <p>
-                        A content management system is a software that lets a user to create, modify and delete the content of a website without
-                        having any technical knowledge. Obviously, you will need a lot of adjustments on your web contents as you create a new work, 
-                        re-organize the portfolio, or modify any context as your idea changes. Instead of paying the developer to change your webiste
-                        for you, you can modify your website by yourself through the dedicated control panel.
+                    A content management system(CMS) is software that lets a user create, modify and delete the content of a website without having any technical knowledge. 
+                    You will need a lot of adjustments on your web content as you need to add a new project, re-organize the portfolio, 
+                    or modify any context as your idea changes. Instead of paying the developer to change the web content for you, you can 
+                    modify your website by yourself through the dedicated control panel. My templates are specifically powered by the headless 
+                    CMS called Contentful, and it offers generous community plan for free, which is generally enough to run a portfolio website.
                     </p>
                     <div className={styles.structure_img_container}>
                         <Img alt="Reference image for contentful control panel" src="/images/documents/contentful1.png"/>
@@ -191,9 +190,9 @@ export default function Documents({ metaData }) {
                
                     <h3>&diams; Open Graph Meta Tags</h3>
                     <p>
-                        Open Graph meta tags on your website controls how your shared URL on social media will be displayed. With OG tags, you can
-                        share your website's URL just as you intended, and you can give the people a general idea of what your website will be about. 
-                        You will get OG tags for Facebook, Instagram and Twitter on your website as default.
+                    Open Graph meta tags(OG tags) on your website control how your shared URL on social media will be displayed. With OG tags, 
+                    you can share your website's URL just as you intended and give people a general idea of what your website will be about before visiting. 
+                    You will get OG tags for Facebook, Instagram, and Twitter on your website as default.
                     </p>
                     <div className={styles.ogtag_reference}>
                         <div>
@@ -211,8 +210,9 @@ export default function Documents({ metaData }) {
                     <br/>
                     <h3>&diams; SEO (Search Engine Optimization)</h3>
                     <p>
-                        SEO is a process of improving the visibility of your webiste to the people on the search engine such as Google or Bing.
-                        More visible the website becomes, more traffic it gets, and it simply means you will have more business through your website.
+                    SEO is a process of improving the visibility of your website to people on search engines such as Google or Bing. 
+                    The more visible the website becomes, the more traffic it gets, which means you will have more business through your website. 
+                    All my templates are optimized to score above 95 on Google's lighthouse report.
                     </p>
                     <div className={styles.structure_img_container}>
                         <Img alt="Reference image for good seo" src="/images/documents/seo.png"/>
@@ -221,8 +221,7 @@ export default function Documents({ metaData }) {
                     <br/>
                     <h3>&diams; Responsive Design</h3>
                     <p>
-                        Website design needs to be optimized to display all the contents properly through various devices. All the traffic to your
-                        webiste are coming from a different type of device, it is a must to optimize your website to be responsive to any size of the platform.
+                    I design my templates to render well on a variety of devices.               
                     </p>
                     <div className={styles.responsive_reference}>
                         <img alt="a template in desktop view" src="/images/templates/desktop/newtro.png"/>
@@ -231,7 +230,7 @@ export default function Documents({ metaData }) {
                     </div>
                 </div>
 
-                <div className={styles.web_stack}>
+                {/* <div className={styles.web_stack}>
                     <h2 className={styles.subtitle}>Built with the most efficient <span className="highlight">web stack</span></h2>
                     <p className={styles.description}>
                         There are tons of different way to build a web application by combining different type of server, framework, third party software, and databases. 
@@ -269,11 +268,7 @@ export default function Documents({ metaData }) {
                         how to display them. It ultimately lets you easily switch between templates and scale up your websites with additional features
                         such as blogs and e-commerce.
                     </p>
-                </div>
-
-                <div className={styles.customization}>
-                    
-                </div>
+                </div> */}
             </div>
         </Layout>
         </>
