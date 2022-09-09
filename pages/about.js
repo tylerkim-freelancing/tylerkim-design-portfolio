@@ -25,7 +25,7 @@ export default function About({ metaData }) {
             <div className={styles.container}>
                 <div className={styles.main}>
                     <div className={styles.logo_container}>
-                        <Img src='/logo.jpg' alt='logo image'/>
+                        <Img src='/logo2.png' alt='logo image'/>
                     </div>
                     <div id='contact' className={styles.about_me}>
                         <h1 className={styles.title}><span className='highlight'>Tyler Kim</span><br/>Web Developer/Designer</h1>
