@@ -30,15 +30,10 @@ $component_margin: 200px;
         flex-direction: column;
         gap: 50px;
     }
-
-    @include breakpoint(mobile) {
-        gap: 0;
-    }
 }
 .logo_container {
     position: relative;
-    width: 400px;
-    height: 400px;
+    width: 200px;
 }
 
 .about_me {

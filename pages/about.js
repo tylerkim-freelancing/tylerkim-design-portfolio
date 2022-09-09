@@ -24,9 +24,7 @@ export default function About({ metaData }) {
         <Layout title='About'>
             <div className={styles.container}>
                 <div className={styles.main}>
-                    <div className={styles.logo_container}>
-                        <Img src='/logo2.png' alt='logo image'/>
-                    </div>
+                    <img className={styles.logo_container} src="/logo.svg" alt="logo image"/>
                     <div id='contact' className={styles.about_me}>
                         <h1 className={styles.title}><span className='highlight'>Tyler Kim</span><br/>Web Developer/Designer</h1>
                         <p>
