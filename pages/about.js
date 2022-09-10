@@ -52,7 +52,7 @@ export default function About({ metaData }) {
                     <Link href='/documents'><button>Learn more about the templates &rarr;</button></Link>
                 </div>
                 
-                <div className={styles.work_process}>
+                {/* <div className={styles.work_process}>
                     <h1 className={styles.title}><span className='highlight'>How</span> does it work?</h1>
                     <div className={styles.card}>
                         <h4 className={styles.subtitle}>1. Browse my templates</h4>
@@ -111,7 +111,7 @@ export default function About({ metaData }) {
                     If you have a question I failed to clarify, or if there is any project in your mind besides the portfolio website, you contact me by 
                     <a href="#contact"><strong> email</strong></a> or <a href="#contact"><strong> text</strong></a>. I will be more than happy to assist you in any possible way!
                     </p>
-                </div>
+                </div> */}
             </div>
         </Layout>
         </>
