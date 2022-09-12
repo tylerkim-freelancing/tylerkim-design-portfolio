@@ -52,6 +52,20 @@ $component_margin: 200px;
     }
 }
 
+.gig_container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    img {
+        height: 50px;
+
+        @include breakpoint(mobile) {
+            height: 30px;
+        }
+    }
+}
+
 .template_based {
     margin-top: $component_margin;
     display: flex;

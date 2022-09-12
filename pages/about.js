@@ -30,8 +30,16 @@ export default function About({ metaData }) {
                         <p>
                         Hey! I'm Tyler Kim, the best web developer/designer, and I have the best web solution for your portfolio website. 
                         I admire people who are passionate about their unique craftsmanship, and it is my passion to make them 
-                        look more professional and get them the attention that they deserve. 
+                        look more professional and get them the attention that they deserve. You can find my gig from the following platforms.
                         </p>
+                        <div className={styles.gig_container}>
+                            <a href='https://www.fiverr.com/share/GokoWL' target='_blank'>
+                                <img src='/fiverr.png' alt='fiverr logo image'/>
+                            </a>
+                            <a href='' target='_blank'>
+                                <img src='/upwork.png' alt='upwork logo image'/>
+                            </a>
+                        </div>
                         {/* <h4>TylerKim.design@gmail.com</h4>
                         <h4><a href='tel:917-473-1447'>917 473 1447</a></h4> */}
                     </div>
