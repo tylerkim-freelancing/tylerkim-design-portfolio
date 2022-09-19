@@ -2,7 +2,7 @@ import styles from './styles/card.module.scss'
 import Img from '../components/img'
 import Link from 'next/link'
 
-export default function Card({ src, name }) {
+export default function Card({ src, name, isNew=false }) {
     return (
         <div className={styles.card}>
             <div className={styles.window_top}>
@@ -11,6 +11,10 @@ export default function Card({ src, name }) {
                 <div></div>
             </div>
             <div className={styles.img_container}>
+                {
+                    isNew && <span className={styles.isNew}>NEW!</span>
+
+                }
                 <Img alt='template thumbnail' src={src}/>
                 <div className={styles.info_container}>
                     <h2 className={styles.title}>{ name }</h2>

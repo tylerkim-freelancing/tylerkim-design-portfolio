@@ -58,7 +58,7 @@ export default function Templates({ templates, metaData }) {
               </div>
                 <div className={styles.gallery}>
                     {
-                        templates.map((template, i) => template.isExample || <Card key={i} src={isDesktop ? template.src_desktop : template.src_mobile} name={template.name}/>)
+                        templates.map((template, i) => template.isExample || <Card key={i} src={isDesktop ? template.src_desktop : template.src_mobile} name={template.name} isNew={template.isNew}/>)
                     }
                 </div>
             </div>

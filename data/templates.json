@@ -3,7 +3,8 @@
         "name": "Cashmere",
         "src_desktop": "/images/templates/desktop/cashmere.png",
         "src_mobile": "/images/templates/mobile/cashmere.png",
-        "url": "https://template-cashmere.vercel.app"
+        "url": "https://template-cashmere.vercel.app",
+        "isNew": true
     },
     {
         "name": "Blooming",
