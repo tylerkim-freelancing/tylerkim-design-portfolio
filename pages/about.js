@@ -33,10 +33,10 @@ export default function About({ metaData }) {
                         look more professional and get them the attention that they deserve. You can find my gig from the following platforms.
                         </p>
                         <div className={styles.gig_container}>
-                            <a href='https://www.fiverr.com/share/GokoWL' target='_blank'>
+                            <a href='#'>
                                 <img src='/fiverr.png' alt='fiverr logo image'/>
                             </a>
-                            <a href='https://www.upwork.com/services/product/a-premium-portfolio-website-with-cms-1568148037388062720?ref=project_share&tier=0' target='_blank'>
+                            <a href='#'>
                                 <img src='/upwork.png' alt='upwork logo image'/>
                             </a>
                         </div>
