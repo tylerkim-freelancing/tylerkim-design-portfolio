@@ -1,40 +1,92 @@
 [
-    {
-        "name": "Cashmere",
-        "src_desktop": "/images/templates/desktop/cashmere.png",
-        "src_mobile": "/images/templates/mobile/cashmere.png",
-        "url": "https://template-cashmere.vercel.app",
-        "isNew": true
-    },
-    {
-        "name": "Blooming",
-        "src_desktop": "/images/templates/desktop/blooming.png",
-        "src_mobile": "/images/templates/mobile/blooming.png",
-        "url": "https://template-blooming.vercel.app"
-    },
-    {
-        "name": "Moderneon",
-        "src_desktop": "/images/templates/desktop/moderneon.png",
-        "src_mobile": "/images/templates/mobile/moderneon.png",
-        "url": "https://template-moderneon.vercel.app"
-    },
-    {
-        "name": "Neumorphism",
-        "src_desktop": "/images/templates/desktop/neumorphism.png",
-        "src_mobile": "/images/templates/mobile/neumorphism.png",
-        "url": "https://template-neumorphism.vercel.app"
-    },
-    {
-        "name": "Newtro",
-        "src_desktop": "/images/templates/desktop/newtro.png",
-        "src_mobile": "/images/templates/mobile/newtro.png",
-        "url": "https://template-newtro.vercel.app"
-    }
-    ,
-    {
-        "name": "Staircase",
-        "src_desktop": "/images/templates/desktop/staircase.png",
-        "src_mobile": "/images/templates/mobile/staircase.png",
-        "url": "https://template-staircase.vercel.app"
-    }
+  {
+    "name": "Cashmere",
+    "src_desktop": "/images/templates/desktop/cashmere.png",
+    "src_mobile": "/images/templates/mobile/cashmere.png",
+    "url": "https://template-cashmere.vercel.app",
+    "category": "Editorial",
+    "description": "An airy, asymmetric canvas that lets the work breathe.",
+    "tags": [
+      "Editorial",
+      "Masonry"
+    ],
+    "background": "#eee8db",
+    "thumbnail_desktop": "/images/templates/desktop/cashmere.webp",
+    "thumbnail_mobile": "/images/templates/mobile/cashmere.webp"
+  },
+  {
+    "name": "Blooming",
+    "src_desktop": "/images/templates/desktop/blooming.png",
+    "src_mobile": "/images/templates/mobile/blooming.png",
+    "url": "https://template-blooming.vercel.app",
+    "category": "Expressive",
+    "description": "Soft colors and playful compositions with a personal touch.",
+    "tags": [
+      "Expressive",
+      "Colorful"
+    ],
+    "background": "#e5e5ef",
+    "thumbnail_desktop": "/images/templates/desktop/blooming.webp",
+    "thumbnail_mobile": "/images/templates/mobile/blooming.webp"
+  },
+  {
+    "name": "Moderneon",
+    "src_desktop": "/images/templates/desktop/moderneon.png",
+    "src_mobile": "/images/templates/mobile/moderneon.png",
+    "url": "https://template-moderneon.vercel.app",
+    "category": "Expressive",
+    "description": "Bold contrast and a neon palette for a vivid first impression.",
+    "tags": [
+      "Expressive",
+      "Dark"
+    ],
+    "background": "#e3e3df",
+    "thumbnail_desktop": "/images/templates/desktop/moderneon.webp",
+    "thumbnail_mobile": "/images/templates/mobile/moderneon.webp"
+  },
+  {
+    "name": "Neumorphism",
+    "src_desktop": "/images/templates/desktop/neumorphism.png",
+    "src_mobile": "/images/templates/mobile/neumorphism.png",
+    "url": "https://template-neumorphism.vercel.app",
+    "category": "Minimal",
+    "description": "Soft surfaces and subtle depth, built around the details.",
+    "tags": [
+      "Minimal",
+      "Soft UI"
+    ],
+    "background": "#e4e9ec",
+    "thumbnail_desktop": "/images/templates/desktop/neumorphism.webp",
+    "thumbnail_mobile": "/images/templates/mobile/neumorphism.webp"
+  },
+  {
+    "name": "Newtro",
+    "src_desktop": "/images/templates/desktop/newtro.png",
+    "src_mobile": "/images/templates/mobile/newtro.png",
+    "url": "https://template-newtro.vercel.app",
+    "category": "Editorial",
+    "description": "A nostalgic perspective on a contemporary portfolio.",
+    "tags": [
+      "Editorial",
+      "Retro"
+    ],
+    "background": "#eee5de",
+    "thumbnail_desktop": "/images/templates/desktop/newtro.webp",
+    "thumbnail_mobile": "/images/templates/mobile/newtro.webp"
+  },
+  {
+    "name": "Staircase",
+    "src_desktop": "/images/templates/desktop/staircase.png",
+    "src_mobile": "/images/templates/mobile/staircase.png",
+    "url": "https://template-staircase.vercel.app",
+    "category": "Minimal",
+    "description": "A structured layout with an unexpected sense of movement.",
+    "tags": [
+      "Minimal",
+      "Geometric"
+    ],
+    "background": "#e5e8e1",
+    "thumbnail_desktop": "/images/templates/desktop/staircase.webp",
+    "thumbnail_mobile": "/images/templates/mobile/staircase.webp"
+  }
 ]

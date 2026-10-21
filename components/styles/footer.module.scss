@@ -1,18 +1,5 @@
-@import '../../styles/lib/theme.scss';
-
-.footer {
-    width: 100%;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    & > p {
-        font-size: $sm_font;
-    }
-}
-
-.copyright {
-    color: $primary_color;
-    font-weight: bold;
-}
+.footer {border-top: 1px solid var(--line); max-width: 1296px; margin: 0 auto; padding: 43px 0 36px; display: flex; justify-content: space-between; gap: 30px; p {font-size: 12px; color: var(--muted); margin-top: 9px;}}
+.title {font-size: 19px; letter-spacing: -.7px; font-weight: 600; span {font-size: 11px; vertical-align: top; margin-left: 5px;}}
+.links {display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 16px 26px; max-width: 340px; font-size: 11px; a {display: flex; align-items: center; gap: 8px;} a:hover {color: var(--accent);} >span {width: 100%; text-align: right; color: var(--muted); font-size: 10px;}}
+@media(max-width:1440px) {.footer {margin: 0 5%;}}
+@media(max-width:600px) {.footer {margin: 0 6%; flex-direction: column;} .links {justify-content: flex-start; >span {text-align: left;}}}

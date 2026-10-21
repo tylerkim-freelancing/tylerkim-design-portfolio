@@ -1,33 +1,57 @@
-# Overview
+# Portfolio Templates
 
-<img src='https://github.com/tylerkim-freelancing/tylerkim-design-portfolio/assets/63427616/f82a8c5b-c43f-485d-b606-d97ee7118ce3' width=250/>
+A collection of six portfolio designs by Hyunbin Kim, presented as an interactive front-end project. Explore different visual styles, switch between desktop and mobile previews, and try the color-theme controls inside the live demos.
 
-### Tyerkim-Design Portfolio Solution
+[Collection website](https://tylerkim-design-portfolio.vercel.app/templates) · [Hyunbin’s portfolio](https://www.hyunbinkim.dev/)
 
-This used to be my freelancing business website which offered pre-made portoflio website templates for artists, freelancers, and students. Clients could explore the templates through the website and customize the colors to make a unique website for them. Once they found a template that they liked, for an affordable price, I helped them hosting the site through `Netlify` for free, and they could always change the contents on their own, since all the contents on a template were populated by the datas from headless CMS, `Contentful` for free as well. In addition, if a client wanted something that none of my template offered, then I could create a fully customized website for him or her, and a template could be a reference for the discussion. 
+## The collection
 
-[You can access the website here!](https://tylerkim-design-portfolio.vercel.app/)
-![chrome-capture-2024-3-4](https://github.com/tylerkim-freelancing/tylerkim-design-portfolio/assets/63427616/93846a17-406f-4d1b-b672-d56ce16d3108)
+| Template | Direction |
+| --- | --- |
+| Cashmere | Editorial · Masonry |
+| Blooming | Expressive · Colorful |
+| Moderneon | Expressive · Dark |
+| Neumorphism | Minimal · Soft UI |
+| Newtro | Editorial · Retro |
+| Staircase | Minimal · Geometric |
 
-# Templates
+The demos use content for a fictional creative named John Doe. This project originally served as a template-based freelance website; the current UI focuses on the design collection and its implementation.
 
-`All you gotta do is picking a template you like, and fill it in with your own works! `
+## Stack and structure
 
-I provided completely designed templates which client can modify the contents on their own through headless CMS service, `Contentful`. Advantages were fast production, no hassle, high performance, and SEO optimization for affordable price with no recurring fee. Non-programmer artists often try to create a website on their own through `Wix` or `Squarespace`, and they end up with poorly designed website or putting too much effort and time. Otherwise, they hire a programmer to design fully customized website for them, then it costs too much money. My pre-made templates offered thoughtfully designed website upfront with some room for customization and affordability--the best of the both worlds. The details of the templates are documented [here](https://tylerkim-design-portfolio.vercel.app/documents).
+- Next.js Pages Router and React for the showcase and statically generated preview routes.
+- Sass modules for responsive page and component styles.
+- A shared local JSON catalog for template names, categories, descriptions, images, and live-demo URLs.
+- Separately hosted template demos, with Contentful-powered content editing.
 
-![제목 없는 그림](https://github.com/tylerkim-freelancing/tylerkim-design-portfolio/assets/63427616/4da965e3-32cb-413a-bda7-148647294a2c)
-![제목 없는 그림 (1)](https://github.com/tylerkim-freelancing/tylerkim-design-portfolio/assets/63427616/ed09a4b2-3fe0-4794-95e3-77c59cf39c45)
+The showcase can build without Contentful credentials. The embedded demos depend on their own hosting and CMS configuration.
 
-## Built With
-[![next js logo](https://img.shields.io/badge/next%20js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org/)
-[![react logo](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev/)
-[![sass logo](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)](https://sass-lang.com/)
-[![Contentful Badge](https://img.shields.io/badge/Contentful-2478CC?logo=contentful&logoColor=fff&style=for-the-badge)](https://www.contentful.com/)
+## Local development
 
-## Experience
+Use Node.js 24 (see `.nvmrc`). The existing Next.js 12 runtime is incompatible with Node.js 25.
 
-A client could fully explore any template from [here](https://tylerkim-design-portfolio.vercel.app/templates), test out the responsive design on both `desktop` and `mobile`, and even customize the color of the components.
+```sh
+nvm use
+npm ci
+npm run dev
+```
 
-![chrome-capture-2024-3-4 (10)](https://github.com/tylerkim-freelancing/tylerkim-design-portfolio/assets/63427616/180c0d3a-cf06-4fc4-b9d4-b67a669e9031)
-![chrome-capture-2024-3-4 (9)](https://github.com/tylerkim-freelancing/tylerkim-design-portfolio/assets/63427616/507ef4b4-0594-4478-b328-52c6aad2d9d6)
+Open [localhost:3000](http://localhost:3000). For production:
 
+```sh
+npm run build
+npm start
+```
+
+## Routes
+
+- `/` and `/templates`: collection, design-style filters, and desktop/mobile thumbnails.
+- `/templates/[template]`: live demo with viewport controls and a direct demo link.
+- `/about`: project background and design/engineering decisions.
+- `/documents`: architecture, CMS, page structure, and development notes.
+
+## Adding a template
+
+Add an entry in `data/templates.json` and desktop/mobile preview images (including the WebP thumbnails referenced by the catalog) under `public/images/templates`. Use an existing category (`Editorial`, `Minimal`, or `Expressive`) or update the filter list in `components/collection.js`. Update the collection’s editorial count copy when expanding beyond six designs. Next.js generates preview routes from the catalog at build time.
+
+The gallery is available without loading the externally hosted demos; the live websites load only when opening a template preview.
